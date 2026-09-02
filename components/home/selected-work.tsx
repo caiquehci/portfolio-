@@ -22,7 +22,8 @@ export function SelectedWork() {
                 href={`/work/${project.slug}`}
                 className="grid gap-6 py-8 md:grid-cols-[1fr_1.2fr] md:items-center md:gap-10"
               >
-                <Cover title={project.name} index={project.index} />
+                {/* passamos slug para que o Cover encontre a pasta correta */}
+                <Cover title={project.name} index={project.index} slug={project.slug} />
                 <div className="flex flex-col gap-3">
                   <p className="text-sm text-muted-foreground">
                     {project.year} · {project.domain}
