@@ -13,7 +13,7 @@ export const profile = {
     "I am a Product and UX/UI Designer with a strong background in graphic design, digital, social media, and marketing. I set aside this space to share some of my achievements.",
   ],
   links: {
-    email: "mailto:hello@carlosmachado.design",
+    email: "mailto:carlos.hcastanheira04@gmail.com",
     linkedin: "https://www.linkedin.com/",
     behance: "https://www.behance.net/",
     whatsapp: "https://wa.me/",
@@ -55,6 +55,11 @@ export const projects: Project[] = [
     slug: "education-checkout-ab-test",
     index: "01",
     name: "Education Checkout A/B Test",
+    // aqui
+
+
+    // aqui
+    //imageUrl: "/portfolio-images/education-checkout-ab-test/43viJqTo95TPIJGNeBCHnlUTaaQ.png",
     headline:
       "Redesigning a checkout: how a \u201cnew baseline\u201d proved, with data, that it wasn\u2019t the culprit behind the conversion decline",
     year: "2026",
@@ -65,7 +70,7 @@ export const projects: Project[] = [
     role: "Product Designer",
     project: "Marcas - QE (Qeevo Group)",
     period: "December 2025 - February 2026",
-    cover: "/images/checkout-cover.png",
+    cover: "/portfolio-images/education-checkout-ab-test/43viJqTo95TPIJGNeBCHnlUTaaQ.png",
     featured: true,
     metric: { value: "6.85% vs 4.72%", label: "conversion, p = 0.0000403" },
     whatIDid: [
@@ -134,7 +139,7 @@ export const projects: Project[] = [
     role: "Visual and UX Designer | Branding Strategist",
     project: "Individual",
     period: "June 2023 - January 2024",
-    cover: "/images/bmker-cover.png",
+    cover: "/portfolio-images/bmker-design-system/bmker-cover.png",
     featured: true,
     metric: { value: "84", label: "valid survey responses" },
     whatIDid: [
@@ -200,7 +205,7 @@ export const projects: Project[] = [
     role: "UX and UI Designer",
     project: "Individual",
     period: "January 2023 - December 2024",
-    cover: "/images/advlabs-cover.png",
+    cover: "/portfolio-images/advlabs-saas/advlabs-cover.png",
     featured: true,
     metric: { value: "2 years", label: "of continuous product evolution" },
     whatIDid: [
@@ -263,7 +268,7 @@ export const projects: Project[] = [
     role: "Product Designer",
     project: "QE (Qeevo Group)",
     period: "2025",
-    cover: "/images/auden-cover.png",
+    cover: "/portfolio-images/auden-college/auden-cover.png",
     featured: true,
     metric: { value: "3 days", label: "to a live website + CMS" },
     whatIDid: [

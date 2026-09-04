@@ -12,7 +12,7 @@
 
 :root {
   color-scheme: dark;
-  --background: #121212;
+  --background: #131313;
   --foreground: #ecece8;
   --muted: #1c1c1c;
   --muted-foreground: #8a8a84;
@@ -32,7 +32,7 @@
   }
   ::selection {
     background: #ecece8;
-    color: #121212;
+    color: #131313;
   }
 }
 

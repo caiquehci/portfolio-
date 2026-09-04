@@ -22,20 +22,14 @@ export function SelectedWork() {
                 href={`/work/${project.slug}`}
                 className="grid gap-6 py-8 md:grid-cols-[1fr_1.2fr] md:items-center md:gap-10"
               >
-                {/* passamos slug para que o Cover encontre a pasta correta */}
-                <Cover title={project.name} index={project.index} slug={project.slug} />
+                {/* Aqui puxamos a propriedade imageUrl direto do arquivo de dados */}
+                <Cover title={project.name} index={project.index} imageUrl={project.cover} />
                 <div className="flex flex-col gap-3">
                   <p className="text-sm text-muted-foreground">
                     {project.year} · {project.domain}
                   </p>
                   <h3 className="text-xl font-medium tracking-tight md:text-2xl">{project.name}</h3>
                   <p className="leading-relaxed text-muted-foreground">{project.summary}</p>
-                  {project.metric ? (
-                    <p className="text-sm">
-                      {project.metric.value}
-                      <span className="text-muted-foreground"> · {project.metric.label}</span>
-                    </p>
-                  ) : null}
                 </div>
               </Link>
             </li>
