@@ -1,12 +1,12 @@
 export const profile = {
-  name: "Castanheira",
-  shortName: "Castanheira",
+  name: "Carlos Castanheira",
+  shortName: "Carlos Castanheira",
   title: "Product Designer",
   positioning:
-    "I design digital products that connect strategy and functionality: interfaces, design systems, and journeys people can actually use.",
+    "Senior Product Designer focused on complex digital products, experimentation and measurable outcomes.",
   valueProposition:
     "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
-  experienceLine: "Product Designer at QE (Qeevo Group). Owner of Ditto.",
+  experienceLine: "Product Designer at Quero Educação (Qeevo Group). Owner of Ditto, AdvLabs and B__mker.",
   location: "Brazil. Open to new opportunities.",
   aboutIntro: [
     "My name is Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
@@ -14,7 +14,7 @@ export const profile = {
   ],
   links: {
     email: "mailto:carlos.hcastanheira04@gmail.com",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/carloshenrmcj/",
     behance: "https://www.behance.net/",
     whatsapp: "https://wa.me/",
     resume: "#",
