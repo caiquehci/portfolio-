@@ -11,9 +11,9 @@ const ibmPlexSans = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Carlos Machado, Product Designer',
+  title: 'Castanheira, Product Designer',
   description:
-    'Product and UX/UI designer. Checkout, design systems, and product decisions backed by research and data.',
+    'Product designer. Checkout, design systems, and product decisions backed by research and data.',
 }
 
 export const viewport: Viewport = {

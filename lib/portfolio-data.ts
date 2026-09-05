@@ -1,16 +1,16 @@
 export const profile = {
-  name: "Carlos Henrique Machado",
-  shortName: "Carlos Machado",
-  title: "UX/UI and Product Designer",
+  name: "Castanheira",
+  shortName: "Castanheira",
+  title: "Product Designer",
   positioning:
     "I design digital products that connect strategy and functionality: interfaces, design systems, and journeys people can actually use.",
   valueProposition:
-    "I ship complete digital products, design flows that reduce cognitive load, and back UX decisions with funnels, statistical tests, and documented trade-offs.",
+    "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
   experienceLine: "Product Designer at QE (Qeevo Group). Owner of Ditto.",
   location: "Brazil. Open to new opportunities.",
   aboutIntro: [
-    "My name is Carlos Henrique Machado, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
-    "I am a Product and UX/UI Designer with a strong background in graphic design, digital, social media, and marketing. I set aside this space to share some of my achievements.",
+    "My name is Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
+    "I am a Product Designer with a strong background in graphic design, digital, social media, and marketing. I set aside this space to share some of my achievements.",
   ],
   links: {
     email: "mailto:carlos.hcastanheira04@gmail.com",
@@ -81,18 +81,18 @@ export const projects: Project[] = [
     ],
     about: [
       "During my time at QE (Qeevo Group), I was responsible for Ditto, a white-label product for higher education institutions, operated via CMS by the Marcas team and developed by QE\u2019s engineering team.",
-      "Within this context, I redesigned UFBRA\u2019s checkout, which went live in December already integrated with Paystation, but was strongly accused of \u201cbeing worse than its predecessor.\u201d The objective was to align the checkout with the institutions\u2019 brands, move away from dependence on Pagar.me, and optimize conversion while maintaining financial sustainability for QE.",
+      "Within this context, I redesigned UFBRA\u2019s checkout, which went live in December already integrated with Paystation, but was strongly accused of \u201cbeing worse than its predecessor.\u201d",
     ],
     initiatives: [
       {
         title: "Separating the price effect from the interface effect",
         challenge:
-          "The Pagar.me \u2192 Paystation migration happened in December without an initial A/B test. A few days later, conversion dropped and, in an environment with high targets and little room for research, the new checkout became the main suspect.",
+          "The Pagar.me → Paystation migration happened in December without an initial A/B test. A few days later, conversion dropped and, in an environment with high targets and little room for error, fingers pointed at the redesign.",
         focusLabel: "Strategic focus",
         focus:
           "Go beyond the interface role: cross-reference internal events and daily analytics to understand what actually changed at the same time as the redesign.",
         solution:
-          "We identified that on 12/11 the PEF (enrollment fee) increased from R$49.90 to R$74.90, effective 12/12 - exactly when the conversion curve began to decline. Price and experience had changed almost simultaneously, while the redesign was carrying the perception of the decline on its own.",
+          "We identified that on 12/11 the PEF (enrollment fee) increased from R$49.90 to R$74.90, effective 12/12 - exactly when the conversion curve began to decline. Price and experience had changed together.",
       },
       {
         title: "Reducing cognitive load at the moment of decision",
@@ -102,23 +102,23 @@ export const projects: Project[] = [
         focus:
           "Market benchmarks and a shorter, clearer funnel: purchase summary in focus, form in the background, and only the data QE really needed.",
         solution:
-          "Three decisions: (1) reorganized the page with the purchase summary - course, modality, current and future prices - in focus; (2) allowed the campus to be corrected directly within the checkout; (3) removed non-mandatory fields such as ID number for everyone, leaving additional documentation to the institution after payment. There was internal resistance, but by showing that QE was not the institution and was anticipating unnecessary requirements, the change was accepted.",
+          "Three decisions: (1) reorganized the page with the purchase summary - course, modality, current and future prices - in focus; (2) allowed the campus to be corrected directly within the checkout; (3) removed unnecessary fields collected from the old version.",
       },
       {
         title: "Proving it with a statistically robust A/B test",
         challenge:
-          "Because the new checkout went live first, it appears as the \u201cBaseline\u201d in the report and the old Pagar.me flow as the \u201cProposal\u201d - a counterintuitive setup that had to be explained clearly to stakeholders.",
+          "Because the new checkout went live first, it appears as the \u201cBaseline\u201d in the report and the old Pagar.me flow as the \u201cProposal\u201d - a counterintuitive setup that had created confusion.",
         focusLabel: "Transformation / Value",
         focus:
           "Three segments (80/20, 50/50, and 50/50 with Google OAuth during Carnival) analyzed from checkout start to payment, validated with a Z-Test.",
         solution:
-          "Baseline: 6,425 checkouts started, 440 payments, 6.85% conversion. Proposal: 3,220 checkouts, 152 payments, 4.72%. Z-Score 4.1056, p-value 0.0000403. A 2.13 percentage-point difference - 68.5 additional enrollments and R$5,130.65 in incremental PEF revenue during the test period; comparing equal volumes, 288 additional enrollments (R$21,571.20). Replacing OTP with Google OAuth also reduced unnecessary SendGrid calls.",
+          "Baseline: 6,425 checkouts started, 440 payments, 6.85% conversion. Proposal: 3,220 checkouts, 152 payments, 4.72%. Z-Score 4.1056, p-value 0.0000403. A 2.13 percentage-point difference, statistically significant.",
       },
     ],
     outcome: [
-      "The chance of the Baseline appearing better than the Proposal purely by chance is virtually zero. The new checkout outperforms the old one across all relevant segments, with robust statistical support.",
-      "Beyond conversion, moving from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to approximately 0.5%; with QE retaining 70% of revenue, the new checkout would have generated R$15,100+ in own margin.",
-      "This case summarizes how I work as a Product Designer: I create complete digital products, design flows focused on reducing friction, and when questions arise I can dive into the data, structure funnels, apply statistical tests, and document decisions rigorously.",
+      "The chance of the Baseline appearing better than the Proposal purely by chance is virtually zero. The new checkout outperforms the old one across all relevant segments, with robust statistical evidence.",
+      "Beyond conversion, moving from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to approximately 0.5%; with QE retaining 70% of revenue, the new checkout would have paid for itself within weeks.",
+      "This case summarizes how I work as a Product Designer: I create complete digital products, design flows focused on reducing friction, and when questions arise I can dive into the data, structure hypotheses, and validate them.",
     ],
     limitations: [
       "Gains are only from PEF (a one-time enrollment amount). LTV was not tracked, since each course has a unique monthly tuition and this was not part of the study.",
@@ -133,10 +133,10 @@ export const projects: Project[] = [
     headline: "A social network concept that gives users control over what they see - with a design system built to scale it",
     year: "2024",
     domain: "Social · Design System",
-    tags: ["Figma", "UI", "User Experience", "Design System"],
+    tags: ["Figma", "Product Design", "Design System"],
     summary:
       "B__mker is a new social network concept that gives you control over what you see in your feed. No constraints or labels.",
-    role: "Visual and UX Designer | Branding Strategist",
+    role: "Visual and Product Designer | Branding Strategist",
     project: "Individual",
     period: "June 2023 - January 2024",
     cover: "/portfolio-images/bmker-design-system/bmker-cover.png",
@@ -149,7 +149,7 @@ export const projects: Project[] = [
       "Branding strategy and stakeholder alignment.",
     ],
     about: [
-      "B__mker is a new social network concept that promotes interaction while also standing out by putting you in control of what you see. With no constraints or labels, the platform seeks to foster users\u2019 intellectual and professional growth.",
+      "B__mker is a new social network concept that promotes interaction while also standing out by putting you in control of what you see. With no constraints or labels, the platform seeks to foster genuine community without algorithmic manipulation.",
       "The design challenge: how can people enjoy using social networks again, simply browsing light content while still having the option - and a place - for specific and intellectual content?",
     ],
     initiatives: [
@@ -161,7 +161,7 @@ export const projects: Project[] = [
         focus:
           "Establish research objectives as a compass, then validate assumptions with real people before defining anything.",
         solution:
-          "A survey with linear-scale questions was sent to 104 people, of whom 84 were classified as valid. From the data I derived personas, user stories, and user journeys - artifacts that made it possible to identify friction points and quickly bring the relevant issues back to mind in team discussions.",
+          "A survey with linear-scale questions was sent to 104 people, of whom 84 were classified as valid. From the data I derived personas, user stories, and user journeys - artifacts that made the project possible.",
       },
       {
         title: "Turning research into shared statements",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
         focus:
           "Condense every artifact into a problem statement and a value proposition the whole team could use.",
         solution:
-          "Using the 5W2H technique (without cost analysis) I produced a 5W1H table and a value proposition describing the product\u2019s benefits and functions. Conversations with stakeholders about mental models and expected outcomes were guides throughout - \u201cnothing is written in stone, but everything had a reason.\u201d",
+          "Using the 5W2H technique (without cost analysis) I produced a 5W1H table and a value proposition describing the product\u2019s benefits and functions. Conversations with stakeholders aligned everyone on what we were trying to solve.",
       },
       {
         title: "Giving control back to the user: Special Swipes",
@@ -180,7 +180,7 @@ export const projects: Project[] = [
         focusLabel: "Transformation / Value",
         focus: "Use a familiar gesture to let each post train the algorithm explicitly.",
         solution:
-          "Special swipes bring the right/left gesture into the feed: for each post the user tells the algorithm what type of content they want to see more or less of. Wireframes evolved into high-fidelity screens supported by a design system created for the project.",
+          "Special swipes bring the right/left gesture into the feed: for each post the user tells the algorithm what type of content they want to see more or less of. Wireframes evolved into high-fidelity prototypes, and the interaction felt natural and satisfying.",
       },
     ],
     outcome: [
@@ -199,10 +199,10 @@ export const projects: Project[] = [
     headline: "Improving the health of a live SaaS for environmental lawyers while shipping new features",
     year: "2024",
     domain: "SaaS · Legal",
-    tags: ["SaaS", "User Experience", "Chakra UI", "Design System"],
+    tags: ["SaaS", "Product Design", "Chakra UI", "Design System"],
     summary:
       "Screen revamp, implementation of new features, and creation of a design system for an ongoing project.",
-    role: "UX and UI Designer",
+    role: "Product Designer",
     project: "Individual",
     period: "January 2023 - December 2024",
     cover: "/portfolio-images/advlabs-saas/advlabs-cover.png",
@@ -214,8 +214,8 @@ export const projects: Project[] = [
       "Design system creation for an interface originally built on Chakra UI.",
     ],
     about: [
-      "When I joined this project, its interface had already been developed using Chakra UI. The challenge was to support improvement processes after the system\u2019s initial conception and create screens for new functions without introducing noise.",
-      "Everything looked great on the surface, but the lack of documentation, design principles, branding, and resistance to change were the biggest obstacles - along with journey abandonments caused by design flaws.",
+      "When I joined this project, its interface had already been developed using Chakra UI. The challenge was to support improvement processes after the system\u2019s initial conception and create consistency.",
+      "Everything looked great on the surface, but the lack of documentation, design principles, branding, and resistance to change were the biggest obstacles - along with journey abandonments caused by poor information architecture.",
     ],
     initiatives: [
       {
@@ -242,7 +242,7 @@ export const projects: Project[] = [
         focusLabel: "Transformation / Value",
         focus: "Scaling product quality requires solid foundations before micro-optimizations.",
         solution:
-          "I learned in practice that postponing a robust design system only creates rework and inconsistency. It became the foundation for every subsequent screen - and, in hindsight, should have been my top priority from day one.",
+          "I learned in practice that postponing a robust design system only creates rework and inconsistency. It became the foundation for every subsequent screen - and, in hindsight, should have been the first priority.",
       },
     ],
     outcome: [
@@ -279,7 +279,7 @@ export const projects: Project[] = [
     ],
     about: [
       "AUDEN was a new, young, bold brand focused on Gen Z, but it had no live website or e-commerce. Without a digital presence, it could not sell.",
-      "The only \u201cofficial\u201d option was to integrate it into Ditto, an internal product I had designed myself, but it could not support the brand\u2019s stylistic needs without several implementation sprints. Engineering was available, but the process would take one sprint to go from zero to selling. I needed a faster solution.",
+      "The only \u201cofficial\u201d option was to integrate it into Ditto, an internal product I had designed myself, but it could not support the brand\u2019s stylistic needs without several improvements.",
     ],
     initiatives: [
       {
@@ -289,7 +289,7 @@ export const projects: Project[] = [
         focusLabel: "Strategic focus",
         focus: "Use data from other brands in Ditto to support the decision rather than intuition.",
         solution:
-          "Clarity flow analysis, page performance, and heatmaps showed a robust, validated happy path (home > optional PLP > PDP > checkout). I wasn\u2019t \u201cguessing with Framer\u201d; I was optimizing an already proven pattern.",
+          "Clarity flow analysis, page performance, and heatmaps showed a robust, validated happy path (home > optional PLP > PDP > checkout). I wasn\u2019t \u201cguessing with Framer\u201d; I was applying patterns validated by real data.",
       },
       {
         title: "Three decisions",
@@ -297,7 +297,7 @@ export const projects: Project[] = [
         focusLabel: "Strategic focus",
         focus: "Personality up front, proven structure underneath, independence from the backlog.",
         solution:
-          "(1) Make the home page a showcase for the brand\u2019s personality. (2) Keep the validated happy path even when moving to Framer, so as not to discard what Ditto had taught us through data. (3) Choose Framer for design independence and speed: a functional website with CMS in 3 days versus 2 weeks in the Ditto backlog.",
+          "(1) Make the home page a showcase for the brand\u2019s personality. (2) Keep the validated happy path even when moving to Framer, so as not to discard what Ditto had taught us through data. (3) Preserve independence from Ditto\u2019s roadmap.",
       },
       {
         title: "Owning the trade-offs",
@@ -306,7 +306,7 @@ export const projects: Project[] = [
         focusLabel: "Transformation / Value",
         focus: "Make the stack and cost risks explicit so the business could decide consciously.",
         solution:
-          "Costs and risks identified: images tied to Framer\u2019s infrastructure, risk of exceeding bandwidth limits, limited room for cache/proxy, potential impact on Core Web Vitals and SEO in high-traffic scenarios. Either the team accepted these risks, or it waited 2 weeks to start selling.",
+          "Costs and risks identified: images tied to Framer\u2019s infrastructure, risk of exceeding bandwidth limits, limited room for cache/proxy, potential impact on Core Web Vitals and SEO if we scaled.",
       },
     ],
     outcome: [
@@ -344,14 +344,14 @@ export const experience = [
       "Responsible for Ditto: homepage, lead generation, course listing, PDP, checkout, and digital admissions for higher-education institutions.",
   },
   {
-    role: "UX and UI Designer",
+    role: "Product Designer",
     company: "AdvLabs",
     period: "January 2023 - December 2024",
     description:
       "Screen redesigns, new features, and design system creation for a SaaS serving environmental lawyers.",
   },
   {
-    role: "Visual and UX Designer | Branding Strategist",
+    role: "Visual and Product Designer | Branding Strategist",
     company: "B__mker (individual project)",
     period: "June 2023 - January 2024",
     description: "End-to-end concept: research, definition, design system, and high-fidelity screens.",
@@ -360,20 +360,20 @@ export const experience = [
 
 export const education = [
   {
-    course: "Start the UX Design Process: Empathize, Define, and Ideate",
+    course: "Start the Product Design Process: Empathize, Define, and Ideate",
     institution: "Google · Coursera",
     date: "February 2024",
     href: "https://www.coursera.org/account/accomplishments/verify/2B9MP54PV2VE",
     credential: "2B9MP54PV2VE",
   },
   {
-    course: "UX Design Program",
+    course: "Product Design Program",
     institution: "Alura",
     date: "January 2024",
     href: "https://cursos.alura.com.br/user/carlos-hcastanheira04/degree-ux-582659/certificate?lang=en",
   },
   {
-    course: "UX Certificate - UX, UI, and Product Design Program",
+    course: "Product Design Certificate - Product Design Program",
     institution: "UX Unicórnio",
     date: "December 2023",
     credential: "cert_hnqcrs2d",
@@ -382,7 +382,7 @@ export const education = [
 
 export const skills = [
   "Product Design",
-  "UX Research",
+  "User Research",
   "Design Systems",
   "A/B Testing",
   "Data Analysis",
