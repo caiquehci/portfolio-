@@ -31,148 +31,220 @@ export default function EducationCheckoutPage() {
       </header>
 
       <div className="w-full">
-        <button 
+        <button
           onClick={() => setActiveImage(project.cover)}
           className="w-full text-left cursor-pointer overflow-hidden rounded-xl bg-transparent"
         >
-          <img 
-            src={project.cover} 
-            alt="Main Banner" 
+          <img
+            src={project.cover}
+            alt="Main Banner"
             className="w-full h-auto object-contain"
           />
         </button>
       </div>
 
       <section className="flex flex-col gap-3">
-        <h2 className="text-xl font-medium">What I did</h2>
+        <h2 className="text-xl font-medium">Role & Scope</h2>
         <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
-          {project.whatIDid.map((item) => (
-            <li key={item} className="leading-relaxed">
-              {item}
-            </li>
-          ))}
+          <li className="leading-relaxed">
+            Owned <strong>Ditto</strong>, the white-label product for higher-education institutions, spanning the homepage, lead generation, course listings, PDP, checkout, and digital admissions.
+          </li>
+          <li className="leading-relaxed">
+            Redesigned UFBRA’s checkout, migrating it to <strong>Paystation</strong> (our internal payment gateway) while aligning it with institutional branding.
+          </li>
+          <li className="leading-relaxed">
+            Investigated quantitative data daily across <strong>Google Analytics, Clarity, Metabase, and internal dashboards</strong>.
+          </li>
+          <li className="leading-relaxed">
+            Structured the A/B testing framework, performed Z-Test statistical validation, and drove alignment across stakeholders.
+          </li>
         </ul>
       </section>
 
       <section className="flex max-w-2xl flex-col gap-4">
         <h2 className="text-xl font-medium">Context</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-          {project.about.map((p, index) => (
-            <p key={index}>{p}</p>
-          ))}
+          <p>
+            During my time at Quero Educação (Qeevo Group), I was responsible for Ditto, a white-label product suite for higher education institutions. It was operated via CMS by the Marcas team and brought to life by me, our PM and QE’s engineering team.
+          </p>
+          <p>
+            As part of this scope, I redesigned the UFBRA checkout. It went live in December, fully integrated with Paystation. Shortly after launch, however, it faced heavy internal friction: stakeholders pointed fingers at the redesign, accusing it of “performing worse than its predecessor.”
+          </p>
+          <p>
+            My goals were clear: modernize the checkout to match institutional branding, break free from Pagar.me dependence, optimize conversion rates, and protect financial sustainability for QE.
+          </p>
         </div>
       </section>
 
-      <div className="w-full">
-        <button 
-          onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/IMAGEM_02.png")}
-            className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
-        >
-          <img 
-            src="/portfolio-images/education-checkout-ab-test/IMAGEM_02.png" 
-            alt="Illustration" 
-            className="h-[300px] md:h-[500px] w-auto object-contain"
-          />
-        </button>
-      </div>
+      <section className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3 max-w-3xl">
+          <h2 className="text-xl font-medium">Baseline X Proposal: why the "new" checkout is the baseline</h2>
+          <p className="leading-relaxed text-muted-foreground">
+            In the A/B test report, the nomenclature is counterintuitive:
+          </p>
+          <ul className="list-disc pl-5 flex flex-col gap-2 text-muted-foreground leading-relaxed">
+            <li>
+              <strong className="text-foreground">Baseline =</strong> The new checkout (my design), running on Paystation via iframe, created within Ditto.
+            </li>
+            <li>
+              <strong className="text-foreground">Proposal =</strong> The old checkout (based on Pagar.me), originally designed for QB and reused in Marcas.
+            </li>
+          </ul>
+          <p className="leading-relaxed text-muted-foreground mt-1">
+            The new checkout went live first, completely replacing the old one. Only after performance questions arose did the previous checkout run in parallel for comparison, which is why the new version appears as the baseline in the analysis.
+          </p>
+        </div>
 
-      <section className="flex flex-col gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+          <div className="w-full">
+            <button
+              onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/proposal-antigo.png")}
+              className="w-full text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+            >
+              <img
+                src="/portfolio-images/education-checkout-ab-test/proposal-antigo.png"
+                alt="Baseline - Novo"
+                className="w-full h-auto object-contain"
+              />
+            </button>
+          </div>
+          <div className="w-full">
+            <button
+              onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/baseline-novo.png")}
+              className="w-full text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+            >
+              <img
+                src="/portfolio-images/education-checkout-ab-test/baseline-novo.png"
+                alt="Proposal - Antigo"
+                className="w-full h-auto object-contain"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col gap-10 mt-16">
         <h2 className="text-xl font-medium">Initiatives</h2>
-        {project.initiatives.map((item) => (
-          <article key={item.title} className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
-            <h3 className="text-lg font-medium">{item.title}</h3>
-            <p className="leading-relaxed text-muted-foreground">{item.challenge}</p>
-            
-            <div className="space-y-1">
-              <p className="text-sm font-medium text-foreground">{item.focusLabel}</p>
-              <p className="leading-relaxed text-muted-foreground">{item.focus}</p>
-            </div>
 
-            <div className="space-y-1">
-              <p className="text-sm font-medium text-foreground">Solution</p>
-              <p className="leading-relaxed text-muted-foreground">{item.solution}</p>
-            </div>
-          </article>
-        ))}
+        <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
+          <h3 className="text-lg font-medium">1. Separating the Price Effect from the Interface Effect</h3>
+          <p className="leading-relaxed text-muted-foreground">
+            The migration from Pagar.me to Paystation happened in December without an initial A/B test. When conversion dipped days later, an environment under high pressure with little room for research instantly scapegoated the new design.
+          </p>
+          <div className="space-y-1">
+            <p className="text-sm font-medium text-foreground">Strategic Focus</p>
+            <p className="leading-relaxed text-muted-foreground">
+              Refuse to stay in a siloed "designer" box. Cross-reference internal events and daily analytics to uncover what actually shifted concurrently with the launch.
+            </p>
+          </div>
+          <div className="space-y-1">
+            <p className="text-sm font-medium text-foreground">Solution</p>
+            <p className="leading-relaxed text-muted-foreground">
+              Digging into data, I discovered that on December 11th, the enrollment fee (PEF) increased from R$49.90 to R$74.90, effective December 12th. Precisely when the conversion curve dipped. Price elasticity and UX shifts collided overnight; the redesign was unfairly carrying the blame for a pricing adjustment.
+            </p>
+          </div>
+        </article>
+
+        <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
+          <h3 className="text-lg font-medium">2. Reducing Cognitive Load at the Moment of Decision</h3>
+          <p className="leading-relaxed text-muted-foreground">
+            The legacy checkout (repurposed from a different business unit, QB) forced users through bloated forms and broke the journey if a campus selection needed tweaking.
+          </p>
+          <div className="space-y-1">
+            <p className="text-sm font-medium text-foreground">Strategic Focus</p>
+            <p className="leading-relaxed text-muted-foreground">
+              Clean up the funnel using market benchmarks, placing the purchase summary front-and-center and trimming the form down to bare-minimum essentials.
+            </p>
+          </div>
+          <div className="space-y-1">
+            <p className="text-sm font-medium text-foreground">Solution</p>
+            <p className="leading-relaxed text-muted-foreground">
+              Restructured the layout to feature a clear purchase summary (course, modality, current/future prices) right in focus, allowed users to correct their campus selection directly inside the checkout flow, and eliminated non-mandatory friction (such as universally collecting ID numbers upfront, shifting compliance documentation post-payment). Despite initial internal pushback, framing QE as an enabler rather than an administrative roadblock won stakeholder buy-in.
+            </p>
+          </div>
+        </article>
+
+        <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
+          <h3 className="text-lg font-medium">3. Proving It with a Statistically Robust A/B Test</h3>
+          <p className="leading-relaxed text-muted-foreground">
+            Because the new checkout had been pushed live first, the A/B test nomenclature was inverted: the new design ran as the "Baseline," while the old Pagar.me flow acted as the "Proposal."
+          </p>
+          <div className="space-y-1">
+            <p className="text-sm font-medium text-foreground">Validation & Impact</p>
+            <p className="leading-relaxed text-muted-foreground">
+              Across three distinct traffic segments (80/20, 50/50, and 50/50 integrated with Google OAuth during Carnival), we tracked performance from checkout initiation to completed payment, validating results with a Z-Test. Baseline achieved 6.85% conversion vs. Proposal's 4.72% (Z-Score of 4.1056, p-value of 0.0000403). This generated 68.5 additional enrollments during the test window (scaling to 288 for equal volumes) and provided valuable financial gains while optimizing SendGrid infrastructure calls.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <div className="w-full">
-          <button 
-            onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/IMAGEM_03.png")}
-            className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
-          >
-            <img 
-              src="/portfolio-images/education-checkout-ab-test/IMAGEM_03.png" 
-              alt="Illustration Left" 
-              className="h-[300px] md:h-[500px] w-auto object-contain" 
-            />
-          </button>
+      <section className="flex flex-col gap-4 w-full mt-10">
+        <h2 className="text-xl font-medium">Results</h2>
+        <div className="w-full h-[80vh] md:h-[80vh] overflow-hidden rounded-xl border border-border bg-neutral-900/10">
+          <iframe
+            src="https://shaky-wolf-35335466.figma.site/"
+            title="A/B Test Results Prototype"
+            className="w-full h-full border-none"
+            allowFullScreen
+          />
         </div>
-        <div className="w-full">
-          <button 
-            onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/IMAGEM_04.png")}
-            className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
-          >
-            <img 
-              src="/portfolio-images/education-checkout-ab-test/IMAGEM_04.png" 
-              alt="Illustration Right" 
-              className="h-[300px] md:h-[500px] w-auto object-contain" 
-            />
-          </button>
-        </div>
-      </div>
+      </section>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4 mt-10">
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-          {project.outcome.map((p, index) => (
-            <p key={index}>{p}</p>
-          ))}
+          <p>
+            The data left no ambiguity: the new checkout decisively outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
+          </p>
+          <p>
+            Beyond conversion wins, migrating from Pagar.me to Paystation slashed infrastructure fees from ~2% down to ~0.5%. With QE retaining 70% of revenue, the redesign yielded over R$15,100 in direct margin gains.
+          </p>
+          <p>
+            This project defines my approach as a Product Designer: I build end-to-end digital experiences that ruthlessly eliminate friction, but when performance questions arise, I dive straight into analytics, structure rigorous funnels, apply statistical testing, and let hard data drive the narrative.
+          </p>
         </div>
       </section>
 
-      <div className="w-full">
-        <button 
+      {/* <div className="w-full">
+        <button
           onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/IMAGEM_05.png")}
           className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
         >
-          <img 
-            src="/portfolio-images/education-checkout-ab-test/IMAGEM_05.png" 
-            alt="Illustration" 
+          <img
+            src="/portfolio-images/education-checkout-ab-test/IMAGEM_05.png"
+            alt="Illustration"
             className="h-[300px] md:h-[500px] w-auto object-contain"
           />
         </button>
-      </div>
+      </div> */}
 
-      {project.limitations ? (
-        <section className="flex max-w-2xl flex-col gap-4">
-          <h2 className="text-xl font-medium">Limitations</h2>
-          {project.limitations.map((p) => (
-            <p key={p} className="leading-relaxed text-muted-foreground">
-              {p}
-            </p>
-          ))}
-        </section>
-      ) : null}
+      <section className="flex max-w-2xl flex-col gap-4 mt-10">
+        <h2 className="text-xl font-medium">Limitations</h2>
+        <p className="leading-relaxed text-muted-foreground">
+          <strong>Scope boundaries:</strong> Metrics were isolated to PEF (one-time enrollment fees). LTV tracking wasn't factored in due to varying monthly tuitions per course.
+        </p>
+        <p className="leading-relaxed text-muted-foreground">
+          <strong>Timing:</strong> The A/B test was deployed after performance alarms went off. Running it pre-launch would have saved weeks of unnecessary stakeholder friction. Profit is earned, but the lesson is invaluable.
+        </p>
+      </section>
 
       {project.team ? (
         <p className="max-w-2xl text-sm text-muted-foreground">{project.team}</p>
       ) : null}
 
       {activeImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 md:p-10"
           onClick={() => setActiveImage(null)}
         >
           <div className="relative max-w-7xl max-h-full overflow-hidden rounded-xl">
-            <img 
-              src={activeImage} 
-              alt="Zoomed view" 
+            <img
+              src={activeImage}
+              alt="Zoomed view"
               className="w-auto h-auto max-w-full max-h-[90vh] object-contain rounded-xl"
             />
           </div>
-          <button 
+          <button
             className="absolute top-4 right-4 text-white text-sm bg-black/40 px-3 py-1.5 rounded-full hover:bg-black/60"
             onClick={() => setActiveImage(null)}
           >
@@ -180,7 +252,7 @@ export default function EducationCheckoutPage() {
           </button>
         </div>
       )}
-      
+
       <section className="flex flex-col gap-6 border-t border-border pt-16 mt-8">
         <div className="flex flex-col gap-2">
           <h2 className="text-xl font-medium tracking-tight">Explore other cases</h2>
@@ -191,15 +263,15 @@ export default function EducationCheckoutPage() {
           {projects
             .filter((p) => p.slug !== 'education-checkout-ab-test')
             .map((p) => (
-              <Link 
-                key={p.slug} 
+              <Link
+                key={p.slug}
                 href={`/work/${p.slug}`}
                 className="group flex flex-col gap-3 rounded-xl border border-border p-4 bg-transparent hover:bg-neutral-900/40 transition-colors"
               >
                 <div className="w-full aspect-[16/10] overflow-hidden rounded-lg border border-border/50">
-                  <img 
-                    src={p.cover} 
-                    alt={p.name} 
+                  <img
+                    src={p.cover}
+                    alt={p.name}
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
                   />
                 </div>
