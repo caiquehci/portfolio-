@@ -56,7 +56,7 @@ export default function AudenCollegePage() {
         </div>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4  mt-16">
         <h2 className="text-xl font-medium">The challenge</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -114,7 +114,7 @@ export default function AudenCollegePage() {
         </article>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4 mt-10">
+      <section className="flex max-w-2xl flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -126,7 +126,7 @@ export default function AudenCollegePage() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-4 w-full mt-10">
+      <section className="flex flex-col gap-4 w-full mt-16">
         <h2 className="text-xl font-medium">See it yourself</h2>
         <div className="w-full h-[80vh] md:h-[80vh] overflow-hidden rounded-xl bg-neutral-900/10">
           <iframe
@@ -138,16 +138,16 @@ export default function AudenCollegePage() {
         </div>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4  mt-16">
         <h2 className="text-xl font-medium">Key takeaway</h2>
         <p className="leading-relaxed text-muted-foreground">
           The fastest solution was not necessarily the best product decision in the long term. But it was doable!
         </p>
       </section>
 
-      {project.team ? (
+      {/* {project.team ? (
         <p className="max-w-2xl text-sm text-muted-foreground">{project.team}</p>
-      ) : null}
+      ) : null} */}
 
       {activeImage && (
         <div

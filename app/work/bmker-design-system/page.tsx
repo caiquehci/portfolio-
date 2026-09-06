@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { projects } from '@/lib/portfolio-data'
+import ImageCarouselModal from '@/components/home/carousel-modal'
 
 export default function BmmkerPage() {
   const project = projects.find((p) => p.slug === 'bmker-design-system')
@@ -26,9 +27,9 @@ export default function BmmkerPage() {
         <p className="text-sm text-muted-foreground">
           Role: Solo Product Designer (Visual, UX, & Brand Strategy) · Timeline: June 2023 – January 2024 · Scope: End-to-end product strategy, user research, brand identity, and interface design.
         </p>
-        <p className="text-sm text-muted-foreground">
-          TL;DR: <a href="https://www.behance.net/gallery/202964509/B__mker" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">View the Behance Case Study</a>
-        </p>
+        {/* <p className="text-sm text-muted-foreground">
+          TL;DR: <a href="https://www.behance.net/gallery/202964509/B__mker" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">View the illustration for this case study</a>
+        </p> */}
       </header>
 
       <div className="w-full">
@@ -44,7 +45,7 @@ export default function BmmkerPage() {
         </button>
       </div>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">About the project</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -56,7 +57,7 @@ export default function BmmkerPage() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-10">
+      <section className="flex flex-col gap-10 mt-16">
         <h2 className="text-xl font-medium">Initiatives</h2>
 
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
@@ -69,7 +70,20 @@ export default function BmmkerPage() {
           </p>
         </article>
 
-        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
+        <div className="w-full">
+          <button
+            onClick={() => setActiveImage("/portfolio-images/bmker-design-system/IMAGEM_03.png")}
+            className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+          >
+            <img
+              src="/portfolio-images/bmker-design-system/IMAGEM_03.png"
+              alt="Illustration"
+              className="h-[300px] md:h-[500px] w-auto object-contain"
+            />
+          </button>
+        </div>
+
+        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
           <h3 className="text-lg font-medium">Strategic approach and discovery</h3>
           <p className="leading-relaxed text-muted-foreground">
             To avoid building for an echo chamber, I decoupled personal assumptions from the product strategy early in the discovery phase.
@@ -107,22 +121,76 @@ export default function BmmkerPage() {
           </ul>
         </article>
 
-        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
+        <div className="max-w-3xl">
+          <ImageCarouselModal
+            images={[
+              "/portfolio-images/bmker-design-system/image05.png",
+              "/portfolio-images/bmker-design-system/image06.png",
+              "/portfolio-images/bmker-design-system/image07.png",
+              "/portfolio-images/bmker-design-system/image08.png",
+              "/portfolio-images/bmker-design-system/image09.png",
+            ]}
+            altText="B__mker persona discoveries"
+            title=""
+          />
+        </div>
+
+        <article className="flex max-w-2xl flex-col gap-6 border-t border-border pt-8 mt-16">
           <h3 className="text-lg font-medium">Core product pillars and solutions</h3>
           <p className="leading-relaxed text-muted-foreground">
             This section can house your visual assets/screens from the original site.
           </p>
           <p className="leading-relaxed text-muted-foreground">
             <strong>Reclaiming content control</strong><br />
-            Designed an onboarding and feed-filtering architecture that allows users to segment their digital consumption. By breaking away from rigid platform formatting, users can toggle between casual social loops and focused professional frameworks based on their immediate intent.
+            Designed an onboarding and feed-filtering architecture that allows users to segment their digital consumption. By breaking away from rigid platform formatting, users can toggle between casual social loops and focused professional frameworks based on their immediate intent. Swipe left to see less. Right to see more, simple huh?!
           </p>
-          <p className="leading-relaxed text-muted-foreground">
+
+          <div className="w-full">
+            <button
+              onClick={() => setActiveImage("/portfolio-images/bmker-design-system/IMAGEM_10.png")}
+              className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+            >
+              <img
+                src="/portfolio-images/bmker-design-system/IMAGEM_10.png"
+                alt="Content control"
+                className="h-[300px] md:h-[500px] w-auto object-contain"
+              />
+            </button>
+          </div>
+
+          <p className="leading-relaxed text-muted-foreground mt-8">
             <strong>Scalable design system and brand identity</strong><br />
             Developed a cohesive visual language from scratch. Because the project was solo-driven, creating a modular component foundation and clear typography/color guidelines was critical to maintaining visual integrity across high-density content cards and sparse discovery layouts.
           </p>
         </article>
 
-        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
+        <div className="w-full">
+          <button
+            onClick={() => setActiveImage("/portfolio-images/bmker-design-system/IMAGEM_11.png")}
+            className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+          >
+            <img
+              src="/portfolio-images/bmker-design-system/IMAGEM_11.png"
+              alt="Brand identity"
+              className="h-[300px] md:h-[500px] w-auto object-contain"
+            />
+          </button>
+        </div>
+
+        <div className="w-full">
+          <button
+            onClick={() => setActiveImage("/portfolio-images/bmker-design-system/IMAGEM_12.png")}
+            className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+          >
+            <img
+              src="/portfolio-images/bmker-design-system/IMAGEM_12.png"
+              alt="Brand identity 2"
+              className="h-[200px] md:h-[214px] w-auto object-contain"
+            />
+          </button>
+        </div>
+
+        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
           <h3 className="text-lg font-medium">Key takeaways</h3>
           <p className="leading-relaxed text-muted-foreground">
             <strong>Research guardrails prevent bias:</strong> Validating early hypotheses with a structured survey of 80+ participants completely shifted the original feature roadmap, proving that subjective design choices must always be checked against actual user behavior.

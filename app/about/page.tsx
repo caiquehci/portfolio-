@@ -18,7 +18,7 @@ export default function AboutPage() {
         <p className="text-sm text-muted-foreground">{profile.location}</p>
       </header>
 
-      <section className="flex flex-col gap-6">
+      <section className="flex flex-col gap-6 mt-16">
         <h2 className="text-xl font-medium">Experience</h2>
         <ul className="flex flex-col">
           {experience.map((item) => (
@@ -33,7 +33,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-6">
+      <section className="flex flex-col gap-6 mt-16">
         <h2 className="text-xl font-medium">Education</h2>
         <ul className="flex flex-col">
           {education.map((item) => (
@@ -54,7 +54,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-4">
+      <section className="flex flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Skills</h2>
         <p className="max-w-2xl leading-relaxed text-muted-foreground">{skills.join(', ')}</p>
       </section>

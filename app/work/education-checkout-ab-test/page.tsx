@@ -44,7 +44,7 @@ export default function EducationCheckoutPage() {
       </div>
 
       <section className="flex flex-col gap-3">
-        <h2 className="text-xl font-medium">Role & Scope</h2>
+        <h2 className="text-xl font-medium">Role and scope</h2>
         <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
           <li className="leading-relaxed">
             Owned <strong>Ditto</strong>, the white-label product for higher-education institutions, spanning the homepage, lead generation, course listings, PDP, checkout, and digital admissions.
@@ -61,7 +61,7 @@ export default function EducationCheckoutPage() {
         </ul>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Context</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -77,7 +77,7 @@ export default function EducationCheckoutPage() {
       </section>
 
       <section className="flex flex-col gap-6">
-        <div className="flex flex-col gap-3 max-w-3xl">
+        <div className="flex flex-col gap-3 max-w-3xl  mt-16">
           <h2 className="text-xl font-medium">Baseline X Proposal: why the "new" checkout is the baseline</h2>
           <p className="leading-relaxed text-muted-foreground">
             In the A/B test report, the nomenclature is counterintuitive:
@@ -178,7 +178,7 @@ export default function EducationCheckoutPage() {
         </article>
       </section>
 
-      <section className="flex flex-col gap-4 w-full mt-10">
+      <section className="flex flex-col gap-4 w-full mt-16">
         <h2 className="text-xl font-medium">Results</h2>
         <div className="w-full h-[80vh] md:h-[80vh] overflow-hidden rounded-xl border border-border bg-neutral-900/10">
           <iframe
@@ -190,7 +190,7 @@ export default function EducationCheckoutPage() {
         </div>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4 mt-10">
+      <section className="flex max-w-2xl flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -218,7 +218,7 @@ export default function EducationCheckoutPage() {
         </button>
       </div> */}
 
-      <section className="flex max-w-2xl flex-col gap-4 mt-10">
+      {/* <section className="flex max-w-2xl flex-col gap-4 mt-10">
         <h2 className="text-xl font-medium">Limitations</h2>
         <p className="leading-relaxed text-muted-foreground">
           <strong>Scope boundaries:</strong> Metrics were isolated to PEF (one-time enrollment fees). LTV tracking wasn't factored in due to varying monthly tuitions per course.
@@ -226,11 +226,11 @@ export default function EducationCheckoutPage() {
         <p className="leading-relaxed text-muted-foreground">
           <strong>Timing:</strong> The A/B test was deployed after performance alarms went off. Running it pre-launch would have saved weeks of unnecessary stakeholder friction. Profit is earned, but the lesson is invaluable.
         </p>
-      </section>
+      </section> */}
 
-      {project.team ? (
+      {/* {project.team ? (
         <p className="max-w-2xl text-sm text-muted-foreground">{project.team}</p>
-      ) : null}
+      ) : null} */}
 
       {activeImage && (
         <div

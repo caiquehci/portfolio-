@@ -35,6 +35,14 @@ export function SelectedWork() {
             </li>
           ))}
         </ul>
+        <div className="flex justify-center mt-4">
+          <Link
+            href="/work/all"
+            className="px-8 py-4 rounded-xl bg-[#ffc000] text-zinc-950 font-medium hover:opacity-90 transition-opacity duration-300 shadow-lg shadow-[#ffc000]/10 flex items-center gap-2"
+          >
+            See all work →
+          </Link>
+        </div>
       </div>
     </section>
   )

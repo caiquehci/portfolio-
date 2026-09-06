@@ -45,7 +45,7 @@ export default function AdvlabsSaaSPage() {
       </div>
 
       <section className="flex flex-col gap-3">
-        <h2 className="text-xl font-medium">Role & Scope</h2>
+        <h2 className="text-xl font-medium">Role and scope</h2>
         <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
           <li className="leading-relaxed">
             Owned the end-to-end design and UX architecture of AdvLabs, a specialized SaaS platform for environmental lawyers, scaling its interface standards across a two-year engagement.
@@ -62,7 +62,7 @@ export default function AdvlabsSaaSPage() {
         </ul>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4  mt-16">
         <h2 className="text-xl font-medium">About the project</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -84,7 +84,7 @@ export default function AdvlabsSaaSPage() {
         </button>
       </div>
 
-      <section className="flex flex-col gap-10">
+      <section className="flex flex-col gap-10 mt-16">
         <h2 className="text-xl font-medium">Initiatives</h2>
 
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
@@ -153,7 +153,7 @@ export default function AdvlabsSaaSPage() {
           </button>
         </div>
 
-        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
+        <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
           <h3 className="text-lg font-medium">Challenging product assumptions</h3>
           <p className="leading-relaxed text-muted-foreground">
             Beyond interface design, I actively steered product strategy by auditing information architecture. For instance, the desktop sidebar navigation had expanded to 19 disparate items, overwhelming users and shrinking active workspace. I restructured the navigation model to reduce cognitive overhead and aligned feature prioritization with direct user feedback and behavioral data.
@@ -161,7 +161,7 @@ export default function AdvlabsSaaSPage() {
         </article>
       </section>
 
-      <section className="flex max-w-2xl flex-col gap-4">
+      <section className="flex max-w-2xl flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Retrospective</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
@@ -183,7 +183,7 @@ export default function AdvlabsSaaSPage() {
         </button>
       </div>
 
-      <section className="flex max-w-2xl flex-col gap-4 mt-6">
+      <section className="flex max-w-2xl flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>

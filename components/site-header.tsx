@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 import { profile } from '@/lib/portfolio-data'
 
 const nav = [
-  { href: '/#work', label: 'Work' },
+  { href: '/work/all', label: 'Work' },
   { href: '/about', label: 'About' },
   { href: '/#contact', label: 'Contact' },
 ]

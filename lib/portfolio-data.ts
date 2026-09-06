@@ -6,7 +6,7 @@ export const profile = {
     "Senior Product Designer focused on complex digital products, experimentation and measurable outcomes.",
   valueProposition:
     "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
-  experienceLine: "Product Designer at Quero Educação (Qeevo Group). Owner of Ditto, AdvLabs and B__mker.",
+  experienceLine: "Owner of Ditto, AdvLabs and B__mker. Soon more to come.",
   location: "Brazil. Open to new opportunities.",
   aboutIntro: [
     "My name is Carlos Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
@@ -15,9 +15,9 @@ export const profile = {
   links: {
     email: "mailto:carlos.hcastanheira04@gmail.com",
     linkedin: "https://www.linkedin.com/in/carloshenrmcj/",
-    behance: "https://www.behance.net/",
-    whatsapp: "https://wa.me/",
-    resume: "#",
+    // behance: "https://www.behance.net/",
+    whatsapp: "https://wa.me/5512988908286",
+    resume: "/about",
   },
 }
 
@@ -196,7 +196,7 @@ export const projects: Project[] = [
   {
     slug: "advlabs-saas",
     index: "03",
-    name: "AdvLabs",
+    name: "AdvLabs SaaS",
     headline: "Improving the health of a live SaaS for environmental lawyers while shipping new features",
     year: "2024",
     domain: "SaaS · Legal",
@@ -332,7 +332,7 @@ export const projects: Project[] = [
     project: "QE (Qeevo Group)",
     period: "2026",
     cover: "/portfolio-images/rapid-churn-retention-intervention/IMAGEM_01.png", 
-    featured: true,
+    featured: false,
     metric: { value: "n=200", label: "quantitative validation sample" },
     whatIDid: [
       "Architected, proposed, and secured approval for a rapid-response product discovery framework.",
@@ -377,6 +377,64 @@ export const projects: Project[] = [
     team: "QE (Qeevo Group) stakeholders and leadership.",
     hidden: true,
   },
+  {
+    slug: "engineering-enablement",
+    index: "06",
+    name: "Engineering enablement without the bottleneck",
+    headline: "Spoiler alert: this is not rocket science, but it is indeed very scalable, easy-to-use and async friendly",
+    year: "2023",
+    domain: "Developer Experience · Frontend Architecture",
+    tags: ["Developer Experience", "Design Systems", "Workflow Optimization", "Prototyping"],
+    summary: "Introduced a scrappy, highly experimental developer experience workflow pairing Figma designs with lightweight, self-contained HTML specifications and Markdown context documents.",
+    role: "Product Designer",
+    project: "X6 Tech",
+    period: "2023",
+    cover: "/portfolio-images/engineering-enablement/IMAGEM_01.png",
+    featured: false,
+    metric: { value: "80%", label: "sprint capacity dedicated to new features" },
+    whatIDid: [
+      "Spearheaded a scrappy, highly experimental developer experience workflow on a cross-functional product team.",
+      "Introduced portable HTML specification files and Markdown context documents paired with Figma designs as a universal translation layer.",
+      "Operationalized core foundational components like the Tabela de Processos to bring component systematization and predictability to engineering sprints."
+    ],
+    about: [
+      "When joining a cross-functional product team consisting of one product designer and four engineers, the workflow suffered from a classic bottleneck. Despite having design files available, the team lacked a shared design system or experience working with a dedicated product designer.",
+      "This resulted in fragmented component choices, heavy reliance on synchronous back-and-forth communication, and inflated sprint hours spent clarifying layout decisions rather than shipping features."
+    ],
+    initiatives: [
+      {
+        title: "The challenge: friction in a greenfield design environment",
+        challenge: "Engineers sourced arbitrary third-party libraries, leading to visual inconsistencies, technical debt, and mismatched component implementations.",
+        focusLabel: "Strategic focus",
+        focus: "Eliminating synchronous communication bottlenecks and resistance to perceived bureaucratic overhead.",
+        solution: "Identified the need for an accessible, zero-friction communication and translation layer that respected engineering velocity."
+      },
+      {
+        title: "The solution: scrappy experimentation with portable HTML specs",
+        challenge: "The team had no prior exposure to structured design systems and lacked a shared vocabulary.",
+        focusLabel: "Implementation",
+        focus: "Reversing online code library logic to craft standalone HTML specification files alongside Markdown context notes.",
+        solution: "Created self-explanatory files allowing developers to inspect behaviors, variants, and tokens at their own pace without navigating complex design tool licenses."
+      },
+      {
+        title: "Organic adoption and systematization",
+        challenge: "Overcoming initial team hesitation toward new workflows without enforcing heavy top-down governance.",
+        focusLabel: "Outcome / Value",
+        focus: "Demonstrating undeniable quality improvements through small, collaborative experiments.",
+        solution: "Won the team over within two sprints, shifting our sprint capacity from fighting debt to dedicating 80% of our time to high-value new features."
+      }
+    ],
+    outcome: [
+      "Transformed delivery velocity and recovered hours previously lost to redundant alignment.",
+      "Shifted sprint capacity from fighting debt to dedicating 80% of time to high-value new features.",
+      "Proved that systemic consistency can be achieved organically through technical empathy and strategic facilitation rather than rigid enterprise tooling."
+    ],
+    limitations: [
+      "Faced initial resistance from team members before the quality improvements drove organic bottom-up adoption."
+    ],
+    team: "",
+    hidden: true,
+  }
 ]
 
 export const moreWork = [
@@ -384,36 +442,57 @@ export const moreWork = [
     name: "PD Test - Internet plan purchase assistant",
     category: "Wireframes / Assistant / PD Test",
     summary: "Internet plan purchase assistant, wireframes + process and presentation!",
-    href: profile.links.behance,
+    href: "https://www.behance.net/gallery/214123611/Teste-PD",
   },
   {
-    name: "Behance archive",
-    category: "Graphic design / Social media / Marketing",
-    summary: "Complementary visual work from my background in graphic design, digital, and marketing.",
-    href: profile.links.behance,
+    name: "B__mker - Visual explore (PT-Br)",
+    category: "Social Media / Design System / Design tokens",
+    summary: "A new network concept that gives you control over what you see in your feed.",
+    href: "https://www.behance.net/gallery/202964509/B__mker",
+  },
+  {
+    name: "AdvLabs - Visual explore (PT-Br)",
+    category: "Wireframes / Assistant / PD Test",
+    summary: "Screen revamp, implementarion of new features and QoL lifetime changes.",
+    href: "https://www.behance.net/gallery/202964267/AdvLabs",
   },
 ]
 
 export const experience = [
   {
-    role: "Product Designer - Ditto (white-label EdTech product)",
-    company: "QE (Qeevo Group)",
-    period: "2025 - February 2026",
+    role: "Senior Product Designer - Ditto (white-label EdTech product)",
+    company: "Quero Educação / Qeevo Group",
+    period: "March 2025 - March 2026",
     description:
-      "Responsible for Ditto: homepage, lead generation, course listing, PDP, checkout, and digital admissions for higher-education institutions.",
+      "Led end-to-end design for Ditto, increasing checkout conversion by 2.1% and reducing friction by 30% across higher-education e-commerce platforms using data-driven discovery, GA4, and Microsoft Clarity.",
   },
   {
-    role: "Product Designer",
-    company: "AdvLabs",
+    role: "Senior UI/UX Designer",
+    company: "X6 TECH",
     period: "January 2023 - December 2024",
     description:
-      "Screen redesigns, new features, and design system creation for a SaaS serving environmental lawyers.",
+      "Reduced interface development time by 25% by building scalable design systems and tokens, while driving user research and high-fidelity responsive web and mobile solutions.",
   },
   {
-    role: "Visual and Product Designer | Branding Strategist",
-    company: "X6 Tech",
-    period: "June 2023 - January 2024",
-    description: "End-to-end concept: research, definition, design system, and high-fidelity screens.",
+    role: "UX/UI & Digital Solutions Designer",
+    company: "PRO Marking Laser",
+    period: "January 2022 - January 2023",
+    description:
+      "Designed industrial software interfaces, translating complex technical and operational requirements into intuitive digital experiences and workflows.",
+  },
+  {
+    role: "UI Designer",
+    company: "OTREM Comunicação",
+    period: "February 2021 - October 2021",
+    description:
+      "Developed web and mobile application interfaces focused on usability, visual consistency, accessibility, and information architecture.",
+  },
+  {
+    role: "Head Graphic Designer",
+    company: "OTREM Comunicação",
+    period: "November 2015 - October 2021",
+    description:
+      "Directed visual identity projects, digital marketing campaigns, and brand collateral while managing and mentoring a team of designers and interns.",
   },
 ]
 
@@ -432,10 +511,20 @@ export const education = [
     href: "https://cursos.alura.com.br/user/carlos-hcastanheira04/degree-ux-582659/certificate?lang=en",
   },
   {
+    course: "Technologist in Systems Analysis and Development",
+    institution: "Universidade Paulista (UNIP)",
+    date: "January 2024 - Present",
+  },
+  {
     course: "Product Design Certificate - Product Design Program",
     institution: "UX Unicórnio",
     date: "December 2023",
     credential: "cert_hnqcrs2d",
+  },
+  {
+    course: "B.S in Graphic Design",
+    institution: "Unifatecie",
+    date: "Conclusion 2021",
   },
 ]
 
