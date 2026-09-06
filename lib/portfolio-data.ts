@@ -190,7 +190,7 @@ export const projects: Project[] = [
     limitations: [
       "As a concept project, results are qualitative: validation happened through feedback sessions, not production metrics.",
     ],
-    team: "Individual project with feedback from peers and stakeholders.",
+    team: "",
   },
   {
     slug: "advlabs-saas",
@@ -203,7 +203,7 @@ export const projects: Project[] = [
     summary:
       "Screen revamp, implementation of new features, and creation of a design system for an ongoing project.",
     role: "Product Designer",
-    project: "Individual",
+    project: "X6 Tech",
     period: "January 2023 - December 2024",
     cover: "/portfolio-images/advlabs-saas/advlabs-cover.png",
     featured: true,
@@ -254,7 +254,7 @@ export const projects: Project[] = [
       "The side menu reached 19 items at times; I would group functions into subgroups and make it collapsible to reduce cognitive load.",
       "More validation with users, not only stakeholders.",
     ],
-    team: "AdvLabs product and development team.",
+    team: "",
   },
   {
     slug: "auden-college",
@@ -266,7 +266,7 @@ export const projects: Project[] = [
     tags: ["Framer", "CMS", "E-commerce", "Product Strategy"],
     summary: "E-commerce, built to start selling immediately. Full of personality!",
     role: "Product Designer",
-    project: "QE (Qeevo Group)",
+    project: "Marcas - QE (Qeevo Group)",
     period: "2025",
     cover: "/portfolio-images/auden-college/auden-cover.png",
     featured: true,
@@ -352,7 +352,7 @@ export const experience = [
   },
   {
     role: "Visual and Product Designer | Branding Strategist",
-    company: "B__mker (individual project)",
+    company: "X6 Tech",
     period: "June 2023 - January 2024",
     description: "End-to-end concept: research, definition, design system, and high-fidelity screens.",
   },

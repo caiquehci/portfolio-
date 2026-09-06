@@ -253,7 +253,7 @@ export default function EducationCheckoutPage() {
         </div>
       )}
 
-      <section className="flex flex-col gap-6 border-t border-border pt-16 mt-8">
+      <section className="flex flex-col gap-6 border-t border-border pt-16 mt-40">
         <div className="flex flex-col gap-2">
           <h2 className="text-xl font-medium tracking-tight">Explore other cases</h2>
           <p className="text-base text-muted-foreground">Continue reading about my process and impact across other digital products.</p>
