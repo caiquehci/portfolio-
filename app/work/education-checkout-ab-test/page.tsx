@@ -261,7 +261,7 @@ export default function EducationCheckoutPage() {
 
         <div className="grid gap-6 sm:grid-cols-3 mt-4">
           {projects
-            .filter((p) => p.slug !== 'education-checkout-ab-test')
+            .filter((p) => !p.hidden && p.slug !== 'education-checkout-ab-test')
             .map((p) => (
               <Link
                 key={p.slug}

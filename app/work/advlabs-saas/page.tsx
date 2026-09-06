@@ -225,7 +225,7 @@ export default function AdvlabsSaaSPage() {
 
         <div className="grid gap-6 sm:grid-cols-3 mt-4">
           {projects
-            .filter((p) => p.slug !== 'advlabs-saas')
+            .filter((p) => !p.hidden && p.slug !== 'advlabs-saas')
             .map((p) => (
               <Link
                 key={p.slug}

@@ -9,7 +9,7 @@ export const profile = {
   experienceLine: "Product Designer at Quero Educação (Qeevo Group). Owner of Ditto, AdvLabs and B__mker.",
   location: "Brazil. Open to new opportunities.",
   aboutIntro: [
-    "My name is Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
+    "My name is Carlos Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
     "I am a Product Designer with a strong background in graphic design, digital, social media, and marketing. I set aside this space to share some of my achievements.",
   ],
   links: {
@@ -48,6 +48,7 @@ export type Project = {
   outcome: string[]
   limitations?: string[]
   team?: string
+  hidden?: boolean
 }
 
 export const projects: Project[] = [
@@ -317,6 +318,64 @@ export const projects: Project[] = [
       "With hindsight from a product perspective, it would have been better to invest in evolving Ditto, despite Framer\u2019s tactical time-to-market advantage.",
     ],
     team: "QE engineering team, Marcas team, and brand stakeholders.",
+  },
+  {
+    slug: "rapid-churn-retention-intervention",
+    index: "05",
+    name: "Rapid Churn and Retention Intervention",
+    headline: "Rapid churn and retention intervention under regulatory shock",
+    year: "2026",
+    domain: "EdTech · Product Strategy",
+    tags: ["Product Strategy", "User Research", "Data Analysis", "Regulatory Shock"],
+    summary: "Architected a rapid-response product discovery framework to diagnose and address retention collapse under sudden federal regulatory shifts.",
+    role: "Product Designer / Lead",
+    project: "QE (Qeevo Group)",
+    period: "2026",
+    cover: "/portfolio-images/rapid-churn-retention-intervention/IMAGEM_01.png", 
+    featured: true,
+    metric: { value: "n=200", label: "quantitative validation sample" },
+    whatIDid: [
+      "Architected, proposed, and secured approval for a rapid-response product discovery framework.",
+      "Conducted deep-dive qualitative causal mapping interviews.",
+      "Established a quantitative validation baseline (n=200) with recency weighting for dropout cohorts.",
+      "Structured a high-impact executive product narrative for leadership."
+    ],
+    about: [
+      "With annual performance stuck at 60% right at the start of the peak conversion window, sales stalled completely as long-term product engagement and user LTV collapsed.",
+      "The root cause was structural following federal guidelines (Decreto nº 12.456/2025 and Portaria MEC nº 378/2025) which banned 100% remote courses without physical presence requirements, breaking our nationwide scholarship model."
+    ],
+    initiatives: [
+      {
+        title: "Product problem statement",
+        challenge: "Federal policy shifts banned 100% remote delivery and mandated physical attendance thresholds while partner institutions lacked physical polos.",
+        focusLabel: "Strategic focus",
+        focus: "Diagnose why prospective and active users were abandoning the product after purchase under severe time constraints.",
+        solution: "Identified that the underlying product-market value proposition broke mid-stream when students could no longer fit rigid on-site schedules."
+      },
+      {
+        title: "Methodology: Rapid mixed-methods discovery",
+        challenge: "Lack of clear behavioral telemetry from leadership and internal teams during a critical sales season.",
+        focusLabel: "Strategic focus",
+        focus: "Deploy a pragmatic, rigorous mixed-methods framework combining qualitative causal mapping and quantitative validation.",
+        solution: "Executed deep-dive interviews and established an n=200 quantitative baseline with recency weighting and strict actionability guardrails."
+      },
+      {
+        title: "Product storyline and executive architecture",
+        challenge: "Translating complex empirical findings into a direct, high-impact narrative for leadership.",
+        focusLabel: "Transformation / Value",
+        focus: "Structure data into clear frameworks for decision-making.",
+        solution: "Delivered a 4-step framework covering user segmentation, retention drivers, churn drivers, and comparative NPS impact."
+      }
+    ],
+    outcome: [
+      "Built the blueprint and hard data required to confront the structural brick wall the business model had hit.",
+      "Demonstrated rigorous empirical problem-solving under extreme pressure and regulatory shock."
+    ],
+    limitations: [
+      "Faced severe organizational resistance and structural inertia when presenting hard operational truths."
+    ],
+    team: "QE (Qeevo Group) stakeholders and leadership.",
+    hidden: true,
   },
 ]
 

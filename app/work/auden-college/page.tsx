@@ -178,7 +178,7 @@ export default function AudenCollegePage() {
 
         <div className="grid gap-6 sm:grid-cols-3 mt-4">
           {projects
-            .filter((p) => p.slug !== 'auden-college')
+            .filter((p) => !p.hidden && p.slug !== 'auden-college')
             .map((p) => (
               <Link
                 key={p.slug}
