@@ -14,9 +14,12 @@ export default function RapidChurnPage() {
 
     return (
         <main className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-16 md:py-24">
-            <Link href="/#work" className="text-sm text-muted-foreground underline underline-offset-4">
-                Back to work
-            </Link>
+            <button
+                onClick={() => window.history.back()}
+                className="text-sm text-muted-foreground underline underline-offset-4 cursor-pointer bg-transparent border-none p-0 text-left"
+            >
+                ← Back
+            </button>
 
             <header className="flex flex-col gap-4">
                 <p className="text-sm text-muted-foreground">
@@ -45,31 +48,28 @@ export default function RapidChurnPage() {
             </div>
 
             <section className="flex flex-col gap-3">
-                <h2 className="text-xl font-medium">Role & Scope</h2>
+                <h2 className="text-xl font-medium">Role and scope</h2>
                 <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
                     <li className="leading-relaxed">
-                        Owned the end-to-end design and UX architecture of AdvLabs, a specialized SaaS platform for environmental lawyers, scaling its interface standards across a two-year engagement.
+                        Operated as the lead product designer embedded within Marcas Team [a branch of Qeevo Group (QE)], having completed core e-commerce design deliverables before pivoting to address systemic business-level drop-offs.
                     </li>
                     <li className="leading-relaxed">
-                        Redesigned and modernized core legacy modules including the Administrative Dashboard, Cases & Petitions, Subscriptions, and Networks, bringing structural hierarchy and clarity to complex workflows.
+                        Took full ownership of scoping, designing, and executing a rapid mixed-methods research framework to diagnose student churn and behavioral friction following federal regulatory shifts.
                     </li>
                     <li className="leading-relaxed">
-                        Architected and shipped brand-new product modules from scratch, including My Clients & Calculator, Courses, and Classes, ensuring seamless integration into the existing information architecture.
-                    </li>
-                    <li className="leading-relaxed">
-                        Developed and institutionalized the platform's first comprehensive Design System, consolidating foundational tokens, UI components, and behavioral guidelines to eliminate ad-hoc development decisions.
+                        Structured and delivered the executive diagnostic architecture, combining qualitative causal maps and quantitative recency-weighted cohort analysis to translate complex user telemetry into actionable insights for leadership.
                     </li>
                 </ul>
             </section>
 
-            <section className="flex max-w-2xl flex-col gap-4">
+            <section className="flex max-w-2xl flex-col gap-4 mt-16">
                 <h2 className="text-xl font-medium">Context and executive summary</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
                     <p>
                         With only four months left in the fiscal year and annual performance stuck at 60% right at the start of the &quot;alta&quot; (historically the peak conversion window for selling educational scholarships) our sales numbers stalled completely, barely ticking up to 61% after weeks of stagnation. While our upfront one-time enrollment purchases initially masked the issue, long-term product engagement and user lifetime value (LTV) were collapsing.
                     </p>
                     <p>
-                        The root cause was structural. Following federal guidelines established via Decreto nº 12.456/2025 and Portaria MEC nº 378/2025, higher education institutions could no longer offer 100% remote courses without meeting strict physical presence requirements. As QE (Qeevo Group) (the single largest educational e-commerce infrastructure provider in Brazil) our core platform allowed us to sell scholarships nationwide. However, after the regulation dropped, partner institutions could no longer enroll students who lacked a physical on-site campus (as we called polo presencial) in their local cities. Students simply refused to commit to institutions whose mandatory on-site schedules no longer fit their lives.
+                        The root cause was structural. Following federal guidelines established via Decreto nº 12.456/2025 and Portaria MEC nº 378/2025, higher education institutions could no longer offer 100% remote courses without meeting strict physical presence requirements. As QE (Qeevo Group) (the single largest educational e-commerce infrastructure provider in Brazil) our core platform allowed us to sell scholarships nationwide. However, after the regulation dropped, partner institutions could no longer enroll students who lacked a physical on-site campus (as we called polo presencial) in their local cities. Students simply refused to commit to institutions whose, now mandatory, on-site schedules no longer fit their lives.
                     </p>
                     <p>
                         While my team struggled with internal ambiguity and friction, I felt like I had to step in. I know, this may be a long read for what it can deliver, but the ending? Hmm, chef’s kiss. I promise. My primary designing and e-commerce deliverables were already complete. Ditto was working as intended, starting to be used by other sectors of the company. Recognizing that our peak business season was stalling out, I put together a rapid discovery framework to figure out why students were dropping off after enrollment.
@@ -77,7 +77,7 @@ export default function RapidChurnPage() {
                 </div>
             </section>
 
-            <section className="flex flex-col gap-10">
+            <section className="flex flex-col gap-10  mt-16">
                 <h2 className="text-xl font-medium">Initiatives</h2>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
@@ -149,8 +149,8 @@ export default function RapidChurnPage() {
                     </ul>
                 </article>
 
-                <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
-                    <h3 className="text-lg font-medium">4. Key takeaways</h3>
+                <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8  mt-16">
+                    <h3 className="text-lg font-medium">Key takeaways</h3>
                     <p className="leading-relaxed text-muted-foreground">
                         <strong>Trying to solve problems, always:</strong> When my core deliverables were finished and internal teams were spinning their wheels against a 40% goal deficit during our peak sales season (alta), I couldn't just sit back. I stepped up to diagnose why our numbers were stuck at 61%.
                     </p>
@@ -163,7 +163,7 @@ export default function RapidChurnPage() {
                 </article>
             </section>
 
-            <section className="flex max-w-2xl flex-col gap-4">
+            <section className="flex max-w-2xl flex-col gap-4 mt-16">
                 <h2 className="text-xl font-medium">How things ended</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
                     <p>
@@ -172,7 +172,7 @@ export default function RapidChurnPage() {
                 </div>
             </section>
 
-            <section className="flex max-w-2xl flex-col gap-4">
+            <section className="flex max-w-2xl flex-col gap-4 mt-16">
                 <h2 className="text-xl font-medium">Presentation invitation</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
                     <p>
@@ -181,7 +181,7 @@ export default function RapidChurnPage() {
                 </div>
             </section>
 
-            <section className="flex flex-col gap-4 w-full mt-10">
+            <section className="flex flex-col gap-4 w-full">
                 <h2 className="text-xl font-medium"></h2>
                 <div className="w-full h-[80vh] md:h-[80vh] overflow-hidden rounded-xl bg-neutral-900/10">
                     <iframe

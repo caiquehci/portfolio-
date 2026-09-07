@@ -12,9 +12,12 @@ export default function AudenCollegePage() {
 
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-16 md:py-24">
-      <Link href="/#work" className="text-sm text-muted-foreground underline underline-offset-4">
-        Back to work
-      </Link>
+      <button
+        onClick={() => window.history.back()}
+        className="text-sm text-muted-foreground underline underline-offset-4 cursor-pointer bg-transparent border-none p-0 text-left"
+      >
+        ← Back
+      </button>
 
       <header className="flex flex-col gap-4">
         <p className="text-sm text-muted-foreground">
