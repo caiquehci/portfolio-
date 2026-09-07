@@ -66,7 +66,7 @@ export default function AdvlabsSaaSPage() {
         <h2 className="text-xl font-medium">About the project</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            AdvLabs is a specialized SaaS platform built for environmental lawyers, operating on a Chakra UI foundation. Joining after initial conception, I took full ownership of modernizing core workflows and architecting new feature modules while scaling the product's interface standards across a two-year engagement.
+            Joining after initial conception, I stepped into the sole design role to modernize core workflows and architect new feature modules while scaling the product's interface standards across a two-year engagement.
           </p>
         </div>
       </section>
@@ -136,8 +136,8 @@ export default function AdvlabsSaaSPage() {
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-6">
           <h3 className="text-lg font-medium">Building the design system</h3>
           <p className="leading-relaxed text-muted-foreground">
-            To solve long-term scalability issues, I developed and institutionalized the platform's first comprehensive Design System. By consolidating foundational tokens, UI components, and behavioral guidelines, I eliminated ad-hoc styling and established a rigorous single source of truth that bridged the gap between product design and frontend engineering.
-          </p>
+            To solve long-term scalability issues, I developed and institutionalized the platform's first comprehensive Design System. I consolidated fragmented UI elements into a unified design system, establishing <Link href="/work/engineering-enablement" className="text-foreground underline underline-offset-4 hover:text-primary transition-colors className='underline underline-offset-4 decoration-muted-foreground/40 hover:text-foreground hover:decoration-foreground transition-colors'">documented component states and interaction guidelines</Link> that engineering could rely on directly. By standardizing these patterns, we cut down UI delivery time per feature and eliminated the back-and-forth guessing game during implementation.
+            </p>
         </article>
 
         <div className="w-full">
@@ -156,7 +156,7 @@ export default function AdvlabsSaaSPage() {
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
           <h3 className="text-lg font-medium">Challenging product assumptions</h3>
           <p className="leading-relaxed text-muted-foreground">
-            Beyond interface design, I actively steered product strategy by auditing information architecture. For instance, the desktop sidebar navigation had expanded to 19 disparate items, overwhelming users and shrinking active workspace. I restructured the navigation model to reduce cognitive overhead and aligned feature prioritization with direct user feedback and behavioral data.
+            Beyond interface design, I actively shaped product strategy by auditing information architecture. For instance, the desktop sidebar navigation had expanded to 19 disparate items, overwhelming users and shrinking active workspace. I restructured the navigation model to reduce cognitive overhead and aligned feature prioritization with direct user feedback and behavioral data.
           </p>
         </article>
       </section>
@@ -183,14 +183,43 @@ export default function AdvlabsSaaSPage() {
         </button>
       </div>
 
-      <section className="flex max-w-2xl flex-col gap-4 mt-16">
+      <section className="flex flex-col gap-4 mt-16">
         <h2 className="text-xl font-medium">Outcome</h2>
-        <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
+        <div className="flex max-w-2xl flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            AdvLabs transitioned from an unstandardized software prototype into a mature, highly scalable SaaS platform. By driving the creation of the design system, refactoring core legal workflows, and taking complete ownership of product UI health, I established the architectural framework necessary for the business to scale confidently over two years.
+            AdvLabs transitioned from an unstandardized software prototype into a mature, highly scalable SaaS platform. By diagnosing a critical user friction point: where repeating multi-step search queries forced users to needlessly burn credits and restart workflows. I redesigned the experience to include intuitive search history access. This reduction in cognitive load unexpectedly drove higher engagement with loose credit purchases and overall platform activity.
+          </p>
+          <p>
+            Quantifiably, this operational and UX overhaul supported a sustained growth trajectory, registering consistent month-over-month increases of ~28% to 30% (in my last, and permited by NDA, analysis) in unique visitors and page views across core modules like the "Dashboard" and "My Office". Operating under a strict commercial NDA, exact revenue metrics remain confidential, but platform resilience, error reduction, and organic user acclaim highlighting improved productivity and workflow agility confirmed the long-term impact of the redesign.
           </p>
         </div>
       </section>
+
+      <div className="w-full">
+        <button
+          onClick={() => setActiveImage("/portfolio-images/advlabs-saas/IMAGEM_04.png")}
+          className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+        >
+          <img
+            src="/portfolio-images/advlabs-saas/IMAGEM_04.png"
+            alt="Illustration"
+            className="h-auto w-full max-w-[725px] object-contain"
+          />
+        </button>
+      </div>
+
+      <div className="w-full">
+        <button
+          onClick={() => setActiveImage("/portfolio-images/advlabs-saas/IMAGEM_05.png")}
+          className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+        >
+          <img
+            src="/portfolio-images/advlabs-saas/IMAGEM_05.png"
+            alt="Illustration"
+            className="h-[300px] md:h-[500px] w-auto object-contain"
+          />
+        </button>
+      </div>
 
       {project.team ? (
         <p className="max-w-2xl text-sm text-muted-foreground">{project.team}</p>

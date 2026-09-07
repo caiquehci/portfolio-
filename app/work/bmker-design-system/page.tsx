@@ -4,6 +4,10 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { projects } from '@/lib/portfolio-data'
 import ImageCarouselModal from '@/components/home/carousel-modal'
+import { ThoughtText } from '@/components/home/thought-text'
+
+  // how to use ThoughtText
+  // < ThoughtText thought = "Hidden text">hightlighted words</ThoughtText >
 
 export default function BmmkerPage() {
   const project = projects.find((p) => p.slug === 'bmker-design-system')
@@ -49,10 +53,10 @@ export default function BmmkerPage() {
         <h2 className="text-xl font-medium">About the project</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            Modern social media platforms are trapped in an engagement loop optimized for passive consumption, leaving users fatigued by algorithmic echo chambers and noise. B__mker is an exploration of a healthier social ecosystem—one designed to balance casual browsing with intentional, high-value intellectual and professional growth.
+            B__mker was a fully realized, professional commercial product engagement spanning from June 2023 to January 2024. Built to tackle modern social media fatigue: where users are trapped in passive consumption and algorithmic echo chambers. B__mker was engineered as an ad-free, subscription-backed social ecosystem designed to balance casual browsing with intentional, high-value intellectual and professional growth.
           </p>
           <p>
-            As the sole designer, I led the project from conception to high-fidelity execution, establishing the brand system, conducting quantitative and qualitative research, and architecting an interface that puts content curation directly back into the user's hands.
+            As the solo designer, I owned the entire commercial product lifecycle from conception to alpha testing, establishing the brand system, conducting quantitative and qualitative research, and architecting an interface that puts content curation directly back into the user's hands.
           </p>
         </div>
       </section>
@@ -89,10 +93,11 @@ export default function BmmkerPage() {
             To avoid building for an echo chamber, I decoupled personal assumptions from the product strategy early in the discovery phase.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            <strong>1. Quantitative e qualitative research</strong>
+            <strong>            <strong>1. Quantitative research and live alpha testing</strong>
+</strong>
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            I structured a formal survey distributed to a sample group of 104 individuals, yielding 84 validated responses. The evaluation used linear-scale metrics (1 to 5) to measure behavioral pain points around digital fatigue, content fragmentation, and the desire for purposeful networking.
+            I structured a formal survey distributed to a sample group of 104 individuals, yielding 84 validated responses. From that pool, we deployed and tested functional alpha versions virtually with a dedicated cohort of 43 active user testers, evaluating behavioral pain points around digital fatigue and monetization willingness.
           </p>
           <p className="leading-relaxed text-muted-foreground">
             <strong>Key insights uncovered:</strong>
@@ -138,7 +143,7 @@ export default function BmmkerPage() {
         <article className="flex max-w-2xl flex-col gap-6 border-t border-border pt-8 mt-16">
           <h3 className="text-lg font-medium">Core product pillars and solutions</h3>
           <p className="leading-relaxed text-muted-foreground">
-            This section can house your visual assets/screens from the original site.
+            This section houses the real production screens and design systems developed during the paid project lifecycle.
           </p>
           <p className="leading-relaxed text-muted-foreground">
             <strong>Reclaiming content control</strong><br />
@@ -191,15 +196,15 @@ export default function BmmkerPage() {
         </div>
 
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
-          <h3 className="text-lg font-medium">Key takeaways</h3>
+          <h3 className="text-lg font-medium">Key takeaways and project retro</h3>
           <p className="leading-relaxed text-muted-foreground">
-            <strong>Research guardrails prevent bias:</strong> Validating early hypotheses with a structured survey of 80+ participants completely shifted the original feature roadmap, proving that subjective design choices must always be checked against actual user behavior.
+            B__mker was a fully immersive, paid professional engagement that pushed my end-to-end design system architecture and user testing capabilities further than any prior project. 
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            <strong>Balancing dual-intent architectures:</strong> Designing for two contrasting states of mind (casual leisure vs. professional/intellectual focus) within a single app requires strict information architecture to prevent cognitive overload.
+            Despite validating core feature interest with our alpha cohort, the startup ultimately wound down following subsequent funding rounds. The product's strict ad-free, pay-to-use premise (while deeply loved in theory during research) faced the harsh friction of real-world monetization resistance, highlighting the stark gap between what users say they want in controlled testing versus how they behave when facing direct paywalls.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            <strong>End-to-end system thinking:</strong> Executing a project solo as a product designer demands treating brand identity, UX strategy, and UI systems as interconnected layers rather than isolated silos.
+            Navigating a product from conception through alpha testing, building an extensive modular design system, and ultimately managing its lifecycle closure provided an invaluable masterclass in commercial product reality, stakeholder strategy, and the true weight of market validation.
           </p>
         </article>
       </section>

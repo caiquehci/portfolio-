@@ -9,12 +9,25 @@ export default function AboutPage() {
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-col gap-16 px-6 py-16 md:py-24">
       <header className="flex max-w-2xl flex-col gap-4">
-        <h1 className="text-3xl font-medium tracking-tight md:text-4xl">About</h1>
-        {profile.aboutIntro.map((p) => (
-          <p key={p} className="leading-relaxed text-muted-foreground">
-            {p}
-          </p>
-        ))}
+        <h1 className="text-3xl font-medium tracking-tight md:text-4xl">About me</h1>
+        <p className="leading-relaxed text-muted-foreground">
+          I am a Product Designer with over 5+ years of experience in digital products, working end-to-end across discovery and delivery, from research to prototyping, validation, and handoff. I specialize in research, information architecture, design systems, and data-driven decision-making, accumulating a total professional journey of 11+ years in design and technology.
+        </p>
+        <p className="leading-relaxed text-muted-foreground">
+          Throughout my career spanning SaaS, e-commerce, educational ecosystems, industrial software, and social networks, I have developed solutions that impacted tens of thousands of active monthly users through high-scale platforms. Most recently connecting thousands of students and partner institutions to the Quero Educação/Qeevo Group network, as well as corporate and industrial environments, summing up over{' '}
+          <a
+            href="https://sobre.quero.com/carreiras/#:~:text=%2B60mi,anualmente"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            className="underline underline-offset-4"
+          >
+            60 million visits per year
+          </a>
+          .
+        </p>
+        <p className="leading-relaxed text-muted-foreground">
+          I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs. My work integrates the bread and butter Figma, with analytical rigor (Google Analytics, Microsoft Clarity, Hotjar, you name the tool), statistical testing, and the advanced use of generative AI to optimize end-to-end processes.
+        </p>
         <p className="text-sm text-muted-foreground">{profile.location}</p>
       </header>
 
