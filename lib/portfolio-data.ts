@@ -6,7 +6,7 @@ export const profile = {
     "Senior Product Designer | 5+ years in high-volume e-commerce & SaaS. I engineer high-converting digital products, architect scalable design systems, and turn complex business logic into measurable revenue.",
   valueProposition:
     "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
-  experienceLine: "Validated by peers and statistics, not opinions.",
+  experienceLine: "Driven by metrics. Hands on.",
   location: "Brazil. Open to new opportunities.",
   aboutIntro: [
     "My name is Carlos Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
@@ -48,6 +48,7 @@ export type Project = {
   limitations?: string[]
   team?: string
   hidden?: boolean
+  drop?: boolean 
 }
 
 export const projects: Project[] = [
@@ -316,7 +317,7 @@ export const projects: Project[] = [
   },
   {
     slug: "rapid-churn-retention-intervention",
-    name: "Rapid Churn and Retention Intervention",
+    name: "Rapid churn and retention intervention",
     headline: "Rapid churn and retention intervention under regulatory shock",
     year: "2026",
     domain: "EdTech · Product Strategy",

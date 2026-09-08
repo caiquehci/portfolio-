@@ -7,7 +7,8 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-card: var(--card);
-  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), sans-serif;
 }
 
 :root {
@@ -30,10 +31,21 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
+  h1 {
+      font-family: var(--font-heading);
+  }
   ::selection {
     background: #ecece8;
     color: #131313;
   }
+    @layer utilities {
+      .neumorphic-card {
+        background: #212121;
+        border-radius: 30px;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+          -15px -15px 30px rgb(60, 60, 60);
+      }
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -41,3 +53,4 @@
     scroll-behavior: auto;
   }
 }
+

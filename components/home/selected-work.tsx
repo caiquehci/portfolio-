@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Cover } from '@/components/cover'
 import { projects } from '@/lib/portfolio-data'
 
@@ -7,34 +8,50 @@ export function SelectedWork() {
 
   return (
     <section id="work" className="scroll-mt-16 border-b border-border">
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-10 px-6 py-16 md:py-24">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-16 md:py-24">
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-medium tracking-tight">Selected work</h2>
           <p className="max-w-xl text-muted-foreground">
-            Four cases. Role, context, the decisions, and what happened next.
+            Role, context, faced problems, the decisions and what happened next.
           </p>
         </div>
 
-        <ul className="flex flex-col">
+        <div className="flex flex-col gap-10">
           {featured.map((project) => (
-            <li key={project.slug} className="border-t border-border last:border-b">
-              <Link
-                href={`/work/${project.slug}`}
-                className="grid gap-6 py-8 md:grid-cols-[1fr_1.2fr] md:items-center md:gap-10"
-              >
-                {/* Aqui puxamos a propriedade imageUrl direto do arquivo de dados */}
-                <Cover title={project.name} imageUrl={project.cover} index={''}/>
-                <div className="flex flex-col gap-3">
-                  <p className="text-sm text-muted-foreground">
-                    {project.year} · {project.domain}
-                  </p>
-                  <h3 className="text-xl font-medium tracking-tight md:text-2xl">{project.name}</h3>
-                  <p className="leading-relaxed text-muted-foreground">{project.summary}</p>
+            <Link
+              key={project.slug}
+              href={`/work/${project.slug}`}
+              className="group relative grid grid-cols-1 md:grid-cols-[1.1fr_1fr] md:items-center rounded-2xl bg-zinc-950 border border-zinc-800/75 overflow-hidden transition-all duration-500 ease-in-out"
+            >
+              {/* Blurred background banner image that only fades in on hover */}
+              {project.cover && (
+                <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-0 group-hover:opacity-60 transition-opacity duration-700">
+                  <Image
+                    src={project.cover}
+                    alt=""
+                    fill
+                    className="object-cover filter blur-2xl scale-125"
+                  />
+                  <div className="absolute inset-0 bg-zinc-950/80" />
                 </div>
-              </Link>
-            </li>
+              )}
+
+              <div className="relative z-10 w-full h-full [&_*]:rounded-none">
+                <Cover title={project.name} imageUrl={project.cover} index={''} />
+              </div>
+              <div className="relative z-10 flex flex-col gap-3 p-6 md:p-8">
+                <p className="text-sm text-zinc-400">
+                  {project.year} · {project.domain}
+                </p>
+                <h3 className="text-xl font-medium tracking-tight md:text-2xl text-zinc-100 group-hover:text-white transition-colors">
+                  {project.name}
+                </h3>
+                <p className="leading-relaxed text-muted-foreground">{project.summary}</p>
+              </div>
+            </Link>
           ))}
-        </ul>
+        </div>
+
         <div className="flex justify-center mt-4">
           <Link
             href="/work/all"
