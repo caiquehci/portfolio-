@@ -97,10 +97,10 @@ export default function AdvlabsSaaSPage() {
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
           <h3 className="text-lg font-medium">Restoring consistency</h3>
           <p className="leading-relaxed text-muted-foreground">
-            I systematically audited and redesigned core product areas, including the Administrative Dashboard, Cases & Petitions, Subscriptions, and Networks. By establishing predictable visual hierarchies and standardizing layout patterns, I transformed fragmented screens into unified, intuitive workflows optimized for deep legal data analysis.
+            I systematically audited and redesigned core product areas, including the Administrative Dashboard, Cases & Petitions, Subscriptions, and Networks. By establishing predictable visual hierarchies and standardizing layout patterns, I standardized hierarchy, navigation and interaction patterns across the core modules so users could move between workflows without relearning the interface.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            For instance, looking at the dashboard evolution, the initial version suffered from a scattered hierarchy where critical metrics sat awkwardly next to empty states while core service actions competed for attention. Through the redesign, I transformed it into a cohesive, high-density command center. By restructuring the layout into a deliberate grid with a dedicated calendar sidebar, contextual banner zones, and clear visual chunking, I shifted the product from a basic collection of cards into an intentional workspace built for professional legal execution.
+            For instance, looking at the dashboard evolution, the initial version suffered from a scattered hierarchy where critical metrics sat awkwardly next to empty states while core service actions competed for attention. By restructuring the layout into a deliberate grid with a dedicated calendar sidebar, contextual banner zones, and clear visual chunking, I shifted the product from a basic collection of cards into an intentional workspace built for professional legal execution.
           </p>
         </article>
 
@@ -187,7 +187,7 @@ export default function AdvlabsSaaSPage() {
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex max-w-2xl flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            AdvLabs transitioned from an unstandardized software prototype into a mature, highly scalable SaaS platform. By diagnosing a critical user friction point: where repeating multi-step search queries forced users to needlessly burn credits and restart workflows. I redesigned the experience to include intuitive search history access. This reduction in cognitive load unexpectedly drove higher engagement with loose credit purchases and overall platform activity.
+            AdvLabs transitioned from an unstandardized software prototype into a scalable SaaS platform. By diagnosing a critical user friction point: where repeating multi-step search queries forced users to needlessly burn credits and restart workflows. I redesigned the experience to include intuitive search history access. This reduction in cognitive load unexpectedly drove higher engagement with loose credit purchases and overall platform activity.
           </p>
           <p>
             Quantifiably, this operational and UX overhaul supported a sustained growth trajectory, registering consistent month-over-month increases of ~28% to 30% (in my last, and permited by NDA, analysis) in unique visitors and page views across core modules like the "Dashboard" and "My Office". Operating under a strict commercial NDA, exact revenue metrics remain confidential, but platform resilience, error reduction, and organic user acclaim highlighting improved productivity and workflow agility confirmed the long-term impact of the redesign.

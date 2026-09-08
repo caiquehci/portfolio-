@@ -72,10 +72,23 @@ export default function RapidChurnPage() {
                         The root cause was structural. Following federal guidelines established via Decreto nº 12.456/2025 and Portaria MEC nº 378/2025, higher education institutions could no longer offer 100% remote courses without meeting strict physical presence requirements. As QE (Qeevo Group) (the single largest educational e-commerce infrastructure provider in Brazil) our core platform allowed us to sell scholarships nationwide. However, after the regulation dropped, partner institutions could no longer enroll students who lacked a physical on-site campus (as we called polo presencial) in their local cities. Students simply refused to commit to institutions whose, now mandatory, on-site schedules no longer fit their lives.
                     </p>
                     <p>
-                        While my team struggled with internal ambiguity and friction, I felt like I had to step in. I know, this may be a long read for what it can deliver, but the ending? Hmm, chef’s kiss. I promise. My primary designing and e-commerce deliverables were already complete. Ditto was working as intended, starting to be used by other sectors of the company. Recognizing that our peak business season was stalling out, I put together a rapid discovery framework to figure out why students were dropping off after enrollment.
+                        While my team struggled with internal ambiguity and friction, I felt like I had to step in. My primary designing and e-commerce deliverables were already complete. Ditto was working as intended, starting to be used by other sectors of the company. Recognizing that our peak business season was stalling out, I put together a rapid discovery framework to figure out why students were dropping off after enrollment. Here's a preview of the whole situation:
                     </p>
                 </div>
             </section>
+
+            <div className="w-full">
+                <button
+                    onClick={() => setActiveImage("/portfolio-images/rapid-churn-retention-intervention/checkout_confound_isolation_flow.png")}
+                    className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+                >
+                    <img
+                        src="/portfolio-images/rapid-churn-retention-intervention/checkout_confound_isolation_flow.png"
+                        alt="Visual explanation/bigger picture of the factual happening process bewteen changes and outcomes"
+                        className="h-[300px] md:h-[500px] w-auto object-contain"
+                    />
+                </button>
+            </div>
 
             <section className="flex flex-col gap-10  mt-16">
                 <h2 className="text-xl font-medium">Initiatives</h2>
@@ -89,7 +102,7 @@ export default function RapidChurnPage() {
                         <strong>The peak season stagnation:</strong> While top-of-funnel acquisition metrics should have spiked during the peak sales window, our annual targets sat frozen at 60% to 61%. Acquisition stalled because the underlying product-market value proposition broke mid-stream.
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>My intervention (?):</strong> With leadership and internal teams missing clear behavioral telemetry, I try to go and do something. I stepped outside my completed delivery scope to build an empirical research model rather than relying on internal speculation. Was I trying to save the day? Probably. I knew that I could? Probably not. Was I going to wait and see? Sure not.
+                        <strong>My intervention:</strong> With leadership and internal teams missing clear behavioral telemetry, I try to go and do something. I stepped outside my completed delivery scope to build an empirical research model rather than relying on internal speculation.
                     </p>
                 </article>
 
@@ -114,7 +127,7 @@ export default function RapidChurnPage() {
                     </p>
                     <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
                         <li className="leading-relaxed">
-                            I established a target sample size of n=200 respondents split evenly between active accounts and churned profiles to ensure directional statistical validity. You, dear reader, may ask &ldquo;but why 200?&rdquo; and I’ll let people much more experienced than me do the talking in that case.
+                            I established a target sample size of n=200 respondents split evenly between active accounts and churned profiles to ensure directional statistical validity. 200 being both a comfort number for what our time constraints represented, and some sort of "ok number" as of Nielsen Norman Group states.
                         </li>
                         <li className="leading-relaxed">
                             I applied recency weighting to dropout cohorts, prioritizing users from the 1-to-6-month window over older profiles to isolate immediate fallout from the regulatory shift.
@@ -158,7 +171,7 @@ export default function RapidChurnPage() {
                         <strong>Facing hard truths over comfort:</strong> When federal regulations (Portaria MEC nº 378/2025 and Decreto nº 12.456/2025) broke our nationwide scholarship model because partner institutions lacked local physical campuses, I refused to let leadership drown in internal guesswork.
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Building rigor when things are falling apart:</strong> I engineered a pragmatic, mixed-methods research framework (n=200, recency-weighted dropouts, and strict validation rules) to force us to look at actual student behavior instead of panic. I mean, if you’re reading this until now, first congrats. Second: what do we expect? Magic? The only ones who actually KNOWS why our product is bad are our users. It’s a loop.
+                        <strong>Building rigor when things are falling apart:</strong> I engineered a pragmatic, mixed-methods research framework (n=200, recency-weighted dropouts, and strict validation rules) to force us to look at actual student behavior instead of panic.
                     </p>
                 </article>
             </section>
@@ -167,7 +180,7 @@ export default function RapidChurnPage() {
                 <h2 className="text-xl font-medium">How things ended</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
                     <p>
-                        I built the blueprint, laid out the hard data, and invited leadership to confront the structural brick wall our business model had hit. But when a company would rather ignore the hard facts than face them, carrying the weight of a failing strategy has a price. Right as the research framework was approved and set into motion, my seat was cut, and I was let go. I know, such a bummer. I was REALLY excited to be able to talk to people, to help my people… No regrets, just the proof of what happens when you care enough about the work to tell the truth, even when it costs you your spot. Does it diminish my craft, my decision making? I guess not, but it is up to you, dear reader, to tell me (if you’re still reading). The important thing is to keep moving forward, no matter what.
+                        I built the blueprint, laid out the hard data, and invited leadership to confront the structural brick wall our business model had hit. But when a company would rather ignore the hard facts than face them, carrying the weight of a failing strategy has a price. Right as the research framework was approved and set into motion, my seat was cut, and I was let go. I know, such a bummer. I was REALLY excited to be able to talk to people, to help my people… No regrets, just the proof of what happens when you care enough about the work to tell the truth, even when it costs you your spot.
                     </p>
                 </div>
             </section>

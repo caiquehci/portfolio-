@@ -3,17 +3,17 @@ export const profile = {
   shortName: "Carlos Castanheira",
   title: "Product Designer",
   positioning:
-    "Senior Product Designer focused on complex digital products, experimentation and measurable outcomes.",
+    "Senior Product Designer | 5+ years in high-volume e-commerce & SaaS. I engineer high-converting digital products, architect scalable design systems, and turn complex business logic into measurable revenue.",
   valueProposition:
     "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
-  experienceLine: "Owner of Ditto, AdvLabs and B__mker. Soon more to come.",
+  experienceLine: "Validated by peers and statistics, not opinions.",
   location: "Brazil. Open to new opportunities.",
   aboutIntro: [
     "My name is Carlos Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
     "I am a Product Designer with a strong background in graphic design, digital, social media, and marketing. I set aside this space to share some of my achievements.",
   ],
   links: {
-    email: "mailto:carlos.hcastanheira04@gmail.com",
+    email: "mailto:castanheiracmi@gmail.com",
     linkedin: "https://www.linkedin.com/in/carloshenrmcj/",
     // behance: "https://www.behance.net/",
     whatsapp: "https://wa.me/5512988908286",
@@ -23,7 +23,6 @@ export const profile = {
 
 export type Project = {
   slug: string
-  index: string
   name: string
   headline: string
   year: string
@@ -54,7 +53,6 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "education-checkout-ab-test",
-    index: "01",
     name: "Education Checkout A/B Test",
     // aqui
 
@@ -67,7 +65,7 @@ export const projects: Project[] = [
     domain: "Payments · EdTech",
     tags: ["Product Design", "A/B Test", "Payments", "Data Analysis"],
     summary:
-      "A statistically validated A/B test for a checkout design that converts 45% more enrollments than the old flow, becoming the baseline for one of the business units of the country\u2019s largest education e-commerce platform.",
+      "A conversion drop that looked like a UX failure. The data showed something else.",
     role: "Product Designer",
     project: "Marcas - QE (Qeevo Group)",
     period: "December 2025 - February 2026",
@@ -128,8 +126,70 @@ export const projects: Project[] = [
     team: "Marcas team (CMS operation), QE engineering team, and business stakeholders. Sensitive and/or protected information has been strategically omitted.",
   },
   {
+    slug: "advlabs-saas",
+    name: "AdvLabs SaaS",
+    headline: "Improving the health of a live SaaS for environmental lawyers while shipping new features",
+    year: "2024",
+    domain: "SaaS · Legal",
+    tags: ["SaaS", "Product Design", "Chakra UI", "Design System"],
+    summary:
+      "Rebuilding a fragmented SaaS product around a coherent system.",
+    role: "Product Designer",
+    project: "X6 Tech",
+    period: "January 2023 - December 2024",
+    cover: "/portfolio-images/advlabs-saas/advlabs-cover.png",
+    featured: true,
+    metric: { value: "2 years", label: "of continuous product evolution" },
+    whatIDid: [
+      "Redesign of existing screens: Admin Dashboard, Cases and Petitions, Subscription, Networks.",
+      "New features: My clients and calculator, Courses, Classes.",
+      "Design system creation for an interface originally built on Chakra UI.",
+    ],
+    about: [
+      "When I joined this project, its interface had already been developed using Chakra UI. The challenge was to support improvement processes after the system\u2019s initial conception and create consistency.",
+      "Everything looked great on the surface, but the lack of documentation, design principles, branding, and resistance to change were the biggest obstacles - along with journey abandonments caused by poor information architecture.",
+    ],
+    initiatives: [
+      {
+        title: "Redesigning screens without a guideline to follow",
+        challenge:
+          "Chakra UI made the system pleasant on the surface, but wherever the framework did not provide a ready-made path, creation had been left to the development team.",
+        focusLabel: "Strategic focus",
+        focus: "Improve product health while new features were being adopted, without introducing noise.",
+        solution:
+          "Revamped the Admin Dashboard, Cases and Petitions, Subscription screen, and Networks, addressing the design flaws that were causing journey abandonments.",
+      },
+      {
+        title: "Creating new capabilities",
+        challenge: "A high volume of corrections competed for time with the need to grow the product.",
+        focusLabel: "Strategic focus",
+        focus: "Ship new value without breaking consistency with the existing system.",
+        solution:
+          "Designed and delivered new screens and features: My clients and calculator, Courses, and Classes.",
+      },
+      {
+        title: "Prioritizing the design system",
+        challenge:
+          "In the daily flow of requests it is common to solve isolated problems without looking at the whole.",
+        focusLabel: "Transformation / Value",
+        focus: "Scaling product quality requires solid foundations before micro-optimizations.",
+        solution:
+          "I learned in practice that postponing a robust design system only creates rework and inconsistency. It became the foundation for every subsequent screen - and, in hindsight, should have been the first priority.",
+      },
+    ],
+    outcome: [
+      "Integrating with the AdvLabs team was easy and my entry created no friction, even while recreating a design without guidelines.",
+      "A design system and redesigned core flows now support the product\u2019s ongoing evolution.",
+    ],
+    limitations: [
+      "I would have advocated more strongly for a mobile version - usage data showed people accessing a desktop-designed product on their phones.",
+      "The side menu reached 19 items at times; I would group functions into subgroups and make it collapsible to reduce cognitive load.",
+      "More validation with users, not only stakeholders.",
+    ],
+    team: "",
+  },
+  {
     slug: "bmker-design-system",
-    index: "02",
     name: "B__mker",
     headline: "A social network concept that gives users control over what they see - with a design system built to scale it",
     year: "2024",
@@ -194,72 +254,7 @@ export const projects: Project[] = [
     team: "",
   },
   {
-    slug: "advlabs-saas",
-    index: "03",
-    name: "AdvLabs SaaS",
-    headline: "Improving the health of a live SaaS for environmental lawyers while shipping new features",
-    year: "2024",
-    domain: "SaaS · Legal",
-    tags: ["SaaS", "Product Design", "Chakra UI", "Design System"],
-    summary:
-      "Screen revamp, implementation of new features, and creation of a design system for an ongoing project.",
-    role: "Product Designer",
-    project: "X6 Tech",
-    period: "January 2023 - December 2024",
-    cover: "/portfolio-images/advlabs-saas/advlabs-cover.png",
-    featured: true,
-    metric: { value: "2 years", label: "of continuous product evolution" },
-    whatIDid: [
-      "Redesign of existing screens: Admin Dashboard, Cases and Petitions, Subscription, Networks.",
-      "New features: My clients and calculator, Courses, Classes.",
-      "Design system creation for an interface originally built on Chakra UI.",
-    ],
-    about: [
-      "When I joined this project, its interface had already been developed using Chakra UI. The challenge was to support improvement processes after the system\u2019s initial conception and create consistency.",
-      "Everything looked great on the surface, but the lack of documentation, design principles, branding, and resistance to change were the biggest obstacles - along with journey abandonments caused by poor information architecture.",
-    ],
-    initiatives: [
-      {
-        title: "Redesigning screens without a guideline to follow",
-        challenge:
-          "Chakra UI made the system pleasant on the surface, but wherever the framework did not provide a ready-made path, creation had been left to the development team.",
-        focusLabel: "Strategic focus",
-        focus: "Improve product health while new features were being adopted, without introducing noise.",
-        solution:
-          "Revamped the Admin Dashboard, Cases and Petitions, Subscription screen, and Networks, addressing the design flaws that were causing journey abandonments.",
-      },
-      {
-        title: "Creating new capabilities",
-        challenge: "A high volume of corrections competed for time with the need to grow the product.",
-        focusLabel: "Strategic focus",
-        focus: "Ship new value without breaking consistency with the existing system.",
-        solution:
-          "Designed and delivered new screens and features: My clients and calculator, Courses, and Classes.",
-      },
-      {
-        title: "Prioritizing the design system",
-        challenge:
-          "In the daily flow of requests it is common to solve isolated problems without looking at the whole.",
-        focusLabel: "Transformation / Value",
-        focus: "Scaling product quality requires solid foundations before micro-optimizations.",
-        solution:
-          "I learned in practice that postponing a robust design system only creates rework and inconsistency. It became the foundation for every subsequent screen - and, in hindsight, should have been the first priority.",
-      },
-    ],
-    outcome: [
-      "Integrating with the AdvLabs team was easy and my entry created no friction, even while recreating a design without guidelines.",
-      "A design system and redesigned core flows now support the product\u2019s ongoing evolution.",
-    ],
-    limitations: [
-      "I would have advocated more strongly for a mobile version - usage data showed people accessing a desktop-designed product on their phones.",
-      "The side menu reached 19 items at times; I would group functions into subgroups and make it collapsible to reduce cognitive load.",
-      "More validation with users, not only stakeholders.",
-    ],
-    team: "",
-  },
-  {
     slug: "auden-college",
-    index: "04",
     name: "AUDEN College",
     headline: "From zero to a selling e-commerce with CMS in 3 days - and the product debate it started",
     year: "2025",
@@ -321,7 +316,6 @@ export const projects: Project[] = [
   },
   {
     slug: "rapid-churn-retention-intervention",
-    index: "05",
     name: "Rapid Churn and Retention Intervention",
     headline: "Rapid churn and retention intervention under regulatory shock",
     year: "2026",
@@ -379,13 +373,12 @@ export const projects: Project[] = [
   },
   {
     slug: "engineering-enablement",
-    index: "06",
     name: "Engineering enablement without the bottleneck",
-    headline: "Spoiler alert: this is not rocket science, but it is indeed very scalable, easy-to-use and async friendly",
+    headline: "Removing the design-to-engineering bottleneck by changing how design information is delivered.",
     year: "2023",
     domain: "Developer Experience · Frontend Architecture",
     tags: ["Developer Experience", "Design Systems", "Workflow Optimization", "Prototyping"],
-    summary: "Introduced a scrappy, highly experimental developer experience workflow pairing Figma designs with lightweight, self-contained HTML specifications and Markdown context documents.",
+    summary: "Removing the design-to-engineering bottleneck by changing how design information is delivered.",
     role: "Product Designer",
     project: "X6 Tech",
     period: "2023",
@@ -420,7 +413,7 @@ export const projects: Project[] = [
         title: "Organic adoption and systematization",
         challenge: "Overcoming initial team hesitation toward new workflows without enforcing heavy top-down governance.",
         focusLabel: "Outcome / Value",
-        focus: "Demonstrating undeniable quality improvements through small, collaborative experiments.",
+        focus: "Demonstrating quality improvements through small, collaborative experiments.",
         solution: "Won the team over within two sprints, shifting our sprint capacity from fighting debt to dedicating 80% of our time to high-value new features."
       }
     ],

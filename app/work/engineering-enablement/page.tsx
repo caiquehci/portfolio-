@@ -117,7 +117,7 @@ export default function EngineeringEnablementPage() {
                             <strong className="text-foreground">Proactive translation:</strong> Long before developer-centric agents and rich context windows were standard, these HTML sheets served as clear visual breakdowns where all component unfolding was easy to see and review. They allowed developers to inspect behaviors, variants, and tokens at their own pace without needing to decode a complex design tool. Meanwhile, the Markdown files held the broader project context and narrative.
                         </li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Organic, bottom-up adoption:</strong> Rather than rolling out a top-down mandate or heavy design system governance framework, I tested the concept small. It was introduced as a collaborative experiment rather than an enforced corporate rule. While one developer initially resisted the shift, the undeniable quality improvement won the team over within two sprints.
+                            <strong className="text-foreground">Organic, bottom-up adoption:</strong> Rather than rolling out a top-down mandate or heavy design system governance framework, I tested the concept small. It was introduced as a collaborative experiment rather than an enforced corporate rule. While one developer initially resisted the shift, the quality improvement won the team over within two sprints.
                         </li>
                     </ul>
                 </article>
@@ -129,9 +129,6 @@ export default function EngineeringEnablementPage() {
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
                         The quantitative impact is clear: recovering hours previously lost to redundant design interpretation allowed us to shift our sprint capacity from fighting technical and alignment debt to dedicating 80% of our time to high-value new features. More importantly, this experiment proved that systemic consistency, perationalized through foundational components like the Tabela de Processos, doesn't require heavy enterprise tooling to succeed. For cross-functional leadership, this demonstrates how a product designer can operate as a strategic facilitator, using scrappy prototyping and technical empathy to align engineering output with product vision under constraints.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        If you read it all, you may be having second thoughts by now. "All that with only this?" and I can asure you, yes, dear reader. There's no magic in here, sometimes people need it simple and if you're not a native speaker (as I'm not on English or a professional dev), this was made in 2023/2024, it's 2026 now. We sure can do something regarding <strong>anything</strong>.
                     </p>
                 </article>
             </section>

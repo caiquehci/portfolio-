@@ -144,7 +144,7 @@ export default function AudenCollegePage() {
       <section className="flex max-w-2xl flex-col gap-4  mt-16">
         <h2 className="text-xl font-medium">Key takeaway</h2>
         <p className="leading-relaxed text-muted-foreground">
-          The fastest solution was not necessarily the best product decision in the long term. But it was doable!
+          The fastest solution was not necessarily the best product decision in the long term.
         </p>
       </section>
 

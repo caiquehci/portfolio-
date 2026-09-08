@@ -144,7 +144,7 @@ export default function EducationCheckoutPage() {
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Strategic focus</p>
             <p className="leading-relaxed text-muted-foreground">
-              Refuse to stay in a siloed "designer" box. Cross-reference internal events and daily analytics to uncover what actually shifted concurrently with the launch.
+              I treated the conversion decline as a product investigation rather than assuming the interface was the cause. Cross-reference internal events and daily analytics to uncover what actually shifted concurrently with the launch.
             </p>
             <p className="text-sm font-medium text-foreground pt-3">Clarified Hypothesis</p>
             <p className="leading-relaxed text-muted-foreground pt-1">
@@ -166,7 +166,7 @@ export default function EducationCheckoutPage() {
         </article>
 
         <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
-          <h3 className="text-lg font-medium">2. Reducing cognitive load at the moment of decision. Why my hypothesis would be correct.</h3>
+          <h3 className="text-lg font-medium">2. Reducing cognitive load at the moment of decision.</h3>
           <p className="leading-relaxed text-muted-foreground">
             The legacy checkout (repurposed from a different business unit, QB) forced users through bloated forms and broke the journey if a campus selection needed tweaking.
           </p>
@@ -214,7 +214,7 @@ export default function EducationCheckoutPage() {
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            The data left no ambiguity<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403, proving that the performance gap between the new design (6.85%) and the legacy flow (4.72%) has virtually zero probability of being a fluke." widthClass='w-[500px]'>(and maybe you're asking yourself on the why is that so?)</ThoughtText>: the new checkout decisively outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
+            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403, proving that the performance gap between the new design (6.85%) and the legacy flow (4.72%) has virtually zero probability of being a fluke." widthClass='w-[500px]'>(and maybe you're asking yourself on the why is that so?)</ThoughtText>: the new checkout decisively outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
           </p>
           <p>
             Beyond conversion wins, migrating from Pagar.me to Paystation slashed infrastructure fees from ~2% down to ~0.5%. With QE retaining 70% of revenue, the redesign yielded over R$15,100 in direct margin gains (numbers regarding only open-to-public information and estimatives in enrollment fees in the period of analysis).

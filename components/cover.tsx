@@ -6,7 +6,7 @@ type CoverProps = {
   imageUrl?: string // Agora passamos o caminho da imagem direto aqui
 }
 
-export function Cover({ title, index, imageUrl }: CoverProps) {
+export function Cover({ title, imageUrl }: CoverProps) {
   return (
     <div className="relative flex w-full min-h-[250px] aspect-[16/10] items-end bg-gray-200 p-4 overflow-hidden rounded-lg">
       {imageUrl ? (
@@ -20,9 +20,6 @@ export function Cover({ title, index, imageUrl }: CoverProps) {
           />
         </div>
       ) : null}
-      <p className="text-sm text-black font-medium z-10 bg-white/80 px-2 py-1 rounded">
-        {index} · {title}
-      </p>
     </div>
   )
 }

@@ -150,7 +150,7 @@ export default function BmmkerPage() {
           </p>
           <p className="leading-relaxed text-muted-foreground">
             <strong>Reclaiming content control</strong><br />
-            Designed an onboarding and feed-filtering architecture that allows users to segment their digital consumption. By breaking away from rigid platform formatting, users can toggle between casual social loops and focused professional frameworks based on their immediate intent. Swipe left to see less. Right to see more, simple huh?!
+            Designed an onboarding and feed-filtering architecture that allows users to segment their digital consumption. By breaking away from rigid platform formatting, users can toggle between casual social loops and focused professional frameworks based on their immediate intent.
           </p>
 
           <div className="w-full">
@@ -168,7 +168,7 @@ export default function BmmkerPage() {
 
           <p className="leading-relaxed text-muted-foreground mt-8">
             <strong>Scalable design system and brand identity</strong><br />
-            Developed a cohesive visual language from scratch. Because the project was solo-driven, creating a modular component foundation and clear typography/color guidelines was critical to maintaining visual integrity across high-density content cards and sparse discovery layouts.
+            Developed a cohesive visual language from scratch. Because the project was solo-driven, creating a modular component foundation and clear typography/color guidelines was critical to maintaining visual integrity across content and discovery.
           </p>
         </article>
 
@@ -204,7 +204,7 @@ export default function BmmkerPage() {
             B__mker was a fully immersive, paid professional engagement that pushed my end-to-end design system architecture and user testing capabilities further than any prior project. 
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            Despite validating core feature interest with our alpha cohort, the startup ultimately wound down following subsequent funding rounds. The product's strict ad-free, pay-to-use premise (while deeply loved in theory during research) faced the harsh friction of real-world monetization resistance, highlighting the stark gap between what users say they want in controlled testing versus how they behave when facing direct paywalls.
+            Despite validating core feature interest with our alpha cohort, the startup ultimately wound down following subsequent funding rounds. The product's strict ad-free, pay-to-use premise (while deeply loved in theory during research) faced the harsh friction of real-world monetization resistance, highlighting the stark gap between what users say they want in controlled testing versus how they behave when facing direct paywalls. The alpha validated interest in the product concept, but not willingness to pay.
           </p>
           <p className="leading-relaxed text-muted-foreground">
             Navigating a product from conception through alpha testing, building an extensive modular design system, and ultimately managing its lifecycle closure provided an invaluable masterclass in commercial product reality, stakeholder strategy, and the true weight of market validation.
