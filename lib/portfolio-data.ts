@@ -402,6 +402,7 @@ export const projects: Project[] = [
     limitations: [
       "With hindsight from a product perspective, it would have been better to invest in evolving Ditto, despite Framer\u2019s tactical time-to-market advantage.",
     ],
+    hidden: true,
     team: "QE engineering team, Marcas team, and brand stakeholders.",
   },
   {
