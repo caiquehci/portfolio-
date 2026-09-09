@@ -53,6 +53,95 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "ditto",
+    name: "Ditto: Multi-tenant white-label e-commerce",
+    headline:
+      "Architecting a scalable white-label e-commerce engine from the ground up for higher-education institutions",
+    year: "2025 – 2026",
+    domain: "EdTech · White-Label E-Commerce",
+    tags: ["Product Design", "Design Systems", "Multi-Tenant Architecture", "E-Commerce"],
+    summary:
+      "Building a zero-to-one white-label e-commerce engine, replacing legacy marketplace constraints with modular architecture and direct institutional enrollments.",
+    role: "Product Designer",
+    project: "Marcas - Quero Educação",
+    period: "2025/2026",
+    cover: "/portfolio-images/ditto/cover.png",
+    featured: true,
+    metric: { value: "6m → 4.5m", label: "form completion time reduction" },
+    whatIDid: [
+      "Owned end-to-end interface architecture across mobile and web for Ditto: homepages, PLPs, PDPs, checkouts, and admissions workflows.",
+      "Modularized the legacy Zilla design system in Figma to support multi-tenant branding and component scalability.",
+      "Integrated Tailwind parameters into Jiractus, empowering marketing and operations to independently manage brand styling and dynamic content reordering.",
+      "Re-architected the checkout and admissions pipeline, cutting 3 redundant fields and migrating to the proprietary Paystation gateway.",
+    ],
+    about: [
+      "Quero Educação needed to capture high-intent student traffic slipping through the cracks of its flagship marketplace, Quero Bolsa. The solution was Ditto: a multi-tenant, white-label e-commerce engine built to deploy individual, brand-agnostic storefronts for top-tier educational partners.",
+      "Operating as the sole Product Designer inside the Marcas business unit over a ten-month development cycle, I owned the complete interface architecture and resolved deep systemic friction between legacy marketplace models and modern monobrand e-commerce needs.",
+    ],
+    initiatives: [
+      {
+        title: "The operational reality and the Zilla constraint",
+        challenge:
+          "Our core design system, Zilla, was rigidly hardcoded for Quero Bolsa, lacking multi-brand flexibility, tokenization, or internal hierarchy for critical components like product cards.",
+        focusLabel: "Strategic focus",
+        focus:
+          "Approach Zilla modularly rather than attempting a political rewrite of the legacy system.",
+        solution:
+          "Combined isolated atomic elements in Figma into scalable component libraries, aligned nomenclature with code standards, and integrated Tailwind parameters into Jiractus so teams could configure brand skins and campaign updates without engineering bottlenecks.",
+      },
+      {
+        title: "Shifting the mental model: Marketplace vs. Monobrand",
+        challenge:
+          "Quero Bolsa operated on an affiliate voucher model (buying a discount coupon). Under Ditto, legal agreements allowed presenting directly as the institution under a direct enrollment model.",
+        focusLabel: "Strategic focus",
+        focus:
+          "Align internal stakeholders on semantic and contractual realities across multi-step checkout copy.",
+        solution:
+          "Restructured transactional copy and multi-step workflows from 'purchase the discount' to 'enroll now', bridging legal compliance and user expectations without exposing underlying infrastructure.",
+      },
+      {
+        title: "The hero section trade-off",
+        challenge:
+          "An initial high-fidelity discovery hero design featured complex multi-step search interactions, intelligent draft-saving states, and deep database scraping.",
+        focusLabel: "Strategic focus",
+        focus:
+          "Evaluate design ambition against Zilla limitations, early frontend friction, and aggressive MVP delivery windows.",
+        solution:
+          "Recognized the over-engineering trap, stepped back, and reduced the hero section to a streamlined, high-efficiency search mechanism that preserved velocity and launch targets.",
+      },
+      {
+        title: "Unlocking marketing agility via Jiractus",
+        challenge:
+          "Rigid content hierarchies on Product Detail Pages restricted marketing teams from testing content ordering (e.g., course grading vs. curriculum highlights) without engineering deployments.",
+        focusLabel: "Strategic focus",
+        focus:
+          "Build operational flexibility directly into the internal management interface.",
+        solution:
+          "Designed an internal capability within Jiractus featuring a draggable interface, enabling marketing to dynamically reorder content blocks for any institution or course combination in seconds.",
+      },
+      {
+        title: "Re-engineering the checkout and admissions pipeline",
+        challenge:
+          "Absence of institutional compliance documentation led to data redundancy, where automated payloads collected data that partner back-offices redundantly asked for again during downstream enrollment.",
+        focusLabel: "Strategic focus",
+        focus:
+          "Audit MEC legal baselines against partner intake habits to eliminate friction and form fatigue.",
+        solution:
+          "Cut 3 mandatory fields out of the 12-step checkout form, reducing estimated completion time from 6 minutes down to 4.5 minutes, while migrating payment infrastructure to the proprietary Paystation engine.",
+      },
+    ],
+    outcome: [
+      "Ditto successfully launched as a fully operational white-label e-commerce engine, proving that a dedicated monobrand experience could capture high-intent traffic outside the core marketplace.",
+      "The scalable architecture absorbed major expansion smoothly—such as onboarding 21 partner institutions for internal business units like Branded—without requiring custom code rewrites or fragmenting brand integrity.",
+      "The project underscored core senior product design principles: balancing political navigation, respecting technical boundaries, and ruthlessly scoping MVPs to deliver real business value under pressure.",
+    ],
+    limitations: [
+      "Navigation and feature rollout had to constantly weigh immediate high-impact conversion levers against long-term QoL expansions due to tight delivery windows.",
+      "Early data silos required proactive daily monitoring and manual session audits (via Microsoft Clarity) to bridge tracking gaps before structured telemetry matured.",
+    ],
+    team: "Marcas business unit, internal engineering teams, and enterprise business stakeholders. Sensitive and/or protected information has been strategically omitted.",
+  },
+  {
     slug: "education-checkout-ab-test",
     name: "Education Checkout A/B Test",
     // aqui
