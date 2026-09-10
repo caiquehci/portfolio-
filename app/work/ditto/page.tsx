@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { projects } from '@/lib/portfolio-data'
 import ImageCarouselModal from '@/components/home/carousel-modal'
+import ModelComparisonFlow from '@/components/ModelComparisonFlow';
+import HeroTradeOffGrid from '@/components/HeroTradeOffGrid';
+import MarketingAgilityFlow from '@/components/MarketingAgilityFlow'; 
 
 export default function DittoPage() {
     const project = projects.find((p) => p.slug === 'ditto') // assuming 'ditto' is the project slug, or adjust as needed
@@ -70,10 +73,72 @@ export default function DittoPage() {
                     <p className="leading-relaxed text-muted-foreground">
                         Our core design system, <em>Zilla</em>, was rigidly hardcoded for Quero Bolsa. It lacked theme support, tokenization, or multi-brand flexibility. Essential components: such as a product card that existed only as unopinionated atomic primitives: an empty white vector box devoid of hierarchy, typography tokens, or layout boundaries. Compounding this, the wider organization was deeply change-averse, treating any attempt to adapt Zilla for Marcas as unnecessary friction.
                     </p>
-                    <p className="leading-relaxed text-muted-foreground">
+
+                    {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+                        <div className="w-full">
+                            <button
+                                onClick={() => setActiveImage("/portfolio-images/ditto/zilla card.png")}
+                                className="w-full text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+                            >
+                                <img
+                                    src="/portfolio-images/ditto/zilla card.png"
+                                    alt="Default card component for zilla: a vector white square, with color and round tokens. Nothing else."
+                                    className="w-full h-auto object-contain"
+                                />
+                            </button>
+                        </div>
+
+                        <div className="w-full">
+                            <button
+                                onClick={() => setActiveImage("/portfolio-images/ditto/ditto card.png")}
+                                className="w-full text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+                            >
+                                <img
+                                    src="/portfolio-images/ditto/ditto card.png"
+                                    alt="Ditto's card component: seeding from Zilla, but now embracing other card qualifying structures. All of them tokenized and according to Zillas naming conventions."
+                                    className="w-full h-auto object-contain"
+                                />
+                            </button>
+                        </div>
+                    </div> */}
+
+                    <div className="w-full">
+                        <button
+                            onClick={() => setActiveImage("/portfolio-images/ditto/zilla card.png")}
+                            className="w-full text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+                        >
+                            <img
+                                src="/portfolio-images/ditto/zilla card.png"
+                                alt="Default card component for zilla: a vector white square, with color and round tokens. Nothing else."
+                                className="w-full h-auto object-contain"
+                            />
+                        </button>
+                        <p className="mt-2 text-sm text-muted-foreground text-center">
+                            Default card component for zilla: a vector white square, with color and round tokens. Nothing else.
+                        </p>
+                    </div>
+
+                    <p className="leading-relaxed text-muted-foreground mt-10">
                         Rather than attempting to rewrite a legacy design system, I approached Zilla modularly. I took its isolated atomic elements (padding tokens, typography blocks, and structural containers) and composed them in Figma into scalable component libraries. By aligning our Figma component nomenclature directly with frontend code standards, I bridged the gap between legacy constraints and multi-brand requirements.
                     </p>
-                    <p className="leading-relaxed text-muted-foreground">
+
+                    <div className="w-full">
+                        <button
+                            onClick={() => setActiveImage("/portfolio-images/ditto/ditto card.png")}
+                            className="w-full text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
+                        >
+                            <img
+                                src="/portfolio-images/ditto/ditto card.png"
+                                alt="Ditto's card component: seeding from Zilla, but now embracing other card qualifying structures. All of them tokenized and according to Zillas naming conventions."
+                                className="w-full h-auto object-contain"
+                            />
+                        </button>
+                        <p className="mt-2 text-sm text-muted-foreground text-center">
+                            Ditto's card component: seeding from Zilla, but now embracing other card qualifying structures. All of them tokenized and according to Zillas naming conventions.
+                        </p>
+                    </div>
+
+                    <p className="leading-relaxed text-muted-foreground mt-10">
                         This laid the groundwork for engineering collaboration. Once we established a shared mental model, we decoupled visual branding from code deployment. By integrating Tailwind parameters into <strong>Jiractus</strong> (our internal operations and management interface) the product and marketing teams gained the ability to dynamically configure primary and secondary colors, spin up new partner skins, and execute rapid campaign modifications without waiting for engineering sprint cycles.
                     </p>
                 </article>
@@ -83,6 +148,11 @@ export default function DittoPage() {
                     <p className="leading-relaxed text-muted-foreground">
                         The architectural challenge went deeper than visual styling. Quero Bolsa operated on an affiliate voucher model: the user purchased a discount coupon from Quero Educação to redeem at an institution. The transaction was a middleman service.
                     </p>
+                </article>
+
+                <ModelComparisonFlow />
+                
+                <article className="flex max-w-2xl flex-col gap-4 pt-8">
                     <p className="leading-relaxed text-muted-foreground">
                         Under Ditto, legal agreements permitted us to present directly as the institution. The transaction shifted to a direct enrollment model. The user was no longer buying a digital discount; they were executing an educational contract.
                     </p>
@@ -108,6 +178,9 @@ export default function DittoPage() {
                     <p className="leading-relaxed text-muted-foreground">
                         <strong>The outcome:</strong> This preserved our development velocity and delivery window while keeping user discovery clean and immediate.
                     </p>
+
+                    <HeroTradeOffGrid />
+
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
@@ -119,6 +192,8 @@ export default function DittoPage() {
                         To solve this without sacrificing system stability, I designed an internal capability within Jiractus featuring a draggable interface. This allowed the marketing team to dynamically reorder content blocks for any institution or course combination in seconds, bypassing static code restrictions entirely. Marketing could run iterations and campaigns based on real-time data without touching a Figma file or opening a pull request.
                     </p>
                 </article>
+
+                <MarketingAgilityFlow />
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
                     <h3 className="text-lg font-medium">Re-engineering the checkout and admissions pipeline</h3>
