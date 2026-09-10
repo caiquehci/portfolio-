@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
 import { GripVertical, Loader2, RotateCcw } from 'lucide-react';
 
-// Path: components/MarketingAgilityFlow.tsx
 export default function MarketingAgilityFlow() {
-    // Default order updated specifically to:
-    // 1. Course Name & Header
-    // 2. Campus Location
-    // 3. Course Grade & Accreditation
-    // 4. Course Price & Tuition
-    // 5. About the Program
-    // 6. Modality (Online / Hybrid)
-    // 7. Student Benefits & Outcomes
     const initialBlocks = [
         { id: '1', name: 'Course Name & Header', type: 'header' },
         { id: '2', name: 'Campus Location', type: 'location' },
@@ -28,7 +19,6 @@ export default function MarketingAgilityFlow() {
     const [hasChanges, setHasChanges] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
-    // Desktop HTML5 Drag Handlers
     const handleDragStart = (index: number) => {
         setDraggedItemIndex(index);
     };
@@ -51,7 +41,6 @@ export default function MarketingAgilityFlow() {
         setDraggedItemIndex(null);
     };
 
-    // Mobile Touch Handlers to support native touch dragging/reordering seamlessly
     const handleTouchStart = (index: number) => {
         setDraggedItemIndex(index);
     };
@@ -59,7 +48,6 @@ export default function MarketingAgilityFlow() {
     const handleTouchMove = (e: React.TouchEvent, index: number) => {
         if (draggedItemIndex === null) return;
 
-        // Get touch coordinates
         const touch = e.touches[0];
         const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
         const itemNode = targetElement?.closest('[data-index]');
@@ -83,7 +71,6 @@ export default function MarketingAgilityFlow() {
         setDraggedItemIndex(null);
     };
 
-    // Apply changes simulation
     const handleApplyChanges = () => {
         setIsLoading(true);
         setTimeout(() => {
@@ -93,14 +80,12 @@ export default function MarketingAgilityFlow() {
         }, 800);
     };
 
-    // Reset layout back to initial default
     const handleReset = () => {
         setControlBlocks(initialBlocks);
         setPreviewBlocks(initialBlocks);
         setHasChanges(false);
     };
 
-    // Component render mapping for the PDP preview (right)
     const renderPDPContent = (type: string) => {
         switch (type) {
             case 'header':
@@ -112,13 +97,13 @@ export default function MarketingAgilityFlow() {
                 );
             case 'price':
                 return (
-                    <div key={type} className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div key={type} className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300 flex flex-col gap-3">
                         <div>
                             <span className="text-[10px] text-neutral-400 font-mono uppercase tracking-wider block mb-0.5">Investimento</span>
                             <div className="text-xs text-neutral-500 line-through">De: 18x R$ 246,83</div>
                             <div className="text-base font-bold text-white">Por: 18x R$ 135,89</div>
                         </div>
-                        <button className="bg-white text-neutral-950 text-xs font-semibold px-4 py-2.5 sm:py-2 rounded-lg transition-colors w-full sm:w-auto text-center">
+                        <button className="bg-white text-neutral-950 text-xs font-semibold px-4 py-2.5 rounded-lg transition-colors w-full text-center">
                             Matricular com Desconto
                         </button>
                     </div>
@@ -145,11 +130,8 @@ export default function MarketingAgilityFlow() {
                 return (
                     <div key={type} className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300 space-y-2">
                         <span className="text-[10px] text-neutral-400 font-mono uppercase tracking-wider block">Benefícios UFBRA</span>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-neutral-300">
-                            <div>✓ Taxa de inscrição grátis</div>
-                            <div>✓ Inglês grátis</div>
-                            <div>✓ Mensalidades fixas</div>
-                            <div>✓ 50% OFF na 2ª Pós</div>
+                        <div className="text-xs text-neutral-300 truncate">
+                            ✓ Taxa de inscrição grátis • ✓ Inglês grátis • ✓ Mensalidades fixas • ✓ 50% OFF na 2ª Pós
                         </div>
                     </div>
                 );
@@ -157,8 +139,8 @@ export default function MarketingAgilityFlow() {
                 return (
                     <div key={type} className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 transition-all duration-300 space-y-1.5">
                         <span className="text-[10px] text-neutral-400 font-mono uppercase tracking-wider block">Sobre o curso</span>
-                        <p className="text-xs text-neutral-400 leading-relaxed">
-                            O curso forma profissionais capacitados para gerenciar processos administrativos complexos, liderar equipes e otimizar resultados corporativos...
+                        <p className="text-xs text-neutral-400 leading-relaxed line-clamp-2">
+                            O curso forma profissionais capacitados para gerenciar processos administrativos complexos, liderar equipes e otimizar resultados corporativos no dia a dia das organizações modernas.
                         </p>
                     </div>
                 );
@@ -168,17 +150,16 @@ export default function MarketingAgilityFlow() {
     };
 
     return (
-        <div className="w-full font-sans text-neutral-100">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+        <div className="w-full max-w-2xl font-sans text-neutral-100 mt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
 
-                {/* Left Side: Control Panel */}
                 <div
-                    className="bg-neutral-900/40 rounded-xl p-4 sm:p-5 flex flex-col justify-between space-y-4"
+                    className="bg-neutral-900/40 rounded-xl p-4 sm:p-5 flex flex-col justify-between space-y-4 h-full"
                     style={{ border: '1px solid rgba(141, 123, 184, 0.45)' }}
                 >
-                    <div>
+                    <div className="flex flex-col">
                         <div className="flex justify-between items-center mb-4 pb-3 border-b border-neutral-800">
-                            <span className="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-neutral-400 font-semibold truncate">
+                            <span className="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-neutral-400 font-semibold whitespace-normal leading-tight">
                                 Ditto Control Panel (Drag / Touch to reorder)
                             </span>
                         </div>
@@ -196,9 +177,9 @@ export default function MarketingAgilityFlow() {
                                     onTouchMove={(e) => handleTouchMove(e, index)}
                                     onTouchEnd={handleTouchEnd}
                                     className={`group bg-neutral-900 border rounded-lg p-3 flex items-center transition-all shadow-sm select-none cursor-grab active:cursor-grabbing touch-none ${draggedItemIndex === index
-                                            ? 'border-neutral-500 bg-neutral-800 shadow-md scale-[1.02]'
-                                            : 'border-neutral-800 hover:border-neutral-700'
-                                        }`}
+                                        ? 'border-neutral-500 bg-neutral-800 shadow-md scale-[1.02]'
+                                        : 'border-neutral-800 hover:border-neutral-700'
+                                    }`}
                                 >
                                     <div className="flex items-center gap-3 w-full">
                                         <div className="text-neutral-500 group-hover:text-neutral-300 transition-colors pointer-events-none">
@@ -213,15 +194,14 @@ export default function MarketingAgilityFlow() {
                         </div>
                     </div>
 
-                    {/* Reset & Apply Changes Buttons Control */}
-                    <div className="pt-4 border-t border-neutral-800 flex items-center justify-between gap-3">
+                    <div className="pt-4 border-t border-neutral-800 flex items-center justify-between gap-3 mt-auto">
                         <button
                             onClick={handleReset}
                             disabled={!hasChanges || isLoading}
                             className={`px-3 py-2 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 shrink-0 ${hasChanges
-                                    ? 'bg-neutral-800 text-neutral-300 border border-neutral-700 hover:bg-neutral-700 cursor-pointer'
-                                    : 'bg-neutral-900 text-neutral-600 border border-neutral-800/50 cursor-not-allowed opacity-40'
-                                }`}
+                                ? 'bg-neutral-800 text-neutral-300 border border-neutral-700 hover:bg-neutral-700 cursor-pointer'
+                                : 'bg-neutral-900 text-neutral-600 border border-neutral-800/50 cursor-not-allowed opacity-40'
+                            }`}
                         >
                             <RotateCcw size={13} />
                             <span>Reset</span>
@@ -231,9 +211,9 @@ export default function MarketingAgilityFlow() {
                             onClick={handleApplyChanges}
                             disabled={!hasChanges || isLoading}
                             className={`px-4 py-2 rounded-lg text-xs font-medium transition-all flex items-center justify-center gap-2 grow sm:grow-0 ${hasChanges
-                                    ? 'bg-white text-neutral-950 cursor-pointer shadow-lg'
-                                    : 'bg-neutral-900 text-neutral-600 border border-neutral-800 cursor-not-allowed opacity-60'
-                                }`}
+                                ? 'bg-white text-neutral-950 cursor-pointer shadow-lg'
+                                : 'bg-neutral-900 text-neutral-600 border border-neutral-800 cursor-not-allowed opacity-60'
+                            }`}
                         >
                             {isLoading && <Loader2 size={14} className="animate-spin" />}
                             <span>Apply Changes</span>
@@ -241,9 +221,8 @@ export default function MarketingAgilityFlow() {
                     </div>
                 </div>
 
-                {/* Right Side: Live Product Display Page (PDP) Preview */}
                 <div
-                    className="border border-neutral-800/80 rounded-xl p-4 sm:p-5 flex flex-col space-y-3 relative"
+                    className="border border-neutral-800/80 rounded-xl p-4 sm:p-5 flex flex-col space-y-3 relative h-full"
                     style={{ backgroundColor: 'rgba(141, 123, 184, 0.15)' }}
                 >
                     <div className="flex justify-between items-center pb-2 border-b border-neutral-800">
@@ -252,7 +231,6 @@ export default function MarketingAgilityFlow() {
                         </span>
                     </div>
 
-                    {/* Container with loading state overlay */}
                     <div className="relative min-h-[480px]">
                         {isLoading && (
                             <div className="absolute inset-0 bg-neutral-950/80 backdrop-blur-sm z-20 flex flex-col items-center justify-center space-y-2 rounded-lg transition-all">

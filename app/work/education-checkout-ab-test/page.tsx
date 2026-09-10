@@ -81,7 +81,7 @@ export default function EducationCheckoutPage() {
             As part of this scope, I redesigned the UFBRA checkout. It went live in December, fully integrated with Paystation. Shortly after launch, however, it faced heavy internal friction: stakeholders pointed fingers at the redesign, accusing it of “performing worse than its predecessor.”
           </p>
           <p>
-            My goals were clear: modernize the checkout to match institutional branding, break free from Pagar.me dependence, optimize conversion rates, and protect financial sustainability for QE. At the time all seemed to be "checkout got broken by..." and other hypothesis that came along.
+            My goals were clear: to align the checkout with institutional branding, migrate from Pagar.me to Paystation, improve conversion, and reduce infrastructure costs.
           </p>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function EducationCheckoutPage() {
         <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
           <h3 className="text-lg font-medium">1. Separating the price effect from the interface effect</h3>
           <p className="leading-relaxed text-muted-foreground">
-            The migration from Pagar.me to Paystation happened in December without an initial A/B test. When conversion dipped days later, an environment under high pressure with little room for research instantly scapegoated the new design.
+            The migration from Pagar.me to Paystation happened in December without an initial A/B test. When conversion dipped days later, the redesign was identified as a possible cause.
           </p>
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Strategic focus</p>
@@ -151,16 +151,16 @@ export default function EducationCheckoutPage() {
               The null hypothesis (H0): There is no significant difference in conversion rates between the new Paystation checkout (Baseline) and the legacy Pagar.me flow (Proposal).
             </p>
             <p className="leading-relaxed text-muted-foreground pt-1">
-              The Product/Marcas alternative hypothesis (H1): Streamlining the interface, reducing cognitive load, displaying a clear price summary, and allowing inline campus corrections, will outperform the legacy form architecture AND/OR couldn't affect the checkout negatively.
+              The Product/Marcas alternative hypothesis (H1): Streamlining the interface, reducing cognitive load, displaying a clear price summary, and allowing inline campus corrections, will result in a higher conversion rate than the legacy form architecture.
             </p>
             <p className="leading-relaxed text-muted-foreground pt-1">
-              The behavioral/change-averse hypothesis (H2): Users are creatures of habit; because they were deeply accustomed to the legacy Pagar.me flow, the sudden interface shift would initially trigger disorientation, friction, and resistance, causing a temporary dip in conversions despite the objective UX improvements.
+              The behavioral/change-averse hypothesis (H2): Users accustomed to the legacy Pagar.me flow may experience temporary friction after the interface change, resulting in conversion decline.
             </p>
           </div>
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Solution</p>
             <p className="leading-relaxed text-muted-foreground">
-              Digging into data, I discovered that on December 11th, the enrollment fee (PEF) increased from R$49.90 to R$74.90, effective December 12th. Precisely when the conversion curve dipped. Price elasticity and UX shifts collided overnight; the redesign was unfairly carrying the blame for a pricing adjustment.
+              Digging into data, I discovered that on December 11th, tThe price increase and checkout redesign occurred at the same time, making it necessary to separate their effects on conversion.
             </p>
           </div>
         </article>
@@ -179,7 +179,7 @@ export default function EducationCheckoutPage() {
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Solution</p>
             <p className="leading-relaxed text-muted-foreground">
-              Restructured the layout to feature a clear purchase summary (course, modality, current/future prices) right in focus, allowed users to correct their campus selection directly inside the checkout flow, and eliminated non-mandatory friction (such as universally collecting ID numbers upfront, shifting compliance documentation post-payment). Despite initial internal pushback, framing QE as an enabler rather than an administrative roadblock won stakeholder buy-in.
+              Restructured the layout to feature a clear purchase summary (course, modality, current/future prices) right in focus, allowed users to correct their campus selection directly inside the checkout flow, and eliminated non-mandatory friction (such as universally collecting ID numbers upfront, shifting compliance documentation post-payment). The changes were aligned with stakeholders by positioning QE as an enabler of the checkout experience.
             </p>
           </div>
         </article>
@@ -192,7 +192,7 @@ export default function EducationCheckoutPage() {
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Validation and impact</p>
             <p className="leading-relaxed text-muted-foreground">
-              Across three distinct traffic segments (80/20, 50/50, and 50/50 integrated with Google OAuth during Carnival), < ThoughtText thought="The sample size was dictated by real-world traffic. Instead of waiting for an arbitrary theoretical threshold, we ran the test across sequential traffic allocations to capture high-intent seasonal volume (the peak), securing enough statistical power and volume to achieve a definitive, highly significant Z-score (4.1056) and a p-value well below standard alpha thresholds. Roughly 0.0000403 compared to the standard 0.05 ~or 5%: it is orders of magnitude smaller than 0.05, meaning there is virtually a 0% chance the results occurred by random chance.">with this sample size</ThoughtText > we tracked performance from checkout initiation to completed payment, validating results with a Z-Test. Baseline achieved 6.85% conversion vs. Proposal's 4.72% (Z-Score of 4.1056, p-value of 0.0000403). This generated 68.5 additional enrollments during the test window (scaling to 288 for equal volumes) and definitively proved that the new `baseline` checkout is superior and here to stay. Also validating < ThoughtText thought="The Product/Marcas alternative hypothesis (H1): Streamlining the interface, reducing cognitive load, displaying a clear price summary, and allowing inline campus corrections, will outperform the legacy form architecture AND/OR couldn't affect the checkout negatively.">hypothesis H1</ThoughtText >.
+              Across three distinct traffic segments (80/20, 50/50, and 50/50 integrated with Google OAuth during Carnival), < ThoughtText thought="The sample size was dictated by real-world traffic. Instead of waiting for an arbitrary theoretical threshold, we ran the test across sequential traffic allocations to capture high-intent seasonal volume (the peak), securing enough statistical power and volume to achieve a definitive, highly significant Z-score (4.1056) and a p-value well below standard alpha thresholds. Roughly 0.0000403 compared to the standard 0.05 ~or 5%: it is orders of magnitude smaller than 0.05, meaning there is virtually a 0% chance the results occurred by random chance.">with this sample size</ThoughtText > we tracked performance from checkout initiation to completed payment, validating results with a Z-Test. Baseline achieved 6.85% conversion vs. Proposal's 4.72% (Z-Score of 4.1056, p-value of 0.0000403). This generated 68.5 additional enrollments during the test window (scaling to 288 for equal volumes), the results showed higher conversion for the new baseline checkout. Also validating < ThoughtText thought="The Product/Marcas alternative hypothesis (H1): Streamlining the interface, reducing cognitive load, displaying a clear price summary, and allowing inline campus corrections, will outperform the legacy form architecture AND/OR couldn't affect the checkout negatively.">hypothesis H1</ThoughtText >.
             </p>
           </div>
         </article>
@@ -214,13 +214,13 @@ export default function EducationCheckoutPage() {
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403, proving that the performance gap between the new design (6.85%) and the legacy flow (4.72%) has virtually zero probability of being a fluke." widthClass='w-[500px]'>(and maybe you're asking yourself on the why is that so?)</ThoughtText>: the new checkout decisively outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
+            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403. The statistical results indicate that the observed conversion difference is unlikely to be explained by random variation." widthClass='w-[500px]'>(and maybe you're asking yourself on the why is that so?)</ThoughtText>: the new checkout decisively outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
           </p>
           <p>
-            Beyond conversion wins, migrating from Pagar.me to Paystation slashed infrastructure fees from ~2% down to ~0.5%. With QE retaining 70% of revenue, the redesign yielded over R$15,100 in direct margin gains (numbers regarding only open-to-public information and estimatives in enrollment fees in the period of analysis).
+            Beyond conversion wins, migrating from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to 0.5%. With QE retaining 70% of revenue, this corresponded to more than R$15,100 in estimated direct margin gains during the analysis period.
           </p>
           <p>
-            This project defines my approach as a Product Designer: I build end-to-end digital experiences that eliminates friction, but when performance questions arise, I dive straight into analytics, structure rigorous funnels, apply statistical testing, and let hard data drive the narrative. Not to defend myself, but to hone the whole. To improve.
+            This project reflects my approach as a Product Designer: I design end-to-end digital experiences, investigate performance through analytics, structure funnels, and use quantitative evidence to guide product decisions..
           </p>
         </div>
       </section>

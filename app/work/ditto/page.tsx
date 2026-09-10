@@ -7,6 +7,8 @@ import ImageCarouselModal from '@/components/home/carousel-modal'
 import ModelComparisonFlow from '@/components/ModelComparisonFlow';
 import HeroTradeOffGrid from '@/components/HeroTradeOffGrid';
 import MarketingAgilityFlow from '@/components/MarketingAgilityFlow'; 
+import PrototypeExplorer from '@/components/PrototypeExplorer'; 
+import CheckoutImpactCaseStudy from '@/components/CheckoutImpactCaseStudy';
 
 export default function DittoPage() {
     const project = projects.find((p) => p.slug === 'ditto') // assuming 'ditto' is the project slug, or adjust as needed
@@ -195,26 +197,17 @@ export default function DittoPage() {
 
                 <MarketingAgilityFlow />
 
-                <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
+                <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-36">
                     <h3 className="text-lg font-medium">Re-engineering the checkout and admissions pipeline</h3>
-                    <p className="leading-relaxed text-muted-foreground">
-                        The checkout flow presented a severe friction point: data redundancy.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        Because institutional compliance documentation was initially absent, I audited legal baselines against Brazil's Ministry of Education (MEC) standards and cross-referenced them with actual partner back-office intake habits. I discovered a data overlap: our automated payload was sending data that partner institutions were redundantly asking students to fill out again downstream during final enrollment.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        <strong>The decision:</strong> I cut 3 mandatory fields out of the 12-step checkout form.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        <strong>The measured impact:</strong> Form completion time dropped from an estimated 6 minutes down to approximately 4.5 minutes, measurably lowering drop-off during the final conversion step.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        Simultaneously, we migrated our payment infrastructure away from third-party legacy gateways to <strong>Paystation</strong>, securing transaction integrity, removing external processing dependencies, and transitioning the business unit to a fully owned checkout architecture.
+                    <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
+                        Resolving data redundancy, optimizing form completion, transitioning to an owned payment architecture, and scaling cleanly across multiple brands.
                     </p>
                 </article>
 
-                <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
+                <CheckoutImpactCaseStudy />
+                {/* <PrototypeExplorer /> */}
+
+                {/* <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
                     <h3 className="text-lg font-medium">Scaling past the initial horizon</h3>
                     <p className="leading-relaxed text-muted-foreground">
                         Without a scalable architectural foundation, expanding beyond the initial pilot group of 4 institutions would have overwhelmed the operating model. The alternative playbook within the organization relied on manual brute-force: deploying fragmented, low-quality copycat sites or scaling low-cost labor through an army of interns hand-crafting pages for every new brand.
@@ -233,7 +226,7 @@ export default function DittoPage() {
                             <strong>Protecting delivery timelines:</strong> For enterprise partners accustomed to high-touch executive visibility, the system ensured that subsequent institutional launches met tight MVP deadlines, insulating the product line from operational chaos.
                         </li>
                     </ul>
-                </article>
+                </article> */}
             </section>
 
             {activeImage && (
