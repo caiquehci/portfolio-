@@ -548,7 +548,7 @@ export const experience = [
     company: "Quero Educação / Qeevo Group",
     period: "March 2025 - March 2026",
     description:
-      "Led end-to-end design for Ditto, increasing checkout conversion by 2.1% and reducing friction by 30% across higher-education e-commerce platforms using data-driven discovery, GA4, and Microsoft Clarity.",
+      "Led end-to-end design for Ditto, increasing checkout conversion by 2.1% and reducing friction in higher-education, white-label e-commerce platforms using data-driven discovery, GA4, and Microsoft Clarity.",
   },
   {
     role: "Senior UI/UX Designer",
@@ -621,5 +621,5 @@ export const skills = [
   "Figma",
   "Framer",
   "Prototyping",
-  "Stakeholder Management",
+  "Stakeholder Management.",
 ]
