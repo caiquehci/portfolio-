@@ -160,7 +160,7 @@ export default function EducationCheckoutPage() {
           <div className="space-y-1">
             <p className="text-sm font-medium text-foreground">Solution</p>
             <p className="leading-relaxed text-muted-foreground">
-              Digging into data, I discovered that on December 11th, tThe price increase and checkout redesign occurred at the same time, making it necessary to separate their effects on conversion.
+              Digging into data, I discovered that on December 11th, the price increase and checkout redesign occurred at the same time, making it necessary to separate their effects on conversion.
             </p>
           </div>
         </article>
@@ -214,43 +214,16 @@ export default function EducationCheckoutPage() {
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403. The statistical results indicate that the observed conversion difference is unlikely to be explained by random variation." widthClass='w-[500px]'>(and maybe you're asking yourself on the why is that so?)</ThoughtText>: the new checkout decisively outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
+            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403. The statistical results indicate that the observed conversion difference is unlikely to be explained by random variation." widthClass='w-[500px]'>(Unpacking the underlying mechanisms)</ThoughtText>: the new version outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
           </p>
           <p>
             Beyond conversion wins, migrating from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to 0.5%. With QE retaining 70% of revenue, this corresponded to more than R$15,100 in estimated direct margin gains during the analysis period.
           </p>
           <p>
-            This project reflects my approach as a Product Designer: I design end-to-end digital experiences, investigate performance through analytics, structure funnels, and use quantitative evidence to guide product decisions..
+            This project reflects my approach as a Product Designer: I design end-to-end digital experiences, investigate performance through analytics, structure funnels, and use quantitative evidence to guide product decisions.
           </p>
         </div>
       </section>
-
-      {/* <div className="w-full">
-        <button
-          onClick={() => setActiveImage("/portfolio-images/education-checkout-ab-test/IMAGEM_05.png")}
-          className="w-auto text-left cursor-pointer overflow-hidden rounded-xl border border-border bg-transparent"
-        >
-          <img
-            src="/portfolio-images/education-checkout-ab-test/IMAGEM_05.png"
-            alt="Illustration"
-            className="h-[300px] md:h-[500px] w-auto object-contain"
-          />
-        </button>
-      </div> */}
-
-      {/* <section className="flex max-w-2xl flex-col gap-4 mt-10">
-        <h2 className="text-xl font-medium">Limitations</h2>
-        <p className="leading-relaxed text-muted-foreground">
-          <strong>Scope boundaries:</strong> Metrics were isolated to PEF (one-time enrollment fees). LTV tracking wasn't factored in due to varying monthly tuitions per course.
-        </p>
-        <p className="leading-relaxed text-muted-foreground">
-          <strong>Timing:</strong> The A/B test was deployed after performance alarms went off. Running it pre-launch would have saved weeks of unnecessary stakeholder friction. Profit is earned, but the lesson is invaluable.
-        </p>
-      </section> */}
-
-      {/* {project.team ? (
-        <p className="max-w-2xl text-sm text-muted-foreground">{project.team}</p>
-      ) : null} */}
 
       {activeImage && (
         <div

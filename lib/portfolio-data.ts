@@ -608,7 +608,7 @@ export const education = [
   {
     course: "B.S in Graphic Design",
     institution: "Unifatecie",
-    date: "Conclusion 2021",
+    date: "2021",
   },
 ]
 

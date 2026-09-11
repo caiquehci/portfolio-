@@ -20,7 +20,7 @@ export default function AllWorkPage() {
 
     return (
         <main className="max-w-5xl mx-auto px-6 py-24">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">All of my work</h1>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">All Projects</h1>
             <p className="text-zinc-400">A complete collection of my projects within product design and engineering, for your appreciation.</p>
 
             {/* Search Bar Section with Segmenting Dividers */}

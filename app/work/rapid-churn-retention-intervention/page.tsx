@@ -171,7 +171,7 @@ export default function RapidChurnPage() {
                         <strong>Facing hard truths over comfort:</strong> When federal regulations (Portaria MEC nº 378/2025 and Decreto nº 12.456/2025) broke our nationwide scholarship model because partner institutions lacked local physical campuses, I refused to let leadership drown in internal guesswork.
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Building rigor when things are falling apart:</strong> I engineered a pragmatic, mixed-methods research framework (n=200, recency-weighted dropouts, and strict validation rules) to force us to look at actual student behavior instead of panic.
+                        <strong>Building rigor when things are falling apart:</strong> I engineered a pragmatic, mixed-methods research framework (recency-weighted dropouts and strict validation rules) to look at actual student behavior instead of panic.
                     </p>
                 </article>
             </section>
@@ -180,7 +180,7 @@ export default function RapidChurnPage() {
                 <h2 className="text-xl font-medium">How things ended</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
                     <p>
-                        I built the blueprint, laid out the hard data, and invited leadership to confront the structural brick wall our business model had hit. But when a company would rather ignore the hard facts than face them, carrying the weight of a failing strategy has a price. Right as the research framework was approved and set into motion, my seat was cut, and I was let go. I know, such a bummer. I was REALLY excited to be able to talk to people, to help my people… No regrets, just the proof of what happens when you care enough about the work to tell the truth, even when it costs you your spot.
+                        I built the blueprint, laid out the hard data, and invited leadership to confront the structural brick wall our business model had hit. Right as the research framework was approved and set into motion, my position was affected by organizational layoffs.
                     </p>
                 </div>
             </section>
