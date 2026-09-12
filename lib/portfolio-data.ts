@@ -75,7 +75,7 @@ export const projects: Project[] = [
     ],
     about: [
       "Quero Educação needed to capture high-intent student traffic slipping through the cracks of its flagship marketplace, Quero Bolsa. The solution was Ditto: a multi-tenant, white-label e-commerce engine built to deploy individual, brand-agnostic storefronts for top-tier educational partners.",
-      "Operating as the sole Product Designer inside the Marcas business unit over a ten-month development cycle, I owned the complete interface architecture and resolved deep systemic friction between legacy marketplace models and modern monobrand e-commerce needs.",
+      "Operating as the sole Product Designer inside the Marcas business unit, I owned the complete interface architecture and resolved deep systemic friction between legacy marketplace models and modern monobrand e-commerce needs.",
     ],
     initiatives: [
       {
@@ -111,7 +111,7 @@ export const projects: Project[] = [
       {
         title: "Unlocking marketing agility",
         challenge:
-          "Rigid content hierarchies on Product Detail Pages restricted marketing teams from testing content ordering (e.g., course grading vs. curriculum highlights) without engineering deployments.",
+          "Rigid content hierarchies on Product Detail Pages restricted marketing teams from testing content ordering without engineering deployments.",
         focusLabel: "Strategic focus",
         focus:
           "Build operational flexibility directly into the internal management interface.",
@@ -124,28 +124,23 @@ export const projects: Project[] = [
           "Absence of institutional compliance documentation led to data redundancy, where automated payloads collected data that partner back-offices redundantly asked for again during downstream enrollment.",
         focusLabel: "Strategic focus",
         focus:
-          "Audit MEC legal baselines against partner intake habits to eliminate friction and form fatigue.",
+          "Audit legal baselines against partner intake habits to eliminate friction and form fatigue.",
         solution:
           "Cut 3 mandatory fields out of the 12-step checkout form, reducing estimated completion time from 6 minutes down to 4.5 minutes, while migrating payment infrastructure to the proprietary Paystation engine.",
       },
     ],
     outcome: [
       "Ditto successfully launched as a fully operational white-label e-commerce engine, proving that a dedicated monobrand experience could capture high-intent traffic outside the core marketplace.",
-      "The scalable architecture absorbed major expansion smoothly—such as onboarding 21 partner institutions for internal business units like Branded—without requiring custom code rewrites or fragmenting brand integrity.",
+      "The scalable architecture absorbed major expansion smoothly—such as onboarding partner institutions for internal business units like Branded—without requiring custom code rewrites or fragmenting brand integrity.",
       "The project underscored core senior product design principles: balancing political navigation, respecting technical boundaries, and ruthlessly scoping MVPs to deliver real business value under pressure.",
     ],
-    team: "Marcas business unit, internal engineering teams, and enterprise business stakeholders. Sensitive and/or protected information has been strategically omitted.",
+    team: "Marcas business unit, internal engineering teams, and enterprise business stakeholders.",
   },
   {
     slug: "education-checkout-ab-test",
     name: "Education Checkout A/B Test",
-    // aqui
-
-
-    // aqui
-    //imageUrl: "/portfolio-images/education-checkout-ab-test/43viJqTo95TPIJGNeBCHnlUTaaQ.png",
     headline:
-      "Redesigning a checkout: how a \u201cnew baseline\u201d proved, with data, that it wasn\u2019t the culprit behind the conversion decline",
+      "Redesigning a checkout: how a “new baseline” proved, with data, that it wasn’t the culprit behind the conversion decline",
     year: "2026",
     domain: "Payments · EdTech",
     tags: ["Product Design", "A/B Test", "Payments", "Data Analysis"],
@@ -153,58 +148,58 @@ export const projects: Project[] = [
       "A conversion drop that looked like a UX failure. The data showed something else.",
     role: "Product Designer",
     project: "Marcas - QE (Qeevo Group)",
-    period: "December 2025 - February 2026",
+    period: "December 2025 – February 2026",
     cover: "/portfolio-images/education-checkout-ab-test/43viJqTo95TPIJGNeBCHnlUTaaQ.png",
     featured: true,
     metric: { value: "6.85% vs 4.72%", label: "conversion, p = 0.0000403" },
     whatIDid: [
-      "Owned Ditto, the white-label product for higher-education institutions: homepage, lead generation, course listing, PDP, checkout, and digital admissions.",
-      "Redesigned UFBRA\u2019s checkout, integrated with Paystation (internal payment gateway).",
-      "Investigated data daily in Google Analytics, Clarity, Metabase, and internal dashboard 902.",
-      "Structured the A/B test funnel, applied a Z-Test, and documented the decisions.",
+      "Owned interface architecture for Ditto across homepages, lead generation, course listings, PDPs, checkouts, and digital admissions workflows.",
+      "Redesigned UFBRA’s checkout integrated with Paystation (internal payment gateway).",
+      "Investigated data daily across Google Analytics, Clarity, Metabase, and internal dashboards.",
+      "Structured the A/B test funnel, applied a Z-Test, and documented strategic decisions.",
     ],
     about: [
-      "During my time at QE (Qeevo Group), I was responsible for Ditto, a white-label product for higher education institutions, operated via CMS by the Marcas team and developed by QE\u2019s engineering team.",
-      "Within this context, I redesigned UFBRA\u2019s checkout, which went live in December already integrated with Paystation, but was strongly accused of \u201cbeing worse than its predecessor.\u201d",
+      "During my time at QE, I was responsible for Ditto, a white-label product for higher education institutions, operated via CMS by the Marcas team and developed by QE’s engineering team.",
+      "Within this context, I redesigned UFBRA’s checkout, which went live in December integrated with Paystation, but was initially blamed for a drop in conversion rates.",
     ],
     initiatives: [
       {
         title: "Separating the price effect from the interface effect",
         challenge:
-          "The Pagar.me → Paystation migration happened in December without an initial A/B test. A few days later, conversion dropped and, in an environment with high targets and little room for error, fingers pointed at the redesign.",
+          "The migration happened in December without an initial A/B test. When conversion dropped amidst high targets, fingers pointed immediately at the redesign.",
         focusLabel: "Strategic focus",
         focus:
-          "Go beyond the interface role: cross-reference internal events and daily analytics to understand what actually changed at the same time as the redesign.",
+          "Go beyond interface design: cross-reference internal events and daily analytics to isolate what actually shifted concurrently with the launch.",
         solution:
-          "We identified that on 12/11 the PEF (enrollment fee) increased from R$49.90 to R$74.90, effective 12/12 - exactly when the conversion curve began to decline. Price and experience had changed together.",
+          "Discovered that the enrollment fee increased right as the conversion curve began to decline, proving price and experience changed simultaneously.",
       },
       {
         title: "Reducing cognitive load at the moment of decision",
         challenge:
-          "The old checkout, originally designed for another business unit, collected unnecessary fields and blocked the journey when a previous campus selection was wrong.",
+          "The legacy checkout collected unnecessary fields and blocked user progression if a previous campus selection contained errors.",
         focusLabel: "Strategic focus",
         focus:
-          "Market benchmarks and a shorter, clearer funnel: purchase summary in focus, form in the background, and only the data QE really needed.",
+          "Streamline the funnel layout: put the purchase summary in focus, background the form, and limit collection to essential data fields.",
         solution:
-          "Three decisions: (1) reorganized the page with the purchase summary - course, modality, current and future prices - in focus; (2) allowed the campus to be corrected directly within the checkout; (3) removed unnecessary fields collected from the old version.",
+          "Reorganized the page to highlight course details, modality, and pricing; enabled inline campus correction directly within checkout; and removed redundant fields.",
       },
       {
-        title: "Statistically robust A/B test",
+        title: "Proving it with a statistically robust A/B test",
         challenge:
-          "Because the new checkout went live first, it appears as the \u201cBaseline\u201d in the report and the old Pagar.me flow as the \u201cProposal\u201d - a counterintuitive setup that had created confusion.",
+          "Because the new checkout went live first, it appeared as the 'Baseline' in reports while the old flow acted as the 'Proposal', creating reporting confusion.",
         focusLabel: "Transformation / Value",
         focus:
-          "Three segments (80/20, 50/50, and 50/50 with Google OAuth during Carnival) analyzed from checkout start to payment, validated with a Z-Test.",
+          "Analyze multiple test segments across checkout-to-payment funnels, validating results through a rigorous Z-Test.",
         solution:
-          "Baseline: 6,425 checkouts started, 440 payments, 6.85% conversion. Proposal: 3,220 checkouts, 152 payments, 4.72%. Z-Score 4.1056, p-value 0.0000403. A 2.13 percentage-point difference, statistically significant.",
+          "Baseline achieved 6.85% conversion vs 4.72% for the proposal (Z-Score 4.1056, p = 0.0000403), proving the new checkout significantly outperformed the old one.",
       },
     ],
     outcome: [
-      "The chance of the Baseline appearing better than the Proposal purely by chance is virtually zero. The new checkout outperforms the old one across all relevant segments, with robust statistical evidence.",
-      "Beyond conversion, moving from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to approximately 0.5%; with QE retaining 70% of revenue, the new checkout would have paid for itself within weeks.",
-      "This case summarizes how I work as a Product Designer: I create complete digital products, design flows focused on reducing friction, and when questions arise I can dive into the data, structure hypotheses, and validate them.",
+      "Statistical validation proved the new checkout outperformed the legacy flow with a p-value near zero, eliminating false assumptions about the redesign.",
+      "Transitioning from Pagar.me to Paystation cut gateway fees significantly, securing rapid financial return on top of conversion gains.",
+      "Demonstrated rigorous product design capability: building complete digital experiences, optimizing friction points, and backing design decisions with deep data analysis.",
     ],
-    team: "Marcas team (CMS operation), QE engineering team, and business stakeholders. Sensitive and/or protected information has been strategically omitted.",
+    team: "Marcas team, QE engineering team, and business stakeholders.",
   },
   {
     slug: "advlabs-saas",
@@ -217,52 +212,52 @@ export const projects: Project[] = [
       "Rebuilding a fragmented SaaS product around a coherent system.",
     role: "Product Designer",
     project: "X6 Tech",
-    period: "January 2023 - December 2024",
+    period: "January 2023 – December 2024",
     cover: "/portfolio-images/advlabs-saas/advlabs-cover.png",
     featured: true,
     metric: { value: "2 years", label: "of continuous product evolution" },
     whatIDid: [
-      "Redesign of existing screens: Admin Dashboard, Cases and Petitions, Subscription, Networks.",
-      "New features: My clients and calculator, Courses, Classes.",
-      "Design system creation for an interface originally built on Chakra UI.",
+      "Redesign of existing core screens: Admin Dashboard, Cases and Petitions, Subscription, and Networks.",
+      "Delivered new features including My clients, calculator, Courses, and Classes.",
+      "Established a cohesive design system bridging gaps in an interface originally built on Chakra UI.",
     ],
     about: [
-      "When I joined this project, its interface had already been developed using Chakra UI. The challenge was to support improvement processes after the system\u2019s initial conception and create consistency.",
-      "Everything looked great on the surface, but the lack of documentation, design principles, branding, and resistance to change were the biggest obstacles - along with journey abandonments caused by poor information architecture.",
+      "When I joined this project, its interface had already been developed using Chakra UI. The challenge was to support ongoing improvements after the system’s initial launch and bring visual consistency.",
+      "While the surface looked clean, the lack of documentation, formal design principles, and information architecture flaws were causing user drop-offs and journey abandonments.",
     ],
     initiatives: [
       {
-        title: "Redesigning screens without a guideline to follow",
+        title: "Redesigning screens without prior guidelines",
         challenge:
-          "Chakra UI made the system pleasant on the surface, but wherever the framework did not provide a ready-made path, creation had been left to the development team.",
+          "Chakra UI provided a pleasant visual baseline, but wherever the framework fell short, ad-hoc choices by the development team had fractured the user experience.",
         focusLabel: "Strategic focus",
-        focus: "Improve product health while new features were being adopted, without introducing noise.",
+        focus: "Improve product health and fix usability bottlenecks while new features were being actively adopted.",
         solution:
-          "Revamped the Admin Dashboard, Cases and Petitions, Subscription screen, and Networks, addressing the design flaws that were causing journey abandonments.",
+          "Revamped the Admin Dashboard, Cases and Petitions, Subscription flows, and Networks to eliminate design flaws driving user drop-offs.",
       },
       {
-        title: "Creating new capabilities",
-        challenge: "A high volume of corrections competed for time with the need to grow the product.",
+        title: "Expanding core capabilities",
+        challenge: "A heavy volume of tactical corrections constantly competed with the strategic need to grow the product roadmap.",
         focusLabel: "Strategic focus",
-        focus: "Ship new value without breaking consistency with the existing system.",
+        focus: "Ship high-value features without breaking consistency with the existing interface.",
         solution:
-          "Designed and delivered new screens and features: My clients and calculator, Courses, and Classes.",
+          "Designed and delivered entirely new product modules: My clients and calculator, Courses, and Classes.",
       },
       {
         title: "Prioritizing the design system",
         challenge:
-          "In the daily flow of requests it is common to solve isolated problems without looking at the whole.",
+          "In high-speed delivery cycles, it is easy to default to isolated, one-off fixes rather than addressing systemic consistency.",
         focusLabel: "Transformation / Value",
-        focus: "Scaling product quality requires solid foundations before micro-optimizations.",
+        focus: "Scaling product quality requires solid foundational components before micro-optimizations.",
         solution:
-          "I learned in practice that postponing a robust design system only creates rework and inconsistency. It became the foundation for every subsequent screen - and, in hindsight, should have been the first priority.",
+          "Established a centralized design system that became the blueprint for all subsequent screen iterations, eliminating technical debt and rework.",
       },
     ],
     outcome: [
-      "Integrating with the AdvLabs team was easy and my entry created no friction, even while recreating a design without guidelines.",
-      "A design system and redesigned core flows now support the product\u2019s ongoing evolution.",
+      "Successfully integrated with the AdvLabs team and stabilized core workflows without introducing deployment friction.",
+      "Delivered a structured design system and redesigned core flows that continue to support the product’s long-term evolution.",
     ],
-    team: "",
+    team: "X6 Tech and AdvLabs product teams.",
   },
   {
     slug: "bmker-design-system",
@@ -275,7 +270,7 @@ export const projects: Project[] = [
       "B__mker is a new social network concept that gives you control over what you see in your feed. No constraints or labels.",
     role: "Visual and Product Designer | Branding Strategist",
     project: "Individual",
-    period: "June 2023 - January 2024",
+    period: "June 2023 – January 2024",
     cover: "/portfolio-images/bmker-design-system/bmker-cover.png",
     featured: true,
     metric: { value: "84", label: "valid survey responses" },
@@ -286,45 +281,45 @@ export const projects: Project[] = [
       "Branding strategy and stakeholder alignment.",
     ],
     about: [
-      "B__mker is a new social network concept that promotes interaction while also standing out by putting you in control of what you see. With no constraints or labels, the platform seeks to foster genuine community without algorithmic manipulation.",
-      "The design challenge: how can people enjoy using social networks again, simply browsing light content while still having the option - and a place - for specific and intellectual content?",
+      "B__mker is a new social network concept that promotes interaction while standing out by putting users in control of what they see. With no artificial constraints or labels, the platform fosters genuine community without hidden algorithmic manipulation.",
+      "The core design challenge: how can people enjoy using social networks again, balancing casual light content with a dedicated space for specific, intellectual engagement?",
     ],
     initiatives: [
       {
         title: "Understanding that I am not my user",
         challenge:
-          "The maxim \u201cyou are not your user\u201d became as real as a toothache in the very first stages of research.",
+          "The maxim “you are not your user” became an immediate priority during the initial discovery stages.",
         focusLabel: "Strategic focus",
         focus:
-          "Establish research objectives as a compass, then validate assumptions with real people before defining anything.",
+          "Establish research objectives as a compass and validate assumptions with real people before building.",
         solution:
-          "A survey with linear-scale questions was sent to 104 people, of whom 84 were classified as valid. From the data I derived personas, user stories, and user journeys - artifacts that made the project possible.",
+          "Distributed a structured survey, capturing 84 valid responses from 104 total entries to build data-backed personas, user stories, and user journeys.",
       },
       {
         title: "Turning research into shared statements",
         challenge:
-          "Insights were fresh only in my mind; the team needed the same clarity to address constraints and pain points.",
+          "Raw qualitative insights needed to be distilled into clear, actionable alignment artifacts for the project.",
         focusLabel: "Strategic focus",
         focus:
-          "Condense every artifact into a problem statement and a value proposition the whole team could use.",
+          "Condense findings into a unified problem statement and a concrete value proposition.",
         solution:
-          "Using the 5W2H technique (without cost analysis) I produced a 5W1H table and a value proposition describing the product\u2019s benefits and functions. Conversations with stakeholders aligned everyone on what we were trying to solve.",
+          "Applied the 5W1H framework to map out product benefits, functions, and core requirements to maintain strategic clarity.",
       },
       {
         title: "Giving control back to the user: Special Swipes",
         challenge:
-          "Feeds are shaped by algorithms the user cannot influence; light and intellectual content compete for the same space.",
+          "Traditional feeds are dictated by opaque algorithms where light and intellectual content awkwardly compete.",
         focusLabel: "Transformation / Value",
-        focus: "Use a familiar gesture to let each post train the algorithm explicitly.",
+        focus: "Leverage familiar gestures to let users actively shape and train their own feed curation.",
         solution:
-          "Special swipes bring the right/left gesture into the feed: for each post the user tells the algorithm what type of content they want to see more or less of. Wireframes evolved into high-fidelity prototypes, and the interaction felt natural and satisfying.",
+          "Designed 'Special Swipes'—integrating directional feed gestures so users can explicitly signal what content they want more or less of, validated through high-fidelity prototyping.",
       },
     ],
     outcome: [
-      "A complete concept - from research to design system - that demonstrates end-to-end product thinking on an individual project.",
-      "The design system structure allowed high-fidelity screens to be produced consistently and validated with feedback.",
+      "A complete end-to-end concept—from foundational user research to a scalable design system—demonstrating rigorous product design thinking.",
+      "Structured design systems and modular components allowed high-fidelity screens to be iterated and validated efficiently.",
     ],
-    team: "",
+    team: "Individual project.",
   },
   {
     slug: "auden-college",
@@ -341,46 +336,46 @@ export const projects: Project[] = [
     featured: true,
     metric: { value: "3 days", label: "to a live website + CMS" },
     whatIDid: [
-      "Decision to use Framer instead of the internal Ditto product.",
-      "Data analysis in Clarity across other brands to validate the happy path.",
-      "Design and build of the website and CMS.",
-      "Trade-off documentation on stack, cost, and governance.",
+      "Decided to use Framer instead of the internal Ditto product to accelerate speed-to-market.",
+      "Conducted data analysis in Clarity across other brands to validate the happy path.",
+      "Designed and built the website and integrated CMS.",
+      "Documented technical trade-offs concerning stack, cost, and governance.",
     ],
     about: [
-      "AUDEN was a new, young, bold brand focused on Gen Z, but it had no live website or e-commerce. Without a digital presence, it could not sell.",
-      "The only \u201cofficial\u201d option was to integrate it into Ditto, an internal product I had designed myself, but it could not support the brand\u2019s stylistic needs without several improvements.",
+      "AUDEN was a new, bold brand focused on Gen Z, but it lacked a live website or e-commerce presence to begin selling.",
+      "While the official option was integrating into Ditto—an internal product I designed—it could not support the brand’s specific stylistic needs without heavy modifications.",
     ],
     initiatives: [
       {
         title: "Optimizing a proven pattern instead of guessing",
         challenge:
-          "My biggest pain point was time. Every day without a website, AUDEN was losing leads and enrollments while targets put us under intense pressure.",
+          "Time was critical; every day without a website meant losing leads and enrollments under intense target pressure.",
         focusLabel: "Strategic focus",
-        focus: "Use data from other brands in Ditto to support the decision rather than intuition.",
+        focus: "Leverage data from other brands in Ditto to back strategic decisions rather than relying on intuition.",
         solution:
-          "Clarity flow analysis, page performance, and heatmaps showed a robust, validated happy path (home > optional PLP > PDP > checkout). I wasn\u2019t \u201cguessing with Framer\u201d; I was applying patterns validated by real data.",
+          "Used Clarity flow analysis, heatmaps, and performance metrics to validate a robust happy path (home > optional PLP > PDP > checkout) within Framer.",
       },
       {
         title: "Three decisions",
-        challenge: "A new brand with no history had to feel bold to Gen Z and convert immediately.",
+        challenge: "A new brand with no history had to feel bold to Gen Z while converting immediately.",
         focusLabel: "Strategic focus",
-        focus: "Personality up front, proven structure underneath, independence from the backlog.",
+        focus: "Put personality upfront, maintain proven structure underneath, and preserve independence from internal roadmaps.",
         solution:
-          "(1) Make the home page a showcase for the brand\u2019s personality. (2) Keep the validated happy path even when moving to Framer, so as not to discard what Ditto had taught us through data. (3) Preserve independence from Ditto\u2019s roadmap.",
+          "(1) Showcase brand personality on the homepage; (2) preserve the data-backed happy path in Framer; (3) remain independent from Ditto's backlog.",
       },
       {
         title: "Owning the trade-offs",
         challenge:
-          "Framer\u2019s visual capabilities and iteration speed were so superior that the team began asking \u201cwhy not migrate everything to Framer?\u201d",
+          "Framer’s visual capabilities and speed prompted internal questions about migrating everything off the core stack.",
         focusLabel: "Transformation / Value",
-        focus: "Make the stack and cost risks explicit so the business could decide consciously.",
+        focus: "Make stack, cost, and infrastructure risks explicit so stakeholders could decide consciously.",
         solution:
-          "Costs and risks identified: images tied to Framer\u2019s infrastructure, risk of exceeding bandwidth limits, limited room for cache/proxy, potential impact on Core Web Vitals and SEO if we scaled.",
+          "Identified risks including infrastructure coupling, bandwidth limits, cache/proxy constraints, and potential impacts on Core Web Vitals and SEO at scale.",
       },
     ],
     outcome: [
-      "Immediate business result: the brand went from zero to a functional website + CMS in 3 days, allowing sales to begin well before the \u201cofficial\u201d Ditto launch window.",
-      "The case exposed limitations of the internal product (Ditto) and generated strategic discussions about stack and governance for brand websites.",
+      "Achieved an immediate business win by taking the brand from zero to a functional website and CMS in 3 days, enabling early sales.",
+      "Highlighted internal product limitations and sparked key strategic discussions regarding tech stack selection and governance.",
     ],
     hidden: true,
     team: "QE engineering team, Marcas team, and brand stakeholders.",
@@ -396,44 +391,44 @@ export const projects: Project[] = [
     role: "Product Designer",
     project: "QE (Qeevo Group)",
     period: "2026",
-    cover: "/portfolio-images/rapid-churn-retention-intervention/IMAGEM_01.png", 
+    cover: "/portfolio-images/rapid-churn-retention-intervention/IMAGEM_01.png",
     featured: false,
     metric: { value: "Architecture & Baseline", label: "rapid diagnostic framework delivered" },
     whatIDid: [
       "Architected, proposed, and secured approval for a rapid-response product discovery framework.",
       "Conducted deep-dive qualitative causal mapping interviews.",
-      "Engineered an asynchronous quantitative validation pipeline (n=200 target scope with recency weighting).",
+      "Engineered an asynchronous quantitative validation pipeline.",
       "Structured a high-impact executive product narrative for leadership."
     ],
     about: [
-      "With annual performance stuck at 60% right at the start of the peak conversion window, sales stalled completely as long-term product engagement and user LTV collapsed.",
-      "The root cause was structural following federal guidelines (Decreto nº 12.456/2025 and Portaria MEC nº 378/2025) which banned 100% remote courses without physical presence requirements, breaking our nationwide scholarship model."
+      "With annual performance facing constraints at the start of the peak conversion window, sales stalled as long-term product engagement and user lifetime value were impacted.",
+      "The root cause was structural following federal guidelines which disrupted the nationwide scholarship model and remote delivery assumptions."
     ],
     initiatives: [
       {
         title: "Product problem statement",
-        challenge: "Federal policy shifts banned 100% remote delivery and mandated physical attendance thresholds while partner institutions lacked physical polos.",
+        challenge: "Federal policy shifts introduced strict physical attendance thresholds while partner ecosystems faced operational hurdles.",
         focusLabel: "Strategic focus",
-        focus: "Diagnose why prospective and active users were abandoning the product after purchase under severe time constraints.",
-        solution: "Identified that the underlying product-market value proposition broke mid-stream when students could no longer fit rigid on-site schedules."
+        focus: "Diagnose why users were abandoning the product after purchase under severe time constraints.",
+        solution: "Identified that the underlying product-market value proposition broke down when students encountered unexpected structural constraints."
       },
       {
         title: "Methodology: Rapid mixed-methods discovery",
         challenge: "Lack of clear behavioral telemetry from leadership and internal teams during a critical sales season.",
         focusLabel: "Strategic focus",
         focus: "Deploy a pragmatic, rigorous mixed-methods framework combining qualitative causal mapping and quantitative validation.",
-        solution: "Executed deep-dive interviews and established an n=200 quantitative baseline with recency weighting and strict actionability guardrails."
+        solution: "Executed deep-dive interviews and established a quantitative baseline with recency weighting and strict actionability guardrails."
       },
       {
         title: "Product storyline and executive architecture",
         challenge: "Translating complex empirical findings into a direct, high-impact narrative for leadership.",
         focusLabel: "Transformation / Value",
-        focus: "Structure data into clear frameworks for decision-making.",
-        solution: "Delivered a 4-step framework covering user segmentation, retention drivers, churn drivers, and comparative NPS impact."
+        focus: "Structure data into clear frameworks for executive decision-making.",
+        solution: "Delivered a structured framework covering user segmentation, retention drivers, churn drivers, and comparative impact."
       }
     ],
     outcome: [
-      "Built the blueprint and hard data required to confront the structural brick wall the business model had hit.",
+      "Built the blueprint and hard data required to confront the structural challenges the business model encountered.",
       "Demonstrated rigorous empirical problem-solving under extreme pressure and regulatory shock."
     ],
     team: "QE (Qeevo Group) stakeholders and leadership.",
@@ -490,7 +485,7 @@ export const projects: Project[] = [
       "Shifted sprint capacity from fighting debt to dedicating 80% of time to high-value new features.",
       "Proved that systemic consistency can be achieved through technical empathy and facilitation rather than rigid enterprise tooling."
     ],
-    team: "",
+    team: "X6 Tech product and engineering team.",
     hidden: true,
   }
 ]
