@@ -114,7 +114,7 @@ function ProjectCard({ project }: { project: any }) {
                 <div className="flex items-start justify-between gap-6">
                     <div className="space-y-2">
                         <span className="text-xs font-mono text-zinc-400 block">
-                            {project.index} · {project.domain}
+                            {project.domain}
                         </span>
                         <h2 className="text-2xl font-semibold text-zinc-100 group-hover:text-white transition-colors duration-300">
                             {project.name}

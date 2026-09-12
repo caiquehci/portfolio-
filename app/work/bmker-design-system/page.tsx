@@ -32,7 +32,7 @@ export default function BmmkerPage() {
           B__mker: Reimagining social discovery and digital intent
         </h1>
         <p className="text-sm text-muted-foreground">
-          Role: Solo Product Designer (Visual, UX, & Brand Strategy) · Timeline: June 2023 – January 2024 · Scope: End-to-end product strategy, user research, brand identity, and interface design.
+          UX/UI Designer · Timeline: June 2023 – January 2024 · Scope: End-to-end product strategy, user research, brand identity, and interface design.
         </p>
         {/* <p className="text-sm text-muted-foreground">
           TL;DR: <a href="https://www.behance.net/gallery/202964509/B__mker" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">View the illustration for this case study</a>

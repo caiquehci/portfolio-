@@ -7,9 +7,9 @@ export const profile = {
   valueProposition:
     "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
   experienceLine: "Driven by metrics. Hands on.",
-  location: "Brazil. Open to new opportunities.",
+  location: "Based in São Paulo, Brazil. Open to new opportunities.",
   aboutIntro: [
-    "My name is Carlos Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it!",
+    "My name is Carlos Castanheira, and if you've made it this far, you've probably already seen some of my work. I hope you liked it.",
     "I am a Product Designer with a strong background in graphic design, digital, social media, and marketing. I set aside this space to share some of my achievements.",
   ],
   links: {
@@ -45,7 +45,6 @@ export type Project = {
     solution: string
   }[]
   outcome: string[]
-  limitations?: string[]
   team?: string
   hidden?: boolean
   drop?: boolean 
@@ -58,7 +57,7 @@ export const projects: Project[] = [
     headline:
       "Architecting a scalable white-label e-commerce engine from the ground up for higher-education institutions",
     year: "2025 – 2026",
-    domain: "EdTech · White-Label E-Commerce",
+    domain: "End-to-end · White-Label E-Commerce",
     tags: ["Product Design", "Design Systems", "Multi-Tenant Architecture", "E-Commerce"],
     summary:
       "Building a zero-to-one white-label e-commerce engine, replacing legacy marketplace constraints with modular architecture and direct institutional enrollments.",
@@ -135,10 +134,6 @@ export const projects: Project[] = [
       "The scalable architecture absorbed major expansion smoothly—such as onboarding 21 partner institutions for internal business units like Branded—without requiring custom code rewrites or fragmenting brand integrity.",
       "The project underscored core senior product design principles: balancing political navigation, respecting technical boundaries, and ruthlessly scoping MVPs to deliver real business value under pressure.",
     ],
-    limitations: [
-      "Navigation and feature rollout had to constantly weigh immediate high-impact conversion levers against long-term QoL expansions due to tight delivery windows.",
-      "Early data silos required proactive daily monitoring and manual session audits (via Microsoft Clarity) to bridge tracking gaps before structured telemetry matured.",
-    ],
     team: "Marcas business unit, internal engineering teams, and enterprise business stakeholders. Sensitive and/or protected information has been strategically omitted.",
   },
   {
@@ -209,10 +204,6 @@ export const projects: Project[] = [
       "Beyond conversion, moving from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to approximately 0.5%; with QE retaining 70% of revenue, the new checkout would have paid for itself within weeks.",
       "This case summarizes how I work as a Product Designer: I create complete digital products, design flows focused on reducing friction, and when questions arise I can dive into the data, structure hypotheses, and validate them.",
     ],
-    limitations: [
-      "Gains are only from PEF (a one-time enrollment amount). LTV was not tracked, since each course has a unique monthly tuition and this was not part of the study.",
-      "The test started only after performance concerns arose; a pre-launch A/B test would have avoided weeks of doubt. Profit is lost, experience is gained.",
-    ],
     team: "Marcas team (CMS operation), QE engineering team, and business stakeholders. Sensitive and/or protected information has been strategically omitted.",
   },
   {
@@ -270,11 +261,6 @@ export const projects: Project[] = [
     outcome: [
       "Integrating with the AdvLabs team was easy and my entry created no friction, even while recreating a design without guidelines.",
       "A design system and redesigned core flows now support the product\u2019s ongoing evolution.",
-    ],
-    limitations: [
-      "I would have advocated more strongly for a mobile version - usage data showed people accessing a desktop-designed product on their phones.",
-      "The side menu reached 19 items at times; I would group functions into subgroups and make it collapsible to reduce cognitive load.",
-      "More validation with users, not only stakeholders.",
     ],
     team: "",
   },
@@ -338,9 +324,6 @@ export const projects: Project[] = [
       "A complete concept - from research to design system - that demonstrates end-to-end product thinking on an individual project.",
       "The design system structure allowed high-fidelity screens to be produced consistently and validated with feedback.",
     ],
-    limitations: [
-      "As a concept project, results are qualitative: validation happened through feedback sessions, not production metrics.",
-    ],
     team: "",
   },
   {
@@ -399,9 +382,6 @@ export const projects: Project[] = [
       "Immediate business result: the brand went from zero to a functional website + CMS in 3 days, allowing sales to begin well before the \u201cofficial\u201d Ditto launch window.",
       "The case exposed limitations of the internal product (Ditto) and generated strategic discussions about stack and governance for brand websites.",
     ],
-    limitations: [
-      "With hindsight from a product perspective, it would have been better to invest in evolving Ditto, despite Framer\u2019s tactical time-to-market advantage.",
-    ],
     hidden: true,
     team: "QE engineering team, Marcas team, and brand stakeholders.",
   },
@@ -413,16 +393,16 @@ export const projects: Project[] = [
     domain: "EdTech · Product Strategy",
     tags: ["Product Strategy", "User Research", "Data Analysis", "Regulatory Shock"],
     summary: "Architected a rapid-response product discovery framework to diagnose and address retention collapse under sudden federal regulatory shifts.",
-    role: "Product Designer / Lead",
+    role: "Product Designer",
     project: "QE (Qeevo Group)",
     period: "2026",
     cover: "/portfolio-images/rapid-churn-retention-intervention/IMAGEM_01.png", 
     featured: false,
-    metric: { value: "n=200", label: "quantitative validation sample" },
+    metric: { value: "Architecture & Baseline", label: "rapid diagnostic framework delivered" },
     whatIDid: [
       "Architected, proposed, and secured approval for a rapid-response product discovery framework.",
       "Conducted deep-dive qualitative causal mapping interviews.",
-      "Established a quantitative validation baseline (n=200) with recency weighting for dropout cohorts.",
+      "Engineered an asynchronous quantitative validation pipeline (n=200 target scope with recency weighting).",
       "Structured a high-impact executive product narrative for leadership."
     ],
     about: [
@@ -456,9 +436,6 @@ export const projects: Project[] = [
       "Built the blueprint and hard data required to confront the structural brick wall the business model had hit.",
       "Demonstrated rigorous empirical problem-solving under extreme pressure and regulatory shock."
     ],
-    limitations: [
-      "Faced severe organizational resistance and structural inertia when presenting hard operational truths."
-    ],
     team: "QE (Qeevo Group) stakeholders and leadership.",
     hidden: true,
   },
@@ -467,7 +444,7 @@ export const projects: Project[] = [
     name: "Engineering enablement without the bottleneck",
     headline: "Removing the design-to-engineering bottleneck by changing how design information is delivered.",
     year: "2023",
-    domain: "Developer Experience · Frontend Architecture",
+    domain: "Developer handoff · Deliverables",
     tags: ["Developer Experience", "Design Systems", "Workflow Optimization", "Prototyping"],
     summary: "Removing the design-to-engineering bottleneck by changing how design information is delivered.",
     role: "Product Designer",
@@ -513,9 +490,6 @@ export const projects: Project[] = [
       "Shifted sprint capacity from fighting debt to dedicating 80% of time to high-value new features.",
       "Proved that systemic consistency can be achieved organically through technical empathy and strategic facilitation rather than rigid enterprise tooling."
     ],
-    limitations: [
-      "Faced initial resistance from team members before the quality improvements drove organic bottom-up adoption."
-    ],
     team: "",
     hidden: true,
   }
@@ -546,7 +520,7 @@ export const experience = [
   {
     role: "Senior Product Designer - Ditto (white-label EdTech product)",
     company: "Quero Educação / Qeevo Group",
-    period: "March 2025 - March 2026",
+    period: "May 2025 - March 2026",
     description:
       "Led end-to-end design for Ditto, increasing checkout conversion by 2.1% and reducing friction in higher-education, white-label e-commerce platforms using data-driven discovery, GA4, and Microsoft Clarity.",
   },

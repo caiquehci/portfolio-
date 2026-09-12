@@ -31,7 +31,7 @@ export default function DittoPage() {
                     Ditto: Architecting a white-label e-commerce engine for Quero Educação
                 </h1>
                 <p className="text-sm text-muted-foreground">
-                    Product Designer · Marcas - QE (Qeevo Group) · December 2025 - February 2026
+                    Product Designer · Marcas - QE (Qeevo Group) · May 2025  - February 2026
                 </p>
             </header>
 

@@ -51,10 +51,10 @@ export default function EngineeringEnablementPage() {
                 <h2 className="text-xl font-medium">Role and scope</h2>
                 <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
                     <li className="leading-relaxed">
-                        Spearheaded a scrappy, highly experimental developer experience workflow on a cross-functional product team to eliminate communication bottlenecks and speed up delivery velocity.
+                        Spearheaded an experimental handoff workflow on a cross-functional product team to eliminate communication bottlenecks and speed up delivery.
                     </li>
                     <li className="leading-relaxed">
-                        Introduced portable HTML specification files and Markdown context documents paired with Figma designs to act as a universal translation layer.
+                        Introduced portable HTML specification files and Markdown context documents paired with Figma designs to act as an universal translation layer.
                     </li>
                     <li className="leading-relaxed">
                         Operationalized core foundational components like the Tabela de Processos to bring component systematization to the team.
@@ -66,10 +66,10 @@ export default function EngineeringEnablementPage() {
                 <h2 className="text-xl font-medium">Executive summary</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
                     <p>
-                        When joining a cross-functional product team consisting of one product designer and four engineers, the workflow suffered from a classic bottleneck. Despite having design files available, the team lacked a shared design system or experience working with a dedicated product designer. This resulted in fragmented component choices, heavy reliance on synchronous back-and-forth communication, and inflated sprint hours spent clarifying layout decisions rather than shipping features.
+                        When joining a cross-functional product team of one designer and four engineers, the workflow faced a bottleneck. The team lacked a shared design system and prior experience with a dedicated designer. This caused fragmented component choices, heavy reliance on synchronous communication, and inflated sprint hours spent clarifying layout decisions rather than shipping features.
                     </p>
                     <p>
-                        To solve this, I introduced a scrappy, highly experimental developer experience workflow: pairing Figma designs with lightweight, self-contained HTML specification files and Markdown context documents. Long before automated tooling became mainstream workspace defaults, these portable specs acted as a universal translation layer, transforming our delivery velocity, recovering hours previously lost to redundant alignment, and shifting our sprint capacity from fighting debt to dedicating <strong className="text-foreground">80% of our time</strong> to high-value new features.
+                        To solve this, I introduced a developer experience workflow: pairing Figma designs with HTML specification files and Markdown context documents. Shifting our sprint capacity from fighting debt to dedicating <strong className="text-foreground">80% of our time</strong> to new features.
                     </p>
                 </div>
             </section>
@@ -95,7 +95,7 @@ export default function EngineeringEnablementPage() {
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
                     <h3 className="text-lg font-medium">The solution: scrappy experimentation with portable HTML specs</h3>
                     <p className="leading-relaxed text-muted-foreground">
-                        Driven by curiosity and a desire to eliminate repetitive friction, I experimented with a proactive approach. I observed how easily accessible online code libraries accelerated my own understanding, even without a formal developer background. Reversing the logic, I started crafting standalone HTML specification files alongside Markdown context notes.
+                        Driven by curiosity and a desire to eliminate repetitive friction, I experimented with a proactive approach. I observed how accessible online code libraries accelerated my own understanding, even without a formal developer background. Reversing the logic, I started crafting standalone HTML specification files alongside Markdown context notes.
                     </p>
                 </article>
 
@@ -111,24 +111,24 @@ export default function EngineeringEnablementPage() {
                     <h3 className="text-lg font-medium">Why this approach worked</h3>
                     <ul className="flex flex-col gap-3 list-disc pl-5 text-muted-foreground">
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Zero-friction accessibility:</strong> HTML files could be opened instantly in any browser without requiring a Figma license, specialized design tool knowledge, or complex onboarding. They were small-sized, highly flexible, and acted as a self-explanatory bridge.
+                            <strong className="text-foreground">Frictionless accessibility:</strong> HTML files could be opened instantly in any browser without requiring a Figma license, design tool knowledge or complex onboarding. They were small, flexible and easy to be replicated/adapted.
                         </li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Proactive translation:</strong> Long before developer-centric agents and rich context windows were standard, these HTML sheets served as clear visual breakdowns where all component unfolding was easy to see and review. They allowed developers to inspect behaviors, variants, and tokens at their own pace without needing to decode a complex design tool. Meanwhile, the Markdown files held the broader project context and narrative.
+                            <strong className="text-foreground">Proactive translation:</strong> Long before developer agents and rich context windows were standard, these HTML sheets served as visual breakdowns to my peers. Component unfolding was easy to see and review. They allowed developers to inspect behaviors, variants, and tokens at their own pace. Meanwhile, the Markdown files held the broader project context and narrative.
                         </li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Organic, bottom-up adoption:</strong> Rather than rolling out a top-down mandate or heavy design system governance framework, I tested the concept small. It was introduced as a collaborative experiment rather than an enforced corporate rule. While one developer initially resisted the shift, the quality improvement won the team over within two sprints.
+                            <strong className="text-foreground">Organic adoption:</strong> Rather than rolling out a top-down mandate or heavy design system governance framework, I tested the concept small. It was introduced as a collaborative experiment rather than an enforced corporate rule. While one developer initially resisted the shift, the quality improvement won the team over within two sprints.
                         </li>
                     </ul>
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
-                    <h3 className="text-lg font-medium">Key takeaway: Systematizing developer experience without overhead</h3>
+                    <h3 className="text-lg font-medium">Key takeaways: Systematizing developer experience without overhead</h3>
                     <p className="leading-relaxed text-muted-foreground">
-                        Scaling a design workflow across a greenfield team isn't about enforcing top-down governance; it's about building a universal translation layer that respects engineering velocity. By introducing lightweight, portable HTML specifications and markdown context documents alongside Figma, I transformed our delivery loop from a reactive cycle of endless synchronous alignment into an autonomous, high-velocity engine.
+                        Scaling a design workflow across a greenfield team isn't about enforcing; it's about building a layer that respects engineering velocity. By introducing those artifacts alongside Figma, I brought autonomy to the process.
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
-                        The quantitative impact is clear: recovering hours previously lost to redundant design interpretation allowed us to shift our sprint capacity from fighting technical and alignment debt to dedicating 80% of our time to high-value new features. More importantly, this experiment proved that systemic consistency, operationalized through foundational components like the Tabela de Processos, doesn't require heavy enterprise tooling to succeed. For cross-functional leadership, this demonstrates how a product designer can operate as a strategic facilitator, using scrappy prototyping and technical empathy to align engineering output with product vision under constraints.
+                        The impact was clear: recovering hours previously lost to misinterpretation allowed us to shift our sprint capacity from fighting technical debts, to dedicating 80% of our time to development. This proved that consistency, operationalized through foundational components like the Tabela de Processos, doesn't require heavy enterprise tooling to succeed. This demonstrates how a product design can operate as a strategic facilitator, using prototyping and empathy to align engineering output with business goals.
                     </p>
                 </article>
             </section>
