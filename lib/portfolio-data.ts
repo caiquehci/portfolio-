@@ -3,7 +3,7 @@ export const profile = {
   shortName: "Carlos Castanheira",
   title: "Product Designer",
   positioning:
-    "Senior Product Designer | 5+ years in high-volume e-commerce & SaaS. I engineer high-converting digital products, architect scalable design systems, and turn complex business logic into measurable revenue.",
+    "Senior Product Designer | 5+ years in high-volume e-commerce & SaaS. I design high-converting digital products, build scalable design systems, and turn complex business logic into measurable revenue.",
   valueProposition:
     "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs.",
   experienceLine: "Driven by metrics. Hands on.",
@@ -109,7 +109,7 @@ export const projects: Project[] = [
           "Recognized the over-engineering trap, stepped back, and reduced the hero section to a streamlined, high-efficiency search mechanism that preserved velocity and launch targets.",
       },
       {
-        title: "Unlocking marketing agility via Jiractus",
+        title: "Unlocking marketing agility",
         challenge:
           "Rigid content hierarchies on Product Detail Pages restricted marketing teams from testing content ordering (e.g., course grading vs. curriculum highlights) without engineering deployments.",
         focusLabel: "Strategic focus",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
           "Three decisions: (1) reorganized the page with the purchase summary - course, modality, current and future prices - in focus; (2) allowed the campus to be corrected directly within the checkout; (3) removed unnecessary fields collected from the old version.",
       },
       {
-        title: "Proving it with a statistically robust A/B test",
+        title: "Statistically robust A/B test",
         challenge:
           "Because the new checkout went live first, it appears as the \u201cBaseline\u201d in the report and the old Pagar.me flow as the \u201cProposal\u201d - a counterintuitive setup that had created confusion.",
         focusLabel: "Transformation / Value",
@@ -488,7 +488,7 @@ export const projects: Project[] = [
     outcome: [
       "Transformed delivery velocity and recovered hours previously lost to redundant alignment.",
       "Shifted sprint capacity from fighting debt to dedicating 80% of time to high-value new features.",
-      "Proved that systemic consistency can be achieved organically through technical empathy and strategic facilitation rather than rigid enterprise tooling."
+      "Proved that systemic consistency can be achieved through technical empathy and facilitation rather than rigid enterprise tooling."
     ],
     team: "",
     hidden: true,

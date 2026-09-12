@@ -56,10 +56,10 @@ export default function BmmkerPage() {
         <h2 className="text-xl font-medium">About the project</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            B__mker was a fully realized, professional commercial product engagement spanning from June 2023 to January 2024. Built to tackle modern social media fatigue: where users are trapped in passive consumption and algorithmic echo chambers. B__mker was engineered as an ad-free, subscription-backed social ecosystem designed to balance casual browsing with intentional, high-value intellectual and professional growth.
+            B__mker was a fully realized, professional commercial product engagement spanning from June 2023 to January 2024. Built to tackle social media fatigue: where users are trapped in passive consumption and algorithmic echo chambers. Engineered as an ad-free, subscription-backed network to balance casual browsing with intellectual and professional growth.
           </p>
           <p>
-            As the solo designer, I owned the entire commercial product lifecycle from conception to alpha testing, establishing the brand system, conducting quantitative and qualitative research, and architecting an interface that puts content curation directly back into the user's hands.
+            AI worked as the sole designer from concept through alpha testing, convering research, product structure, branding and interface design.
           </p>
         </div>
       </section>
@@ -204,10 +204,10 @@ export default function BmmkerPage() {
             B__mker was a fully immersive, paid professional engagement that pushed my end-to-end design system architecture and user testing capabilities further than any prior project. 
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            Despite validating core feature interest with our alpha cohort, the startup ultimately wound down following subsequent funding rounds. The product's strict ad-free, pay-to-use premise (while deeply loved in theory during research) faced the harsh friction of real-world monetization resistance, highlighting the stark gap between what users say they want in controlled testing versus how they behave when facing direct paywalls. The alpha validated interest in the product concept, but not willingness to pay.
+            Despite validating core feature interest with our alpha cohort, the startup ultimately wound down following subsequent funding rounds. The product's strict ad-free, pay-to-use premise (while deeply loved in theory during research) faced friction of real-world monetization resistance, highlighting the gap between what users say they want in controlled testing versus how they behave when facing direct paywalls. The alpha validated interest in the product concept, but not willingness to pay.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            Navigating a product from conception through alpha testing, building an extensive modular design system, and ultimately managing its lifecycle closure provided an invaluable masterclass in commercial product reality, stakeholder strategy, and the true weight of market validation.
+            Navigating a product from conception through alpha testing, building a modular design system, and managing its lifecycle closure provided an invaluable masterclass in product reality, stakeholder strategy and the weight of market validation.
           </p>
         </article>
       </section>

@@ -131,7 +131,7 @@ export default function CheckoutAndScalingSection() {
                     <div className="flex flex-col gap-1.5">
                         <span className="text-xs font-semibold text-neutral-200 uppercase tracking-wider">Horizontal Scalability</span>
                         <p className="text-[11px] md:text-xs text-neutral-400 leading-relaxed">
-                            Adopted by internal business units like Branded to seamlessly onboard 21 distinct partner institutions without parallel engineering rewrites.
+                            Adopted by internal business units like Branded to seamlessly onboard 21+ distinct partner institutions without parallel engineering rewrites.
                         </p>
                     </div>
 
@@ -145,7 +145,7 @@ export default function CheckoutAndScalingSection() {
                     <div className="flex flex-col gap-1.5">
                         <span className="text-xs font-semibold text-neutral-200 uppercase tracking-wider">Delivery Timelines</span>
                         <p className="text-[11px] md:text-xs text-neutral-400 leading-relaxed">
-                            Insulated enterprise partner launches from operational chaos, consistently meeting tight MVP delivery windows under high-touch executive scrutiny.
+                            21+ partner institutions were onboarded without parallel engineering rewrites, respecting business deadlines.
                         </p>
                     </div>
                 </div>

@@ -142,11 +142,11 @@ export default function EducationCheckoutPage() {
             The migration from Pagar.me to Paystation happened in December without an initial A/B test. When conversion dipped days later, the redesign was identified as a possible cause.
           </p>
           <div className="space-y-1">
-            <p className="text-sm font-medium text-foreground">Strategic focus</p>
+            <p className="text-sm font-medium text-foreground">Strategy</p>
             <p className="leading-relaxed text-muted-foreground">
               I treated the conversion decline as a product investigation rather than assuming the interface was the cause. Cross-reference internal events and daily analytics to uncover what actually shifted concurrently with the launch.
             </p>
-            <p className="text-sm font-medium text-foreground pt-3">Clarified Hypothesis</p>
+            <p className="text-sm font-medium text-foreground pt-3">Hypothesis</p>
             <p className="leading-relaxed text-muted-foreground pt-1">
               The null hypothesis (H0): There is no significant difference in conversion rates between the new Paystation checkout (Baseline) and the legacy Pagar.me flow (Proposal).
             </p>
@@ -185,7 +185,7 @@ export default function EducationCheckoutPage() {
         </article>
 
         <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
-          <h3 className="text-lg font-medium">3. Proving it with a statistically robust A/B test</h3>
+          <h3 className="text-lg font-medium">3. Proving it with a robust A/B test</h3>
           <p className="leading-relaxed text-muted-foreground">
             Because the new checkout had been pushed live first, the A/B test nomenclature was inverted: the new design ran as the "Baseline," while the old Pagar.me flow acted as the "Proposal."
           </p>
@@ -214,13 +214,13 @@ export default function EducationCheckoutPage() {
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403. The statistical results indicate that the observed conversion difference is unlikely to be explained by random variation." widthClass='w-[500px]'>(Unpacking the underlying mechanisms)</ThoughtText>: the new version outperformed the legacy flow across every relevant metric, backed by rigorous statistical validation.
+            The A/B test confirmed the new checkout outperformed the legacy flow.<ThoughtText thought="The results are trustworthy because we methodically isolated variables and eliminated confounding factors: (A) Price effect vs. Interface effect isolation: We traced and accounted for a concurrent price increase [PEF jumping from R$49.90 to R$74.90 on December 12th] that had initially biased stakeholders against the redesign. (B) Multi-segment replication: The test wasn't run on a single isolated day; it was validated across three separate traffic configurations, including high-stress seasonal traffic periods like Carnival. (C) Statistical guardrails: The final outcome achieved a Z-Score of 4.1056 and a p-value of 0.0000403. The statistical results indicate that the observed conversion difference is unlikely to be explained by random variation." widthClass='w-[500px]'>(Unpacking the underlying mechanisms)</ThoughtText>: the new version outperformed the legacy flow across every relevant metric, backed by statistical validation.
           </p>
           <p>
-            Beyond conversion wins, migrating from Pagar.me to Paystation reduced infrastructure fees from approximately 2% to 0.5%. With QE retaining 70% of revenue, this corresponded to more than R$15,100 in estimated direct margin gains during the analysis period.
+            The new checkout converted at 6.85% versus 4.72% for the previous flow. The difference was statistically significant.
           </p>
           <p>
-            This project reflects my approach as a Product Designer: I design end-to-end digital experiences, investigate performance through analytics, structure funnels, and use quantitative evidence to guide product decisions.
+            The migration to Paystation also reduced infrastructure fees from aproximatelly 2% to 0.5%, corresponding to more than R$15,100 in estimated direct margin during the analysis period.
           </p>
         </div>
       </section>

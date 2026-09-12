@@ -66,7 +66,7 @@ export default function AdvlabsSaaSPage() {
         <h2 className="text-xl font-medium">About the project</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            Joining after initial conception, I stepped into the sole design role to modernize core workflows and architect new feature modules while scaling the product's interface standards across a two-year engagement.
+            Joining after initial conception, I stepped in to modernize core workflows and design new features, while scaling the product's interface standards across a two-year engagement.
           </p>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function AdvlabsSaaSPage() {
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
           <h3 className="text-lg font-medium">The challenge</h3>
           <p className="leading-relaxed text-muted-foreground">
-            The platform suffered from critical operational bottlenecks. Without a formalized design system or clear interaction documentation, component behavior was left to ad-hoc development decisions. This led to fragmented user journeys, heavy cognitive friction across complex legal workflows, and rising drop-off rates in high-intent areas like petition management and account subscriptions.
+            The platform had bottlenecks. Without a formalized design system or clear interaction documentation, component behavior was left to ad-hoc development decisions. This led to fragmented user journeys, heavy cognitive friction across complex legal workflows, and rising drop-off rates in high-intent areas like petition management and account subscriptions.
           </p>
         </article>
 
@@ -100,7 +100,7 @@ export default function AdvlabsSaaSPage() {
             I systematically audited and redesigned core product areas, including the Administrative Dashboard, Cases & Petitions, Subscriptions, and Networks. By establishing predictable visual hierarchies and standardizing layout patterns, I standardized hierarchy, navigation and interaction patterns across the core modules so users could move between workflows without relearning the interface.
           </p>
           <p className="leading-relaxed text-muted-foreground">
-            For instance, looking at the dashboard evolution, the initial version suffered from a scattered hierarchy where critical metrics sat awkwardly next to empty states while core service actions competed for attention. By restructuring the layout into a deliberate grid with a dedicated calendar sidebar, contextual banner zones, and clear visual chunking, I shifted the product from a basic collection of cards into an intentional workspace built for professional legal execution.
+            For instance, looking at the dashboard evolution, the initial version suffered from a scattered hierarchy where critical metrics sat awkwardly next to empty states while core service actions competed for attention. By restructuring the layout into a deliberate grid with a dedicated calendar sidebar, contextual banner zones, and clear visual chunking, I shifted the product from a collection of cards into an workspace built for professional legal execution.
           </p>
         </article>
 
@@ -136,7 +136,7 @@ export default function AdvlabsSaaSPage() {
         <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-6">
           <h3 className="text-lg font-medium">Building the design system</h3>
           <p className="leading-relaxed text-muted-foreground">
-            To solve long-term scalability issues, I developed and institutionalized the platform's first comprehensive Design System. I consolidated fragmented UI elements into a unified design system, establishing <Link href="/work/engineering-enablement" className="text-foreground underline underline-offset-4 hover:text-primary transition-colors className='underline underline-offset-4 decoration-muted-foreground/40 hover:text-foreground hover:decoration-foreground transition-colors'">documented component states and interaction guidelines</Link> that engineering could rely on directly. By standardizing these patterns, we cut down UI delivery time per feature and eliminated the back-and-forth guessing game during implementation.
+            To solve long-term scalability issues, I developed and institutionalized the platform's first comprehensive Design System. I consolidated fragmented UI elements into a unified design system, establishing <Link href="/work/engineering-enablement" className="text-foreground underline underline-offset-4 hover:text-primary transition-colors className='underline underline-offset-4 decoration-muted-foreground/40 hover:text-foreground hover:decoration-foreground transition-colors'">documented component states and interaction guidelines</Link> that engineering could rely on directly. By standardizing these patterns, we cut down UI delivery time per feature and eliminated the guessing from the process.
             </p>
         </article>
 
@@ -187,10 +187,10 @@ export default function AdvlabsSaaSPage() {
         <h2 className="text-xl font-medium">Outcome</h2>
         <div className="flex max-w-2xl flex-col gap-4 text-muted-foreground leading-relaxed">
           <p>
-            AdvLabs transitioned from an unstandardized software prototype into a scalable SaaS platform. By diagnosing a critical user friction point: where repeating multi-step search queries forced users to needlessly burn credits and restart workflows. I redesigned the experience to include intuitive search history access. This reduction in cognitive load unexpectedly drove higher engagement with loose credit purchases and overall platform activity.
+            The redesign introduced a consistent interaction model across the product and established the first shared design system. One of the workflows I redesigned was search history, which allowed users to return to previous searches instead of repeating the same multi-step process.
           </p>
           <p>
-            Quantifiably, this operational and UX overhaul supported a sustained growth trajectory, registering consistent month-over-month increases of ~28% to 30% (in my last, and permited by NDA, analysis) in unique visitors and page views across core modules like the "Dashboard" and "My Office". Operating under a strict commercial NDA, exact revenue metrics remain confidential, but platform resilience, error reduction, and organic user acclaim highlighting improved productivity and workflow agility confirmed the long-term impact of the redesign.
+            In the final analysis period available to me, core modules showed approximately 28-30% month-over-month growth in unique visitors and page views.
           </p>
         </div>
       </section>

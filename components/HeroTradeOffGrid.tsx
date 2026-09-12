@@ -31,37 +31,37 @@ export default function HeroTradeOffGrid() {
             <div className="grid grid-cols-1 md:grid-cols-3 bg-card rounded-xl border border-border shadow-sm divide-y md:divide-y-0 md:divide-x divide-border overflow-hidden">
                 <div className="flex flex-col p-6 bg-card">
                     <span className="text-xs font-semibold uppercase tracking-wider text-purple-400 mb-2">
-                        The Dilemma
+                        Dilemma
                     </span>
                     <h4 className="text-base font-medium text-foreground mb-3">
-                        Heavy architecture vs. reality
+                        Real MVP needs vs. time to do so
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                        I initially designed a deeply automated multi-step search with live database scraping, but I faced strict frontend friction, Zilla's constraints, and an unforgiving MVP deadline.
+                        I had initially designed a search experience with additional interactions and deeper data integration. It became clear that this approach would require custom frontend work.
                     </p>
                 </div>
 
                 <div className="flex flex-col p-6 bg-card">
                     <span className="text-xs font-semibold uppercase tracking-wider text-purple-400 mb-2">
-                        The Pivot
+                        Pivot
                     </span>
                     <h4 className="text-base font-medium text-foreground mb-3">
-                        Killing all the extra weight
+                        Reducing scope and complexity 
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                        It was a tough call, but I decided to scrap the immersive draft-saving states entirely, choosing instead to strip it down to a lean, direct institutional search mechanism.
+                        Additional interactions were removed from the first release because they depend on engineering work that wasn't necessary to validate the core experience.
                     </p>
                 </div>
 
                 <div className="flex flex-col p-6 bg-card">
                     <span className="text-xs font-semibold uppercase tracking-wider text-purple-400 mb-2">
-                        The Impact
+                        Impact
                     </span>
                     <h4 className="text-base font-medium text-foreground mb-3">
-                        Velocity and clarity preserved
+                        Preserving the core discovery
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                        This scope cut protected my delivery timeline, saved critical sprint points, and ultimately allowed me to deliver a faster, cleaner path for student discovery into an MVP.
+                        The final MVP shipped with the essential search experience rather than carrying the additional frontend work into the first release.
                     </p>
                 </div>
             </div>

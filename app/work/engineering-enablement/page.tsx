@@ -54,10 +54,10 @@ export default function EngineeringEnablementPage() {
                         Spearheaded an experimental handoff workflow on a cross-functional product team to eliminate communication bottlenecks and speed up delivery.
                     </li>
                     <li className="leading-relaxed">
-                        Introduced portable HTML specification files and Markdown context documents paired with Figma designs to act as an universal translation layer.
+                        Introduced portable HTML specification files and Markdown context documents paired with Figma designs.
                     </li>
                     <li className="leading-relaxed">
-                        Operationalized core foundational components like the Tabela de Processos to bring component systematization to the team.
+                        Operationalized core components like the Tabela de Processos to bring component systematization to the team.
                     </li>
                 </ul>
             </section>
@@ -128,7 +128,7 @@ export default function EngineeringEnablementPage() {
                         Scaling a design workflow across a greenfield team isn't about enforcing; it's about building a layer that respects engineering velocity. By introducing those artifacts alongside Figma, I brought autonomy to the process.
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
-                        The impact was clear: recovering hours previously lost to misinterpretation allowed us to shift our sprint capacity from fighting technical debts, to dedicating 80% of our time to development. This proved that consistency, operationalized through foundational components like the Tabela de Processos, doesn't require heavy enterprise tooling to succeed. This demonstrates how a product design can operate as a strategic facilitator, using prototyping and empathy to align engineering output with business goals.
+                        The team estimated that approximately 80% of sprint capacity could remain focused on development rather than clarification and technical debt. 
                     </p>
                 </article>
             </section>

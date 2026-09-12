@@ -123,9 +123,6 @@ export default function AudenCollegePage() {
           <p>
             AUDEN went from having no digital storefront to a functional website and CMS in 3 days, allowing the brand to begin selling without waiting for the engineering backlog.
           </p>
-          <p>
-            The project also exposed a broader product question: if a designer could independently deliver a branded storefront this quickly, what did that say about the limitations and positioning of the internal product? The result was a strategic discussion around Ditto’s scope, technology costs, governance, and the role of internal versus external platforms.
-          </p>
         </div>
       </section>
 
@@ -139,13 +136,6 @@ export default function AudenCollegePage() {
             allowFullScreen
           />
         </div>
-      </section>
-
-      <section className="flex max-w-2xl flex-col gap-4  mt-16">
-        <h2 className="text-xl font-medium">Key takeaway</h2>
-        <p className="leading-relaxed text-muted-foreground">
-          The fastest solution was not necessarily the best product decision in the long term.
-        </p>
       </section>
 
       {/* {project.team ? (
@@ -182,6 +172,7 @@ export default function AudenCollegePage() {
         <div className="grid gap-6 sm:grid-cols-3 mt-4">
           {projects
             .filter((p) => !p.hidden && p.slug !== 'auden-college')
+            .slice(0, 3)
             .map((p) => (
               <Link
                 key={p.slug}

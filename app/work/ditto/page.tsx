@@ -175,10 +175,7 @@ export default function DittoPage() {
                         <strong>The trade-off:</strong> Building the immersive search mechanism required heavy custom code that would have heavily bloated sprint points. While it delivered high visual fidelity, it carried no guaranteed conversion lift for an MVP where users simply needed to find a specific course within a single institution.
                     </p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>What I chose:</strong> I stepped back, discarded the multi-step draft-saving architecture, and reduced the hero section to a streamlined, high-efficiency search mechanism.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        <strong>The outcome:</strong> This preserved our development velocity and delivery window while keeping user discovery clean and immediate.
+                        I stepped back, discarded the multi-step draft-saving architecture, and reduced the hero section to a streamlined, high-efficiency search mechanism. This preserved our development velocity and delivery window while keeping user discovery clean and immediate.
                     </p>
 
                     <HeroTradeOffGrid />
