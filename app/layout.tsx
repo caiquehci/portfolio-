@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { IBM_Plex_Sans } from 'next/font/google'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
+import { AnalyticsTracker } from '@/components/analytics-tracker'
 import './globals.css'
 
 const ibmPlexSans = IBM_Plex_Sans({
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={ibmPlexSans.variable}>
       <body className="min-h-dvh flex flex-col">
+        <AnalyticsTracker />
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />
