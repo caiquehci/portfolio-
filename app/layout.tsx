@@ -3,6 +3,7 @@ import { IBM_Plex_Sans } from 'next/font/google'
 import { Space_Grotesk, Geist } from 'next/font/google'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
+import { AnalyticsTracker } from '@/components/analytics-tracker'
 import './globals.css'
 
 // const ibmPlexSans = IBM_Plex_Sans({
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${spaceGrotesk.variable}`}>
       <body className="min-h-dvh flex flex-col font-sans antialiased">
+        <AnalyticsTracker />
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />

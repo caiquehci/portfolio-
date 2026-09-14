@@ -1,2 +1,8 @@
 .next/
 node_modules/
+*.tsbuildinfo
+
+# Secrets: never commit. Configure these in the Vercel dashboard instead.
+.env
+.env.local
+.env*.local
