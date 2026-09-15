@@ -1,0 +1,189 @@
+{
+  "nav": {
+    "work": "All Projects",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "switchToPortuguese": "Switch to Portuguese",
+    "switchToEnglish": "Switch to English"
+  },
+
+  "footer": {
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "about": "About"
+  },
+
+  "hero": {
+    "title": "Product Designer",
+    "positioning": "Senior Product Designer focused on complex digital products, experimentation and measurable outcomes.",
+    "experienceLine": "Owner of Ditto, AdvLabs and B__mker. Soon more to come."
+  },
+
+  "selectedWork": {
+    "title": "Selected work",
+    "subtitle": "Role, context, faced problems, the decisions and what happened next.",
+    "seeAll": "See all work →"
+  },
+
+  "moreWork": {
+    "title": "More work ( WIP )",
+    "subtitle": "Smaller pieces: wireframes, presentations, and graphic design."
+  },
+
+  "contact": {
+    "title": "Contact",
+    "body": "I can share more about these projects. Some details are omitted because they are sensitive or protected.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "resume": "Resume"
+  },
+
+  "about": {
+    "metaTitle": "About",
+    "title": "About me",
+    "intro1": "I am a Product Designer with over 5+ years of experience in digital products, working end-to-end across discovery and delivery, from research to prototyping, validation, and handoff. I specialize in research, information architecture, design systems, and data-driven decision-making, accumulating a total professional journey of 11 years in design and technology.",
+    "intro2Before": "Throughout my career spanning SaaS, e-commerce, educational ecosystems, industrial software, and social networks, I have developed solutions that impacted tens of thousands of active monthly users through high-scale platforms. Most recently, I built and optimized high-scale platforms for the Quero Educação/Qeevo Group network, contributing to an ecosystem that drives over",
+    "intro2Link": "60 million visits anually",
+    "intro2After": " to connect students and partner institutions.",
+    "intro3": "I ship complete digital products, design flows that reduce cognitive load, and back product decisions with funnels, statistical tests, and documented trade-offs. My work integrates the bread and butter Figma, with analytical rigor (Google Analytics, Microsoft Clarity, Hotjar, you name the tool), statistical testing, and the advanced use of generative AI to optimize end-to-end processes.",
+    "location": "Brazil. Open to new opportunities.",
+    "experienceTitle": "Experience",
+    "educationTitle": "Education",
+    "skillsTitle": "Skills"
+  },
+
+  "caseCommon": {
+    "back": "← Back",
+    "roleAndScope": "Role and scope",
+    "aboutTheProject": "About the project",
+    "executiveSummary": "Executive summary",
+    "contextAndExecutiveSummary": "Context and executive summary",
+    "initiatives": "Initiatives",
+    "theChallenge": "The challenge",
+    "theDecision": "The decision",
+    "strategicFocus": "Strategic focus",
+    "keyTakeaways": "Key takeaways",
+    "retrospective": "Retrospective",
+    "exploreOtherCases": "Explore other cases",
+    "exploreOtherCasesSubtitle": "Continue reading about my process and impact across other digital products.",
+    "close": "Close",
+    "seeItYourself": "See it yourself",
+    "role": "Role",
+    "project": "Project",
+    "period": "Period",
+    "team": "Team"
+  },
+
+  "projects": {},
+
+  "cases": {
+    "audenCollege": {
+      "tagline": "From zero to a selling e-commerce in 3 days",
+      "executionTitle": "Execution",
+      "tradeoffsTitle": "Trade-offs",
+      "outcomeTitle": "Outcome",
+      "about1": "AUDEN was a new, Gen Z-focused brand with no website or e-commerce live. Its official path to market was through Ditto, an internal product I had designed, but adapting it to AUDEN’s visual requirements would require engineering time and multiple iterations.",
+      "about2": "The business needed to start selling immediately. Rather than waiting for the internal product backlog, I evaluated whether an existing validated experience could be deployed through a faster stack.",
+      "challenge1": "The challenge was not simply to design a new website. It was to balance time-to-market, brand expression, product consistency, and technical constraints.",
+      "challenge2": "Ditto could support the core purchasing journey, but getting AUDEN from zero to a functional storefront would take roughly two weeks. Every day without a live site meant another day without the ability to generate leads and enrollments.",
+      "decisionText": "I chose Framer instead of Ditto. The decision was based on more than visual flexibility. I analyzed existing Ditto experiences through Clarity, looking at user flows, page performance, and heatmaps. The data showed that the existing Home to PLP to PDP to Checkout journey was already a validated path. That allowed me to separate what needed to change from what was already working.",
+      "principlesIntro": "The three principles were straightforward:",
+      "principle1": "Give the homepage enough personality to establish AUDEN as a new, Gen Z-focused brand.",
+      "principle2": "Preserve the validated purchasing journey.",
+      "principle3": "Use Framer to gain design independence and reduce time-to-market.",
+      "result1": "I designed and built the website and CMS in Framer, translating the existing product logic into a new branded experience without rebuilding the underlying purchasing journey from scratch. The result was a functional e-commerce website with CMS capabilities delivered in 3 days, compared with approximately 2 weeks through the internal Ditto workflow.",
+      "result2": "The speed came with real consequences. Framer offered significantly more freedom and faster iteration, but introduced considerations around infrastructure, image hosting, bandwidth, caching, Core Web Vitals, SEO, and long-term scalability. The decision was therefore not simply Framer is faster. It was a deliberate trade-off between immediate time-to-market and long-term control of the technology stack.",
+      "result3": "AUDEN went from having no digital storefront to a functional website and CMS in 3 days, allowing the brand to begin selling without waiting for the engineering backlog."
+    },
+
+    "engineeringEnablement": {
+      "scope1": "Spearheaded an experimental handoff workflow on a cross-functional product team to eliminate communication bottlenecks and speed up delivery.",
+      "scope2": "Introduced portable HTML specification files and Markdown context documents paired with Figma designs.",
+      "scope3": "Operationalized core components like the Tabela de Processos to bring component systematization to the team.",
+      "summary1": "When joining a cross-functional product team of one designer and four engineers, the workflow faced a bottleneck. The team lacked a shared design system and prior experience with a dedicated designer. This caused fragmented component choices, heavy reliance on synchronous communication, and inflated sprint hours spent clarifying layout decisions rather than shipping features.",
+      "summary2": "To solve this, I introduced a developer experience workflow: pairing Figma designs with HTML specification files and Markdown context documents. Shifting our sprint capacity from fighting debt to dedicating",
+      "challengeTitle": "The challenge: friction in a greenfield design environment",
+      "challengeLabel1": "Inconsistent component choices:",
+      "challengeText1": "Engineers were accustomed to sourcing the first third-party library that seemed appropriate, leading to deep visual inconsistencies, redundant technical debt, and mismatched component implementations across the product.",
+      "challengeLabel2": "Synchronous communication bottlenecks:",
+      "challengeText2": "Despite detailed design files and documented tickets, the team frequently relied on synchronous check-ins for layout logic, states, and behavior. This created dead time in sprints where engineering velocity stalled waiting for clarification.",
+      "challengeLabel3": "Cultural resistance to overhead:",
+      "challengeText3": "The team had no prior exposure to structured design systems, and introducing new processes risked being met with resistance if perceived as bureaucratic overhead.",
+      "solutionTitle": "The solution: scrappy experimentation with portable HTML specs",
+      "solutionText": "Driven by curiosity and a desire to eliminate repetitive friction, I experimented with a proactive approach. I observed how accessible online code libraries accelerated my own understanding, even without a formal developer background. Reversing the logic, I started crafting standalone HTML specification files alongside Markdown context notes.",
+      "whyTitle": "Why this approach worked",
+      "whyLabel1": "Frictionless accessibility:",
+      "whyText1": "HTML files could be opened instantly in any browser without requiring a Figma license, design tool knowledge or complex onboarding. They were small, flexible and easy to be replicated/adapted.",
+      "whyLabel2": "Proactive translation:",
+      "whyText2": "Long before developer agents and rich context windows were standard, these HTML sheets served as visual breakdowns to my peers. Component unfolding was easy to see and review. They allowed developers to inspect behaviors, variants, and tokens at their own pace. Meanwhile, the Markdown files held the broader project context and narrative.",
+      "whyLabel3": "Organic adoption:",
+      "whyText3": "Rather than rolling out a top-down mandate or heavy design system governance framework, I tested the concept small. It was introduced as a collaborative experiment rather than an enforced corporate rule. While one developer initially resisted the shift, the quality improvement won the team over within two sprints.",
+      "takeawaysTitle": "Key takeaways: Systematizing developer experience without overhead",
+      "takeaways1": "Scaling a design workflow across a greenfield team isn't about enforcing; it's about building a layer that respects engineering velocity. By introducing those artifacts alongside Figma, I brought autonomy to the process.",
+      "takeaways2": "The team estimated that approximately 80% of sprint capacity could remain focused on development rather than clarification and technical debt."
+    },
+
+    "rapidChurn": {
+      "scope1": "Operated as the lead product designer embedded within Marcas Team [a branch of Qeevo Group (QE)], having completed core e-commerce design deliverables before pivoting to address systemic business-level drop-offs.",
+      "scope2": "Took full ownership of scoping, designing, and executing a rapid mixed-methods research framework to diagnose student churn and behavioral friction following federal regulatory shifts.",
+      "scope3": "Structured and delivered the executive diagnostic architecture, combining qualitative causal maps and quantitative recency-weighted cohort analysis to translate complex user telemetry into actionable insights for leadership.",
+      "context1": "Four months prior to the close of the fiscal year, annual performance stalled at 60% right at the onset of the \"alta\" (historically the peak conversion window for educational scholarship sales). Sales numbers remained frozen at 61% following weeks of stagnation. While upfront, one-time enrollment purchases temporarily masked the issue, long-term product engagement and user lifetime value (LTV) were collapsing.",
+      "context2": "The root cause was structural. Following federal policy shifts established via Decreto nº 12.456/2025 and Portaria MEC nº 378/2025, higher education institutions could no longer offer 100% remote courses without meeting strict physical presence requirements. As QE operates as a major educational e-commerce infrastructure provider in Brazil, our platform historically enabled nationwide scholarship distribution. However, the new regulations meant partner institutions could no longer enroll students lacking a physical on-site campus within their local municipality. Prospective and active students faced rigid scheduling and geographic barriers that broke the core product-market fit.",
+      "context3": "With core e-commerce design milestones finalized and internal design systems operational across other company sectors, I initiated a rapid discovery framework to quantify post-enrollment drop-offs and provide leadership with empirical behavioral data. The objective was clear: by uncovering the exact post-enrollment gaps and friction points driving student abandonment, we could proactively equip Ditto and our sales and commercial teams with critical early-warning indicators—allowing them to identify vulnerability and intervene before churn occurred downstream.",
+      "init1Title": "1. Product problem statement",
+      "init1Label1": "The regulatory product blockade:",
+      "init1Text1": "Federal mandates via Portaria MEC nº 378/2025 prohibited 100% remote delivery for high-demand academic tracks, enforcing mandatory physical attendance thresholds. Because partner institutions lacked physical polos across diverse local markets, students could no longer reconcile local attendance mandates with their schedules, halting product consumption.",
+      "init1Label2": "The peak season stagnation:",
+      "init1Text2": "While top-of-funnel acquisition metrics should have spiked during the peak sales window, our annual targets sat frozen at 60% to 61%. Acquisition stalled because the underlying product-market value proposition broke mid-stream.",
+      "init1Label3": "My intervention:",
+      "init1Text3": "Historical telemetry from 0-to-12-month cohorts could not bypass federal compliance parameters or manufacture physical infrastructure where local presence was missing. Rather than treating research as a mechanism to reverse compliance-driven drop-offs, the framework was deployed to map the exact threshold of market impact. Providing leadership with empirical data to separate unrecoverable geographic segments from salvageable user groups.",
+      "init2Title": "2. Methodology: Rapid mixed-methods discovery",
+      "init2Intro": "To diagnose post-purchase abandonment under severe time constraints, I deployed a structured mixed-methods framework designed around two strategic execution paths:",
+      "init2QualLabel": "Qualitative discovery (1:1 sync interviews):",
+      "init2Qual1": "Option 1 (Stratified by modality): Structured for granular, format-specific decisions. Comprises 48 total interviews split evenly between active students (24 enrolled 3–12 months) and dropouts (24 within 12 months, prioritizing recent churn), perfectly mirrored across online, hybrid, and in-person delivery modes.",
+      "init2Qual2": "Option 2 (Modality-agnostic): Structured for operational simplicity. Comprises 16 total interviews (8 active students, 8 dropouts) ignoring modality to establish a baseline causal contrast.",
+      "init2QuantLabel": "Quantitative validation (Online async surveys):",
+      "init2Quant1": "Option 1 (Stratified by modality): Comprises 600 total respondents (300 active students, 300 dropouts, evenly split across online, hybrid, and in-person formats) to enable deep cross-tabulations by modality.",
+      "init2Quant2": "Option 2 (Modality-agnostic): Comprises 200 total respondents (100 active students, 100 dropouts, regardless of modality) focused strictly on core active-versus-dropout comparisons.",
+      "init2Quant3": "Recency weighting: Applied weighting to dropout cohorts, prioritizing users from the 1-to-6-month window over older profiles to isolate immediate fallout from the regulatory transition and to also avoid memory bias.",
+      "init2GuardrailsLabel": "Actionability guardrails:",
+      "init2GuardrailsText": "To eliminate noise, friction points were classified as actionable only when corroborated across qualitative causal maps and landing within the upper quartile of the quantitative survey distribution.",
+      "init3Title": "3. Product storyline and executive architecture",
+      "init3Intro": "I structured the product narrative for leadership around a direct, high-impact 4-step framework:",
+      "init3Label1": "User segmentation:",
+      "init3Text1": "Analysis of cohort sizes, demographic distributions, and active versus churned user splits.",
+      "init3Label2": "Product retention drivers:",
+      "init3Text2": "Quantitative metrics paired with qualitative verbatims highlighting core mechanics driving retention past the 1-year mark.",
+      "init3Label3": "Product churn drivers:",
+      "init3Text3": "Isolation of primary leakage vectors occurring during the first year of usage.",
+      "init3Label4": "Experience and recommendation impact:",
+      "init3Text4": "Comparative Net Promoter Score (NPS) analysis segmented by active and churned user states.",
+      "insightsTitle": "Operational insights",
+      "insightsLabel1": "Data-driven diagnosis:",
+      "insightsText1": "Retrospective user data cannot invalidate an external regulatory shift. Empirical research served to quantify the boundaries of market friction rather than misrepresenting compliance-driven drop-offs as product design failures.",
+      "insightsLabel2": "Adaptable research architecture:",
+      "insightsText2": "Executing a streamlined methodology balanced granular format analysis with rapid delivery under tight operational constraints.",
+      "insightsLabel3": "Operational risk mitigation:",
+      "insightsText3": "Post-enrollment insights can be converted into early-warning indicators for commercial and sales teams, isolating vulnerability before downstream churn occured.",
+      "outcomeTitle": "Execution, outcomes and deliverable validation",
+      "outcome1": "The diagnostic framework was fully scoped, architected, and approved under streamlined parameters to prioritize speed and immediate executive utility. Partnered with product analyst to extract target student cohorts, while product management engineered an automated n8n pipeline to distribute survey instruments via email at scale.",
+      "outcome2": "The primary deliverable of this engagement was the comprehensive diagnostic architecture itself. A validated, end-to-end research framework that successfully yielded initial survey data (achieving roughly 45 baseline responses out of the 200 target respondents) prior to organizational layoffs halting the initiative.",
+      "outcome3": "The rigor of the framework proved that product design extends far beyond visual UI delivery into systemic business diagnosis and risk mitigation under crisis conditions.",
+      "presentationTitle": "Presentation invitation",
+      "presentationText": "Want to see the actual slides I walked into my leadership's office with? Take a look at the exact presentation I used to pitch this diagnostic framework."
+    }
+  },
+
+  "allWork": {
+    "metaTitle": "All work",
+    "title": "All Projects",
+    "subtitle": "A complete collection of my projects within product design and engineering, for your appreciation.",
+    "searchPlaceholder": "Search by keyword, e.g., 'design system', 'saas', 'A/B test'...",
+    "noResults": "No projects found matching"
+  }
+}

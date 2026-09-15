@@ -5,10 +5,12 @@ import Link from 'next/link'
 import { projects } from '@/lib/portfolio-data'
 import ImageComparisonModal from '@/components/home/image-comparison-modal'
 import ImageCarouselModal from '@/components/home/carousel-modal'
+import { useTranslations } from '@/lib/i18n/provider'
 
 export default function RapidChurnPage() {
     const project = projects.find((p) => p.slug === 'rapid-churn-retention-intervention')
     const [activeImage, setActiveImage] = useState<string | null>(null)
+    const t = useTranslations()
 
     if (!project) return null
 
@@ -17,9 +19,7 @@ export default function RapidChurnPage() {
             <button
                 onClick={() => window.history.back()}
                 className="text-sm text-muted-foreground underline underline-offset-4 cursor-pointer bg-transparent border-none p-0 text-left"
-            >
-                ← Back
-            </button>
+            >{t.caseCommon.back}</button>
 
             <header className="flex flex-col gap-4">
                 <p className="text-sm text-muted-foreground">
@@ -48,32 +48,20 @@ export default function RapidChurnPage() {
             </div>
 
             <section className="flex flex-col gap-3">
-                <h2 className="text-xl font-medium">Role and scope</h2>
+                <h2 className="text-xl font-medium">{t.caseCommon.roleAndScope}</h2>
                 <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
-                    <li className="leading-relaxed">
-                        Operated as the lead product designer embedded within Marcas Team [a branch of Qeevo Group (QE)], having completed core e-commerce design deliverables before pivoting to address systemic business-level drop-offs.
-                    </li>
-                    <li className="leading-relaxed">
-                        Took full ownership of scoping, designing, and executing a rapid mixed-methods research framework to diagnose student churn and behavioral friction following federal regulatory shifts.
-                    </li>
-                    <li className="leading-relaxed">
-                        Structured and delivered the executive diagnostic architecture, combining qualitative causal maps and quantitative recency-weighted cohort analysis to translate complex user telemetry into actionable insights for leadership.
-                    </li>
+                    <li className="leading-relaxed">{t.cases.rapidChurn.scope1}</li>
+                    <li className="leading-relaxed">{t.cases.rapidChurn.scope2}</li>
+                    <li className="leading-relaxed">{t.cases.rapidChurn.scope3}</li>
                 </ul>
             </section>
 
             <section className="flex max-w-2xl flex-col gap-4 mt-16">
-                <h2 className="text-xl font-medium">Context and executive summary</h2>
+                <h2 className="text-xl font-medium">{t.caseCommon.contextAndExecutiveSummary}</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-                    <p>
-                        Four months prior to the close of the fiscal year, annual performance stalled at 60% right at the onset of the "alta" (historically the peak conversion window for educational scholarship sales). Sales numbers remained frozen at 61% following weeks of stagnation. While upfront, one-time enrollment purchases temporarily masked the issue, long-term product engagement and user lifetime value (LTV) were collapsing.
-                    </p>
-                    <p>
-                        The root cause was structural. Following federal policy shifts established via Decreto nº 12.456/2025 and Portaria MEC nº 378/2025, higher education institutions could no longer offer 100% remote courses without meeting strict physical presence requirements. As QE operates as a major educational e-commerce infrastructure provider in Brazil, our platform historically enabled nationwide scholarship distribution. However, the new regulations meant partner institutions could no longer enroll students lacking a physical on-site campus within their local municipality. Prospective and active students faced rigid scheduling and geographic barriers that broke the core product-market fit.
-                    </p>
-                    <p>
-                        With core e-commerce design milestones finalized and internal design systems operational across other company sectors, I initiated a rapid discovery framework to quantify post-enrollment drop-offs and provide leadership with empirical behavioral data. The objective was clear: by uncovering the exact post-enrollment gaps and friction points driving student abandonment, we could proactively equip Ditto and our sales and commercial teams with critical early-warning indicators—allowing them to identify vulnerability and intervene before churn occurred downstream.
-                    </p>
+                    <p>{t.cases.rapidChurn.context1}</p>
+                    <p>{t.cases.rapidChurn.context2}</p>
+                    <p>{t.cases.rapidChurn.context3}</p>
                 </div>
             </section>
 
@@ -91,115 +79,81 @@ export default function RapidChurnPage() {
             </div> */}
 
             <section className="flex flex-col gap-10  mt-16">
-                <h2 className="text-xl font-medium">Initiatives</h2>
+                <h2 className="text-xl font-medium">{t.caseCommon.initiatives}</h2>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
-                    <h3 className="text-lg font-medium">1. Product problem statement</h3>
+                    <h3 className="text-lg font-medium">{t.cases.rapidChurn.init1Title}</h3>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>The regulatory product blockade:</strong> Federal mandates via Portaria MEC nº 378/2025 prohibited 100% remote delivery for high-demand academic tracks, enforcing mandatory physical attendance thresholds. Because partner institutions lacked physical polos across diverse local markets, students could no longer reconcile local attendance mandates with their schedules, halting product consumption.
-                    </p>
+                        <strong>{t.cases.rapidChurn.init1Label1}</strong>{t.cases.rapidChurn.init1Text1}</p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>The peak season stagnation:</strong> While top-of-funnel acquisition metrics should have spiked during the peak sales window, our annual targets sat frozen at 60% to 61%. Acquisition stalled because the underlying product-market value proposition broke mid-stream.
-                    </p>
+                        <strong>{t.cases.rapidChurn.init1Label2}</strong>{t.cases.rapidChurn.init1Text2}</p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>My intervention:</strong> Historical telemetry from 0-to-12-month cohorts could not bypass federal compliance parameters or manufacture physical infrastructure where local presence was missing. Rather than treating research as a mechanism to reverse compliance-driven drop-offs, the framework was deployed to map the exact threshold of market impact. Providing leadership with empirical data to separate unrecoverable geographic segments from salvageable user groups.
-                    </p>
+                        <strong>{t.cases.rapidChurn.init1Label3}</strong>{t.cases.rapidChurn.init1Text3}</p>
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
-                    <h3 className="text-lg font-medium">2. Methodology: Rapid mixed-methods discovery</h3>
+                    <h3 className="text-lg font-medium">{t.cases.rapidChurn.init2Title}</h3>
+                    <p className="leading-relaxed text-muted-foreground">{t.cases.rapidChurn.init2Intro}</p>
                     <p className="leading-relaxed text-muted-foreground">
-                        To diagnose post-purchase abandonment under severe time constraints, I deployed a structured mixed-methods framework designed around two strategic execution paths:
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        <strong>Qualitative discovery (1:1 sync interviews):</strong>
+                        <strong>{t.cases.rapidChurn.init2QualLabel}</strong>
                     </p>
                     <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
-                        <li className="leading-relaxed">
-                            Option 1 (Stratified by modality): Structured for granular, format-specific decisions. Comprises 48 total interviews split evenly between active students (24 enrolled 3–12 months) and dropouts (24 within 12 months, prioritizing recent churn), perfectly mirrored across online, hybrid, and in-person delivery modes.
-                        </li>
-                        <li className="leading-relaxed">
-                            Option 2 (Modality-agnostic): Structured for operational simplicity. Comprises 16 total interviews (8 active students, 8 dropouts) ignoring modality to establish a baseline causal contrast.
-                        </li>
+                        <li className="leading-relaxed">{t.cases.rapidChurn.init2Qual1}</li>
+                        <li className="leading-relaxed">{t.cases.rapidChurn.init2Qual2}</li>
                     </ul>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Quantitative validation (Online async surveys):</strong>
+                        <strong>{t.cases.rapidChurn.init2QuantLabel}</strong>
                     </p>
                     <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
-                        <li className="leading-relaxed">
-                            Option 1 (Stratified by modality): Comprises 600 total respondents (300 active students, 300 dropouts, evenly split across online, hybrid, and in-person formats) to enable deep cross-tabulations by modality.
-                        </li>
-                        <li className="leading-relaxed">
-                            Option 2 (Modality-agnostic): Comprises 200 total respondents (100 active students, 100 dropouts, regardless of modality) focused strictly on core active-versus-dropout comparisons.
-                        </li>
-                        <li className="leading-relaxed">
-                            Recency weighting: Applied weighting to dropout cohorts, prioritizing users from the 1-to-6-month window over older profiles to isolate immediate fallout from the regulatory transition and to also avoid memory bias.
-                        </li>
+                        <li className="leading-relaxed">{t.cases.rapidChurn.init2Quant1}</li>
+                        <li className="leading-relaxed">{t.cases.rapidChurn.init2Quant2}</li>
+                        <li className="leading-relaxed">{t.cases.rapidChurn.init2Quant3}</li>
                     </ul>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Actionability guardrails:</strong>
+                        <strong>{t.cases.rapidChurn.init2GuardrailsLabel}</strong>
                     </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        To eliminate noise, friction points were classified as actionable only when corroborated across qualitative causal maps and landing within the upper quartile of the quantitative survey distribution.
-                    </p>
+                    <p className="leading-relaxed text-muted-foreground">{t.cases.rapidChurn.init2GuardrailsText}</p>
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
-                    <h3 className="text-lg font-medium">3. Product storyline and executive architecture</h3>
-                    <p className="leading-relaxed text-muted-foreground">
-                        I structured the product narrative for leadership around a direct, high-impact 4-step framework:
-                    </p>
+                    <h3 className="text-lg font-medium">{t.cases.rapidChurn.init3Title}</h3>
+                    <p className="leading-relaxed text-muted-foreground">{t.cases.rapidChurn.init3Intro}</p>
                     <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
                         <li className="leading-relaxed">
-                            <strong>User segmentation:</strong> Analysis of cohort sizes, demographic distributions, and active versus churned user splits.
-                        </li>
+                            <strong>{t.cases.rapidChurn.init3Label1}</strong>{t.cases.rapidChurn.init3Text1}</li>
                         <li className="leading-relaxed">
-                            <strong>Product retention drivers:</strong> Quantitative metrics paired with qualitative verbatims highlighting core mechanics driving retention past the 1-year mark.
-                        </li>
+                            <strong>{t.cases.rapidChurn.init3Label2}</strong>{t.cases.rapidChurn.init3Text2}</li>
                         <li className="leading-relaxed">
-                            <strong>Product churn drivers:</strong> Isolation of primary leakage vectors occurring during the first year of usage.
-                        </li>
+                            <strong>{t.cases.rapidChurn.init3Label3}</strong>{t.cases.rapidChurn.init3Text3}</li>
                         <li className="leading-relaxed">
-                            <strong>Experience and recommendation impact:</strong> Comparative Net Promoter Score (NPS) analysis segmented by active and churned user states.
-                        </li>
+                            <strong>{t.cases.rapidChurn.init3Label4}</strong>{t.cases.rapidChurn.init3Text4}</li>
                     </ul>
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8  mt-16">
-                    <h3 className="text-lg font-medium">Operational insights</h3>
+                    <h3 className="text-lg font-medium">{t.cases.rapidChurn.insightsTitle}</h3>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Data-driven diagnosis:</strong> Retrospective user data cannot invalidate an external regulatory shift. Empirical research served to quantify the boundaries of market friction rather than misrepresenting compliance-driven drop-offs as product design failures.
-                    </p>
+                        <strong>{t.cases.rapidChurn.insightsLabel1}</strong>{t.cases.rapidChurn.insightsText1}</p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Adaptable research architecture:</strong> Executing a streamlined methodology balanced granular format analysis with rapid delivery under tight operational constraints.
-                    </p>
+                        <strong>{t.cases.rapidChurn.insightsLabel2}</strong>{t.cases.rapidChurn.insightsText2}</p>
                     <p className="leading-relaxed text-muted-foreground">
-                        <strong>Operational risk mitigation:</strong> Post-enrollment insights can be converted into early-warning indicators for commercial and sales teams, isolating vulnerability before downstream churn occured.
-                    </p>
+                        <strong>{t.cases.rapidChurn.insightsLabel3}</strong>{t.cases.rapidChurn.insightsText3}</p>
                 </article>
             </section>
 
             <section className="flex max-w-2xl flex-col gap-4 mt-16">
-                <h2 className="text-xl font-medium">Execution, outcomes and deliverable validation</h2>
+                <h2 className="text-xl font-medium">{t.cases.rapidChurn.outcomeTitle}</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-                    <p>
-                        The diagnostic framework was fully scoped, architected, and approved under streamlined parameters to prioritize speed and immediate executive utility. Partnered with product analyst to extract target student cohorts, while product management engineered an automated n8n pipeline to distribute survey instruments via email at scale.
-                    </p>
-                    <p>
-                        The primary deliverable of this engagement was the comprehensive diagnostic architecture itself. A validated, end-to-end research framework that successfully yielded initial survey data (achieving roughly 45 baseline responses out of the 200 target respondents) prior to organizational layoffs halting the initiative.
-                    </p>
-                    <p>
-                        The rigor of the framework proved that product design extends far beyond visual UI delivery into systemic business diagnosis and risk mitigation under crisis conditions.
-                    </p>
+                    <p>{t.cases.rapidChurn.outcome1}</p>
+                    <p>{t.cases.rapidChurn.outcome2}</p>
+                    <p>{t.cases.rapidChurn.outcome3}</p>
                 </div>
             </section>
 
             <section className="flex max-w-2xl flex-col gap-4 mt-16">
-                <h2 className="text-xl font-medium">Presentation invitation</h2>
+                <h2 className="text-xl font-medium">{t.cases.rapidChurn.presentationTitle}</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-                    <p>
-                        Want to see the actual slides I walked into my leadership's office with? Take a look at the exact presentation I used to pitch this diagnostic framework.
-                    </p>
+                    <p>{t.cases.rapidChurn.presentationText}</p>
                 </div>
             </section>
 
@@ -231,16 +185,14 @@ export default function RapidChurnPage() {
                     <button
                         className="absolute top-4 right-4 text-white text-sm bg-black/40 px-3 py-1.5 rounded-full hover:bg-black/60"
                         onClick={() => setActiveImage(null)}
-                    >
-                        Close
-                    </button>
+                    >{t.caseCommon.close}</button>
                 </div>
             )}
 
             <section className="flex flex-col gap-6 border-t border-border pt-16 mt-40">
                 <div className="flex flex-col gap-2">
-                    <h2 className="text-xl font-medium tracking-tight">Explore other cases</h2>
-                    <p className="text-base text-muted-foreground">Continue reading about my process and impact across other digital products.</p>
+                    <h2 className="text-xl font-medium tracking-tight">{t.caseCommon.exploreOtherCases}</h2>
+                    <p className="text-base text-muted-foreground">{t.caseCommon.exploreOtherCasesSubtitle}</p>
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-3 mt-4">

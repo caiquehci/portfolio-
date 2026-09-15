@@ -1,14 +1,17 @@
+'use client'
+
 import { moreWork } from '@/lib/portfolio-data'
+import { useTranslations } from '@/lib/i18n/provider'
 
 export function MoreWork() {
+  const t = useTranslations()
+
   return (
     <section id="more-work" className="scroll-mt-16 border-b border-border">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-6 py-16 md:py-20">
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-medium tracking-tight">More work ( WIP )</h2>
-          <p className="max-w-xl text-muted-foreground">
-            Smaller pieces: wireframes, presentations, and graphic design.
-          </p>
+          <h2 className="text-2xl font-medium tracking-tight">{t.moreWork.title}</h2>
+          <p className="max-w-xl text-muted-foreground">{t.moreWork.subtitle}</p>
         </div>
         <ul className="flex flex-col">
           {moreWork.map((item) => (

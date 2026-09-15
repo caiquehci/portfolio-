@@ -5,16 +5,19 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { profile } from '@/lib/portfolio-data'
-
-const nav = [
-  { href: '/work/all', label: 'All Projects' },
-  { href: '/about', label: 'About' },
-  { href: '/#contact', label: 'Contact' },
-]
+import { useTranslations } from '@/lib/i18n/provider'
+import { LanguageToggle } from '@/components/language-toggle'
 
 export function SiteHeader() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+  const t = useTranslations()
+
+  const nav = [
+    { href: '/work/all', label: t.nav.work },
+    { href: '/about', label: t.nav.about },
+    { href: '/#contact', label: t.nav.contact },
+  ]
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm">
@@ -39,18 +42,24 @@ export function SiteHeader() {
               </Link>
             )
           })}
+
+          <LanguageToggle />
         </nav>
 
-        <button
-          type="button"
-          className="inline-flex size-9 items-center justify-center md:hidden"
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? 'Close' : 'Menu'}
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageToggle />
+
+          <button
+            type="button"
+            className="inline-flex size-9 items-center justify-center"
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? t.nav.close : t.nav.menu}
+          </button>
+        </div>
       </div>
 
       {open && (

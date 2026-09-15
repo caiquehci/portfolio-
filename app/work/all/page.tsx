@@ -1,12 +1,15 @@
 'use client'
 
-import { projects } from "@/lib/portfolio-data";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import { useProjects, useTranslations } from "@/lib/i18n/provider";
 
 export default function AllWorkPage() {
     const [searchQuery, setSearchQuery] = useState("");
+    const t = useTranslations();
+    // Localized list, so search matches the language the visitor is reading.
+    const projects = useProjects();
 
     const filteredProjects = projects.filter((project) => {
         const query = searchQuery.toLowerCase();
@@ -20,15 +23,15 @@ export default function AllWorkPage() {
 
     return (
         <main className="max-w-5xl mx-auto px-6 py-24">
-            <h1 className="text-4xl font-bold tracking-tight mb-4">All Projects</h1>
-            <p className="text-zinc-400">A complete collection of my projects within product design and engineering, for your appreciation.</p>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">{t.allWork.title}</h1>
+            <p className="text-zinc-400">{t.allWork.subtitle}</p>
 
             {/* Search Bar Section with Segmenting Dividers */}
             <div className="border-t border-zinc-800/60 my-8 pt-8">
                 <div className="relative w-full md:max-w-md">
                     <input
                         type="text"
-                        placeholder="Search by keyword, e.g., 'design system', 'saas', 'A/B test'..."
+                        placeholder={t.allWork.searchPlaceholder}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="w-full px-4 py-3 pr-11 rounded-xl bg-zinc-900/60 border border-zinc-800 text-zinc-200 placeholder:text-zinc-500 shadow-[0_0_15px_rgba(255,255,255,0.03)] focus:outline-none focus:border-zinc-200 transition-all duration-300 text-sm"
@@ -49,7 +52,7 @@ export default function AllWorkPage() {
                     ))
                 ) : (
                     <div className="col-span-full py-12 text-center text-zinc-500">
-                        No projects found matching &ldquo;{searchQuery}&rdquo;.
+                        {t.allWork.noResults} &ldquo;{searchQuery}&rdquo;.
                     </div>
                 )}
             </div>

@@ -3,10 +3,12 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { projects } from '@/lib/portfolio-data'
+import { useTranslations } from '@/lib/i18n/provider'
 
 export default function EngineeringEnablementPage() {
     const project = projects.find((p) => p.slug === 'engineering-enablement')
     const [activeImage, setActiveImage] = useState<string | null>(null)
+    const t = useTranslations()
 
     if (!project) return null
 
@@ -15,9 +17,7 @@ export default function EngineeringEnablementPage() {
             <button
                 onClick={() => window.history.back()}
                 className="text-sm text-muted-foreground underline underline-offset-4 cursor-pointer bg-transparent border-none p-0 text-left"
-            >
-                ← Back
-            </button>
+            >{t.caseCommon.back}</button>
 
             <header className="flex flex-col gap-4">
                 <p className="text-sm text-muted-foreground">
@@ -48,55 +48,41 @@ export default function EngineeringEnablementPage() {
             ) : null}
 
             <section className="flex flex-col gap-3">
-                <h2 className="text-xl font-medium">Role and scope</h2>
+                <h2 className="text-xl font-medium">{t.caseCommon.roleAndScope}</h2>
                 <ul className="flex max-w-2xl list-disc flex-col gap-2 pl-5 text-muted-foreground">
-                    <li className="leading-relaxed">
-                        Spearheaded an experimental handoff workflow on a cross-functional product team to eliminate communication bottlenecks and speed up delivery.
-                    </li>
-                    <li className="leading-relaxed">
-                        Introduced portable HTML specification files and Markdown context documents paired with Figma designs.
-                    </li>
-                    <li className="leading-relaxed">
-                        Operationalized core components like the Tabela de Processos to bring component systematization to the team.
-                    </li>
+                    <li className="leading-relaxed">{t.cases.engineeringEnablement.scope1}</li>
+                    <li className="leading-relaxed">{t.cases.engineeringEnablement.scope2}</li>
+                    <li className="leading-relaxed">{t.cases.engineeringEnablement.scope3}</li>
                 </ul>
             </section>
 
             <section className="flex max-w-2xl flex-col gap-4 mt-16">
-                <h2 className="text-xl font-medium">Executive summary</h2>
+                <h2 className="text-xl font-medium">{t.caseCommon.executiveSummary}</h2>
                 <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-                    <p>
-                        When joining a cross-functional product team of one designer and four engineers, the workflow faced a bottleneck. The team lacked a shared design system and prior experience with a dedicated designer. This caused fragmented component choices, heavy reliance on synchronous communication, and inflated sprint hours spent clarifying layout decisions rather than shipping features.
-                    </p>
-                    <p>
-                        To solve this, I introduced a developer experience workflow: pairing Figma designs with HTML specification files and Markdown context documents. Shifting our sprint capacity from fighting debt to dedicating <strong className="text-foreground">80% of our time</strong> to new features.
+                    <p>{t.cases.engineeringEnablement.summary1}</p>
+                    <p>{t.cases.engineeringEnablement.summary2}<strong className="text-foreground">80% of our time</strong> to new features.
                     </p>
                 </div>
             </section>
 
             <section className="flex flex-col gap-10 mt-16">
-                <h2 className="text-xl font-medium">Initiatives</h2>
+                <h2 className="text-xl font-medium">{t.caseCommon.initiatives}</h2>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8">
-                    <h3 className="text-lg font-medium">The challenge: friction in a greenfield design environment</h3>
+                    <h3 className="text-lg font-medium">{t.cases.engineeringEnablement.challengeTitle}</h3>
                     <ul className="flex flex-col gap-3 list-disc pl-5 text-muted-foreground">
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Inconsistent component choices:</strong> Engineers were accustomed to sourcing the first third-party library that seemed appropriate, leading to deep visual inconsistencies, redundant technical debt, and mismatched component implementations across the product.
-                        </li>
+                            <strong className="text-foreground">{t.cases.engineeringEnablement.challengeLabel1}</strong>{t.cases.engineeringEnablement.challengeText1}</li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Synchronous communication bottlenecks:</strong> Despite detailed design files and documented tickets, the team frequently relied on synchronous check-ins for layout logic, states, and behavior. This created dead time in sprints where engineering velocity stalled waiting for clarification.
-                        </li>
+                            <strong className="text-foreground">{t.cases.engineeringEnablement.challengeLabel2}</strong>{t.cases.engineeringEnablement.challengeText2}</li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Cultural resistance to overhead:</strong> The team had no prior exposure to structured design systems, and introducing new processes risked being met with resistance if perceived as bureaucratic overhead.
-                        </li>
+                            <strong className="text-foreground">{t.cases.engineeringEnablement.challengeLabel3}</strong>{t.cases.engineeringEnablement.challengeText3}</li>
                     </ul>
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
-                    <h3 className="text-lg font-medium">The solution: scrappy experimentation with portable HTML specs</h3>
-                    <p className="leading-relaxed text-muted-foreground">
-                        Driven by curiosity and a desire to eliminate repetitive friction, I experimented with a proactive approach. I observed how accessible online code libraries accelerated my own understanding, even without a formal developer background. Reversing the logic, I started crafting standalone HTML specification files alongside Markdown context notes.
-                    </p>
+                    <h3 className="text-lg font-medium">{t.cases.engineeringEnablement.solutionTitle}</h3>
+                    <p className="leading-relaxed text-muted-foreground">{t.cases.engineeringEnablement.solutionText}</p>
                 </article>
 
                 <div className="w-full h-[600px] border border-border rounded-xl overflow-hidden bg-background shadow-sm mt-2">
@@ -108,28 +94,21 @@ export default function EngineeringEnablementPage() {
                 </div>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
-                    <h3 className="text-lg font-medium">Why this approach worked</h3>
+                    <h3 className="text-lg font-medium">{t.cases.engineeringEnablement.whyTitle}</h3>
                     <ul className="flex flex-col gap-3 list-disc pl-5 text-muted-foreground">
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Frictionless accessibility:</strong> HTML files could be opened instantly in any browser without requiring a Figma license, design tool knowledge or complex onboarding. They were small, flexible and easy to be replicated/adapted.
-                        </li>
+                            <strong className="text-foreground">{t.cases.engineeringEnablement.whyLabel1}</strong>{t.cases.engineeringEnablement.whyText1}</li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Proactive translation:</strong> Long before developer agents and rich context windows were standard, these HTML sheets served as visual breakdowns to my peers. Component unfolding was easy to see and review. They allowed developers to inspect behaviors, variants, and tokens at their own pace. Meanwhile, the Markdown files held the broader project context and narrative.
-                        </li>
+                            <strong className="text-foreground">{t.cases.engineeringEnablement.whyLabel2}</strong>{t.cases.engineeringEnablement.whyText2}</li>
                         <li className="leading-relaxed">
-                            <strong className="text-foreground">Organic adoption:</strong> Rather than rolling out a top-down mandate or heavy design system governance framework, I tested the concept small. It was introduced as a collaborative experiment rather than an enforced corporate rule. While one developer initially resisted the shift, the quality improvement won the team over within two sprints.
-                        </li>
+                            <strong className="text-foreground">{t.cases.engineeringEnablement.whyLabel3}</strong>{t.cases.engineeringEnablement.whyText3}</li>
                     </ul>
                 </article>
 
                 <article className="flex max-w-2xl flex-col gap-4 border-t border-border pt-8 mt-16">
-                    <h3 className="text-lg font-medium">Key takeaways: Systematizing developer experience without overhead</h3>
-                    <p className="leading-relaxed text-muted-foreground">
-                        Scaling a design workflow across a greenfield team isn't about enforcing; it's about building a layer that respects engineering velocity. By introducing those artifacts alongside Figma, I brought autonomy to the process.
-                    </p>
-                    <p className="leading-relaxed text-muted-foreground">
-                        The team estimated that approximately 80% of sprint capacity could remain focused on development rather than clarification and technical debt. 
-                    </p>
+                    <h3 className="text-lg font-medium">{t.cases.engineeringEnablement.takeawaysTitle}</h3>
+                    <p className="leading-relaxed text-muted-foreground">{t.cases.engineeringEnablement.takeaways1}</p>
+                    <p className="leading-relaxed text-muted-foreground">{t.cases.engineeringEnablement.takeaways2}</p>
                 </article>
             </section>
 
@@ -152,16 +131,14 @@ export default function EngineeringEnablementPage() {
                     <button
                         className="absolute top-4 right-4 text-white text-sm bg-black/40 px-3 py-1.5 rounded-full hover:bg-black/60"
                         onClick={() => setActiveImage(null)}
-                    >
-                        Close
-                    </button>
+                    >{t.caseCommon.close}</button>
                 </div>
             )}
 
             <section className="flex flex-col gap-6 border-t border-border pt-16 mt-40">
                 <div className="flex flex-col gap-2">
-                    <h2 className="text-xl font-medium tracking-tight">Explore other cases</h2>
-                    <p className="text-base text-muted-foreground">Continue reading about my process and impact across other digital products.</p>
+                    <h2 className="text-xl font-medium tracking-tight">{t.caseCommon.exploreOtherCases}</h2>
+                    <p className="text-base text-muted-foreground">{t.caseCommon.exploreOtherCasesSubtitle}</p>
                 </div>
 
                 <div className="grid gap-6 sm:grid-cols-3 mt-4">

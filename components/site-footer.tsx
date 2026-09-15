@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import { profile } from '@/lib/portfolio-data'
+import { useTranslations } from '@/lib/i18n/provider'
 
 export function SiteFooter() {
+  const t = useTranslations()
+
   return (
     <footer className="relative border-t border-border">
       {/* Absolute background gradient: sits behind everything, takes up 0 layout height */}
@@ -15,7 +20,7 @@ export function SiteFooter() {
         <ul className="flex flex-wrap items-center gap-5 text-xs">
           <li>
             <a href={profile.links.email} className="text-muted-foreground hover:text-foreground">
-              Email
+              {t.footer.email}
             </a>
           </li>
           <li>
@@ -30,7 +35,7 @@ export function SiteFooter() {
           </li>
           <li>
             <Link href="/about" className="text-muted-foreground hover:text-foreground">
-              About
+              {t.footer.about}
             </Link>
           </li>
         </ul>

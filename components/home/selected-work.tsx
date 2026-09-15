@@ -1,19 +1,21 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Cover } from '@/components/cover'
-import { projects } from '@/lib/portfolio-data'
+import { useProjects, useTranslations } from '@/lib/i18n/provider'
 
 export function SelectedWork() {
+  const projects = useProjects()
   const featured = projects.filter((p) => p.featured)
+  const t = useTranslations()
 
   return (
     <section id="work" className="scroll-mt-16 border-b border-border">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-6 py-16 md:py-24">
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-medium tracking-tight">Selected work</h2>
-          <p className="max-w-xl text-muted-foreground">
-            Role, context, faced problems, the decisions and what happened next.
-          </p>
+          <h2 className="text-2xl font-medium tracking-tight">{t.selectedWork.title}</h2>
+          <p className="max-w-xl text-muted-foreground">{t.selectedWork.subtitle}</p>
         </div>
 
         <div className="flex flex-col gap-10">
@@ -57,7 +59,7 @@ export function SelectedWork() {
             href="/work/all"
             className="px-8 py-4 rounded-xl bg-[#ffc000] text-zinc-950 font-medium hover:opacity-90 transition-opacity duration-300 shadow-lg shadow-[#ffc000]/10 flex items-center gap-2"
           >
-            See all work →
+            {t.selectedWork.seeAll}
           </Link>
         </div>
       </div>

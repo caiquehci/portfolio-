@@ -2,11 +2,14 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { projects } from '@/lib/portfolio-data'
+import { useProject, useProjects, useTranslations } from '@/lib/i18n/provider'
 
 export default function AudenCollegePage() {
-  const project = projects.find((p) => p.slug === 'auden-college')
+  // Localized: prose comes from the dictionary, structure from portfolio-data.
+  const project = useProject('auden-college')
+  const projects = useProjects()
   const [activeImage, setActiveImage] = useState<string | null>(null)
+  const t = useTranslations()
 
   if (!project) return null
 
@@ -15,9 +18,7 @@ export default function AudenCollegePage() {
       <button
         onClick={() => window.history.back()}
         className="text-sm text-muted-foreground underline underline-offset-4 cursor-pointer bg-transparent border-none p-0 text-left"
-      >
-        ← Back
-      </button>
+      >{t.caseCommon.back}</button>
 
       <header className="flex flex-col gap-4">
         <p className="text-sm text-muted-foreground">
@@ -27,7 +28,7 @@ export default function AudenCollegePage() {
           {project.name}
         </h1>
         <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          From zero to a selling e-commerce in 3 days
+          {t.cases.audenCollege.tagline}
         </p>
         <p className="text-sm text-muted-foreground">
           {project.role} · {project.project} · {project.period}
@@ -48,52 +49,38 @@ export default function AudenCollegePage() {
       </div>
 
       <section className="flex max-w-2xl flex-col gap-4">
-        <h2 className="text-xl font-medium">About the project</h2>
+        <h2 className="text-xl font-medium">{t.caseCommon.aboutTheProject}</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-          <p>
-            AUDEN was a new, Gen Z-focused brand with no website or e-commerce live. Its official path to market was through Ditto, an internal product I had designed, but adapting it to AUDEN’s visual requirements would require engineering time and multiple iterations.
-          </p>
-          <p>
-            The business needed to start selling immediately. Rather than waiting for the internal product backlog, I evaluated whether an existing validated experience could be deployed through a faster stack.
-          </p>
+          <p>{t.cases.audenCollege.about1}</p>
+          <p>{t.cases.audenCollege.about2}</p>
         </div>
       </section>
 
       <section className="flex max-w-2xl flex-col gap-4  mt-16">
-        <h2 className="text-xl font-medium">The challenge</h2>
+        <h2 className="text-xl font-medium">{t.caseCommon.theChallenge}</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-          <p>
-            The challenge was not simply to design a new website. It was to balance time-to-market, brand expression, product consistency, and technical constraints.
-          </p>
-          <p>
-            Ditto could support the core purchasing journey, but getting AUDEN from zero to a functional storefront would take roughly two weeks. Every day without a live site meant another day without the ability to generate leads and enrollments.
-          </p>
+          <p>{t.cases.audenCollege.challenge1}</p>
+          <p>{t.cases.audenCollege.challenge2}</p>
         </div>
       </section>
 
       <section className="flex flex-col gap-10 mt-16">
-        <h2 className="text-xl font-medium">Initiatives</h2>
+        <h2 className="text-xl font-medium">{t.caseCommon.initiatives}</h2>
 
         <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
-          <h3 className="text-lg font-medium">The decision</h3>
-          <p className="leading-relaxed text-muted-foreground">
-            I chose Framer instead of Ditto. The decision was based on more than visual flexibility. I analyzed existing Ditto experiences through Clarity, looking at user flows, page performance, and heatmaps. The data showed that the existing Home to PLP to PDP to Checkout journey was already a validated path. That allowed me to separate what needed to change from what was already working.
-          </p>
-          <p className="leading-relaxed text-muted-foreground">
-            The three principles were straightforward:
-          </p>
+          <h3 className="text-lg font-medium">{t.caseCommon.theDecision}</h3>
+          <p className="leading-relaxed text-muted-foreground">{t.cases.audenCollege.decisionText}</p>
+          <p className="leading-relaxed text-muted-foreground">{t.cases.audenCollege.principlesIntro}</p>
           <ul className="flex flex-col gap-2 pl-5 list-disc text-muted-foreground">
-            <li>Give the homepage enough personality to establish AUDEN as a new, Gen Z-focused brand.</li>
-            <li>Preserve the validated purchasing journey.</li>
-            <li>Use Framer to gain design independence and reduce time-to-market.</li>
+            <li>{t.cases.audenCollege.principle1}</li>
+            <li>{t.cases.audenCollege.principle2}</li>
+            <li>{t.cases.audenCollege.principle3}</li>
           </ul>
         </article>
 
         <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
-          <h3 className="text-lg font-medium">Execution</h3>
-          <p className="leading-relaxed text-muted-foreground">
-            I designed and built the website and CMS in Framer, translating the existing product logic into a new branded experience without rebuilding the underlying purchasing journey from scratch. The result was a functional e-commerce website with CMS capabilities delivered in 3 days, compared with approximately 2 weeks through the internal Ditto workflow.
-          </p>
+          <h3 className="text-lg font-medium">{t.cases.audenCollege.executionTitle}</h3>
+          <p className="leading-relaxed text-muted-foreground">{t.cases.audenCollege.result1}</p>
         </article>
 
         <div className="w-full">
@@ -110,24 +97,20 @@ export default function AudenCollegePage() {
         </div>
 
         <article className="flex max-w-2xl flex-col gap-5 border-t border-border pt-8">
-          <h3 className="text-lg font-medium">Trade-offs</h3>
-          <p className="leading-relaxed text-muted-foreground">
-            The speed came with real consequences. Framer offered significantly more freedom and faster iteration, but introduced considerations around infrastructure, image hosting, bandwidth, caching, Core Web Vitals, SEO, and long-term scalability. The decision was therefore not simply Framer is faster. It was a deliberate trade-off between immediate time-to-market and long-term control of the technology stack.
-          </p>
+          <h3 className="text-lg font-medium">{t.cases.audenCollege.tradeoffsTitle}</h3>
+          <p className="leading-relaxed text-muted-foreground">{t.cases.audenCollege.result2}</p>
         </article>
       </section>
 
       <section className="flex max-w-2xl flex-col gap-4 mt-16">
-        <h2 className="text-xl font-medium">Outcome</h2>
+        <h2 className="text-xl font-medium">{t.cases.audenCollege.outcomeTitle}</h2>
         <div className="flex flex-col gap-4 text-muted-foreground leading-relaxed">
-          <p>
-            AUDEN went from having no digital storefront to a functional website and CMS in 3 days, allowing the brand to begin selling without waiting for the engineering backlog.
-          </p>
+          <p>{t.cases.audenCollege.result3}</p>
         </div>
       </section>
 
       <section className="flex flex-col gap-4 w-full mt-16">
-        <h2 className="text-xl font-medium">See it yourself</h2>
+        <h2 className="text-xl font-medium">{t.caseCommon.seeItYourself}</h2>
         <div className="w-full h-[80vh] md:h-[80vh] overflow-hidden rounded-xl bg-neutral-900/10">
           <iframe
             src="https://faculdadeauden.com.br/"
@@ -157,16 +140,14 @@ export default function AudenCollegePage() {
           <button
             className="absolute top-4 right-4 text-white text-sm bg-black/40 px-3 py-1.5 rounded-full hover:bg-black/60"
             onClick={() => setActiveImage(null)}
-          >
-            Close
-          </button>
+          >{t.caseCommon.close}</button>
         </div>
       )}
 
       <section className="flex flex-col gap-6 border-t border-border pt-16 mt-40">
         <div className="flex flex-col gap-2">
-          <h2 className="text-xl font-medium tracking-tight">Explore other cases</h2>
-          <p className="text-base text-muted-foreground">Continue reading about my process and impact across other digital products.</p>
+          <h2 className="text-xl font-medium tracking-tight">{t.caseCommon.exploreOtherCases}</h2>
+          <p className="text-base text-muted-foreground">{t.caseCommon.exploreOtherCasesSubtitle}</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-3 mt-4">
